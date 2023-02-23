@@ -1,0 +1,14 @@
+- item: 首页
+  icon: fa fa-home
+  link: "./"
+
+- item: 开源
+  icon: fa fa-cog
+  link: ""
+  list:
+    - name: GitHub
+      icon: fa fa-github
+      url: "https://github.com/jetsung"
+    - name: JihuLab
+      icon: fa fa-gitlab
+      url: "https://jihulab.com/jetsung"
