@@ -3,10 +3,98 @@
   icon: far fa-star
   links:
     - title: 杰嵩开发笔记
-      logo: ""
+      logo: https://api.iowen.cn/favicon/flarum.org.cn.png
       url: https://jetsung.com
       qrcode:
-      description: 杰嵩开发笔记
+      description: 杰嵩开发笔记（社区）
+    - title: 平平无奇程序员
+      logo: https://zzzzy.com/logo.png
+      url: https://zzzzy.com
+      qrcode:
+      description: 平平无奇程序员（博客）
+    - title: GitHub
+      logo: https://api.iowen.cn/favicon/github.com.png
+      url: "https://github.com/jetsung"
+      qrcode:
+      description: （国外）作品项目代码开源
+    - title: JihuLab
+      logo: https://api.iowen.cn/favicon/jihulab.com.png
+      url: "https://jihulab.com/jetsung"
+      qrcode:
+      description: （国内）作品项目代码开源
+    - title: 头条号
+      logo: https://api.iowen.cn/favicon/www.toutiao.com.png
+      url: https://www.toutiao.com/c/user/token/MS4wLjABAAAATopQ1LkY3v_vbmTLcW504_Asubeqs24gH-IFJp66CDLoFB2ATjEwBZJhdIsgKEPZ/?
+      qrcode:
+      description: 平平无奇程序员（头条号）
+
+- taxonomy: 科技智能
+  icon: fas fa-flask fa-lg
+  list:
+    - term: 代码托管
+      links:
+        - title: ◈GitHub
+          logo: https://api.iowen.cn/favicon/github.com.png
+          url: https://github.com
+          description: 全球最大的代码托管平台
+        - title: ◈极狐 GitLab
+          logo: https://api.iowen.cn/favicon/jihulab.com.png
+          url: https://jihulab.com
+          description: （国内）GitLab 中国（极狐）版
+        - title: ◈GitLab
+          logo: https://api.iowen.cn/favicon/gitlab.com.png
+          url: https://gitlab.com
+          description: GitLab （可自建）代码托管平台
+        - title: ◈阿里云效 Codeup
+          logo: https://img.alicdn.com/imgextra/i1/O1CN016ZhHeb1Qk05Dj8B47_!!6000000002013-55-tps-240-240.svg
+          url: https://codeup.aliyun.com
+          description: （国内）阿里云效代码托管平台
+        - title: ◈Framagit
+          logo: https://api.iowen.cn/favicon/framagit.org.png
+          url: https://framagit.org
+          description: 基于 GitLab，代码托管平台
+        - title: ◈Codeberg
+          logo: https://api.iowen.cn/favicon/codeberg.org.png
+          url: https://codeberg.org
+          description: 基于 Gitea，代码托管平台
+        - title: Gitee
+          logo: https://api.iowen.cn/favicon/gitee.com.png
+          url: https://gitee.com
+          description: （国内）Gitee 代码托管平台
+        - title: GitCode
+          logo: https://gitcode.net/uploads/-/system/appearance/favicon/1/icon.png
+          url: https://gitcode.net
+          description: （国内）基于 GitLab，代码托管平台
+        - title: Coding
+          logo: https://api.iowen.cn/favicon/coding.net.png
+          url: https://coding.net
+          description: （国内）Coding 代码托管平台
+        - title: Gitea
+          logo: https://api.iowen.cn/favicon/gitea.com.png
+          url: https://gitea.com
+          description: Gitea （可自建）代码托管平台
+        - title: GitLink
+          logo: https://api.iowen.cn/favicon/gitlink.org.cn.png
+          url: https://code.gitlink.org.cn
+          description: （国内）基于 Gitea，代码托管平台
+        - title: 更多⇒
+          logo:
+          url: https://jetsung.com/d/208
+          description: ⇒更多代码托管服务平台
+    - term: 免费资源
+      links:
+        - title: Koyeb
+          logo: https://api.iowen.cn/favicon/www.koyeb.com.png
+          url: https://www.koyeb.com
+          description: Serverless 框架平台（需信用卡）
+        - title: Replit
+          logo: https://api.iowen.cn/favicon/replit.com.png
+          url: https://replit.com
+          description: 网络应用托管平台
+        - title: FreeDB
+          logo: https://api.iowen.cn/favicon/freedb.tech.png
+          url: https://freedb.tech
+          description: 数据库托管（仅建议测试用）
 
 - taxonomy: 素材资源
   icon: far fa-folder-open fa-lg
@@ -14,24 +102,9 @@
     - term: 字体资源
       links:
         - title: 找字体
-          logo: ""
+          logo: https://api.iowen.cn/favicon/www.zfont.cn.png
           url: https://www.zfont.cn
-          qrcode:
           description: 找字体,免费商用字体
-
-- taxonomy: 科研办公
-  icon: fas fa-flask fa-lg
-  list:
-    - term: DevOPS
-      links:
-        - title: Koyeb
-          logo:
-          url: https://www.koyeb.com
-          description: Koyeb is a developer-friendly serverless platform to deploy apps globally. No-ops, servers, or infrastructure management.
-        - title: Replit
-          logo:
-          url: https://replit.com
-          description: Build software collaboratively from anywhere in the world, on any device, without spending a second on setup
 
 # 源站
 
@@ -59,14 +132,6 @@
       logo: 微信公众号.png
       url: https://mp.weixin.qq.com/
       description: 再小的个体也有自己的品牌。
-    - title: CODING
-      logo: coding.png
-      url: https://shenweiyan.coding.net/user/projects
-      description: 个人 CODING 代码托管。
-    - title: GitHub
-      logo: github.jpg
-      url: https://github.com/
-      description: GitHub 开源社区。
     - title: Md2X 定制版
       logo: mdx.png
       url: https://mdx.ncbix.com/
