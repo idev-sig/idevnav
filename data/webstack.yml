@@ -50,7 +50,7 @@
           url: https://codeup.aliyun.com
           description: （国内）阿里云效代码托管平台
         - title: ◈Framagit
-          logo: https://api.iowen.cn/favicon/framagit.org.png
+          logo: https://framagit.org/uploads/-/system/appearance/header_logo/1/logo.svg
           url: https://framagit.org
           description: 基于 GitLab，代码托管平台
         - title: ◈Codeberg
