@@ -15,5 +15,6 @@ git push origin main
 PORT="20171"
 [ $# -ge 2 ] && PORT="${2}"
 
+echo "${PORT}"
 # publish
 HTTP_PROXY=http://localhost:${PORT} wrangler pages publish docs --project-name nav
