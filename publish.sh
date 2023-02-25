@@ -8,7 +8,7 @@ hugo -D
 
 # git push
 git add .
-git commit -am "${1}"
+git commit -am "feat: ${1}"
 git push origin main
 
 # set port
