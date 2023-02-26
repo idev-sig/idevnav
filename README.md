@@ -37,7 +37,7 @@ hugo -D
    - 静态文件（夹）直接上传方式;
    - `Wrangler` 命令行方式;
 
-   3 种布署方式，我推荐用第 3 种。第 1 种限制了那两个平台，而我使用 `JihuLab`，第 2 种不方便，第 3 种需要使用代理。
+   3 种布署方式，我推荐用第 3 种。第 1 种限制了那两个平台，而我使用 `JihuLab` 托管代码。第 2 种不方便更新。第 3 种需要使用代理。
 
 ### [Wrangler 命令行工具](https://developers.cloudflare.com/workers/wrangler/)
 

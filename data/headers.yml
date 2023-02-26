@@ -13,6 +13,10 @@
       icon: fa fa-gitlab
       url: "https://jihulab.com/jetsung"
 
+- item: 导航
+  icon: far fa-caret-square-down
+  link: "https://nav.zzzzy.com"
+
 - item: 关于
   icon: fas fa-meh-rolling-eyes
   link: "https://jetsung.com/p/about"

@@ -330,10 +330,6 @@
           logo: https://api.iowen.cn/favicon/dict.eudic.net.png
           url: http://dict.eudic.net/Home/Translation
           description: 欧路词典翻译
-        - title: 有道翻译
-          logo: 有道词典.png
-          url: http://fanyi.youdao.com/
-          description: 有道翻译
         - title: 沪江翻译
           logo: https://api.iowen.cn/favicon/dict.hujiang.com.png
           url: https://dict.hujiang.com/app/trans
@@ -342,6 +338,14 @@
           logo: https://api.iowen.cn/favicon/fanyi.dict.cn.png
           url: http://fanyi.dict.cn/
           description: 海词翻译
+        - title: F 搜翻译
+          logo: https://api.iowen.cn/favicon/fsoufsou.com.png
+          url: https://fsoufsou.com/translate
+          description: F 搜翻译
+        - title: 有道翻译
+          logo: 有道词典.png
+          url: http://fanyi.youdao.com/
+          description: 有道翻译
         - title: 搜狗翻译
           logo: https://api.iowen.cn/favicon/fanyi.sogou.com.png
           url: https://fanyi.sogou.com/text
