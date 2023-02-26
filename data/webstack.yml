@@ -295,42 +295,69 @@
   list:
     - term: 在线翻译
       links:
-        - title: 有道翻译
-          logo: 有道词典.png
-          url: http://fanyi.youdao.com/
-          description: 有道翻译
-        - title: 谷歌翻译
-          logo: 谷歌翻译.jpg
-          url: https://translate.google.com.hk/
-          description: 谷歌翻译
-        - title: 百度翻译
-          logo: https://api.iowen.cn/favicon/fanyi.baidu.com.png
-          url: https://fanyi.baidu.com/
-          description: 百度翻译
         - title: Bing 翻译
           logo: https://api.iowen.cn/favicon/www.bing.com.png
           url: https://www.bing.com/translator/
           description: Bing 翻译
-        - title: 沪江翻译
-          logo: https://api.iowen.cn/favicon/dict.hujiang.com.png
-          url: https://dict.hujiang.com/app/trans
-          description: 沪江小D 翻译
-        - title: 腾讯翻译君
-          logo: https://api.iowen.cn/favicon/fanyi.qq.com.png
-          url: https://fanyi.qq.com/
-          description: 腾讯翻译君
+        - title: 百度翻译
+          logo: https://api.iowen.cn/favicon/fanyi.baidu.com.png
+          url: https://fanyi.baidu.com/
+          description: 百度翻译
+        - title: 谷歌翻译
+          logo: 谷歌翻译.jpg
+          url: https://translate.google.com.hk/
+          description: 谷歌翻译
         - title: 彩云小译
           logo: https://api.iowen.cn/favicon/fanyi.caiyunapp.com.png
           url: https://fanyi.caiyunapp.com/
           description: 彩云小译
-        - title: 搜狗翻译
-          logo: https://api.iowen.cn/favicon/fanyi.sogou.com.png
-          url: https://fanyi.sogou.com/text
-          description: 搜狗翻译
+        - title: 腾讯翻译君
+          logo: https://api.iowen.cn/favicon/fanyi.qq.com.png
+          url: https://fanyi.qq.com/
+          description: 腾讯翻译君
         - title: DeepL 翻译
           logo: https://api.iowen.cn/favicon/www.deepl.com.png
           url: https://www.deepl.com/translator
           description: DeepL 翻译
+        - title: Yandex 翻译
+          logo: https://api.iowen.cn/favicon/translate.yandex.com.png
+          url: https://translate.yandex.com/
+          description: Yandex 翻译
+        - title: 爱词霸翻译
+          logo: https://api.iowen.cn/favicon/www.iciba.com.png
+          url: http://www.iciba.com/fy
+        - title: 欧路词典翻译
+          logo: https://api.iowen.cn/favicon/dict.eudic.net.png
+          url: http://dict.eudic.net/Home/Translation
+          description: 欧路词典翻译
+        - title: 有道翻译
+          logo: 有道词典.png
+          url: http://fanyi.youdao.com/
+          description: 有道翻译
+        - title: 沪江翻译
+          logo: https://api.iowen.cn/favicon/dict.hujiang.com.png
+          url: https://dict.hujiang.com/app/trans
+          description: 沪江小D 翻译
+        - title: 海词翻译
+          logo: https://api.iowen.cn/favicon/fanyi.dict.cn.png
+          url: http://fanyi.dict.cn/
+          description: 海词翻译
+        - title: 搜狗翻译
+          logo: https://api.iowen.cn/favicon/fanyi.sogou.com.png
+          url: https://fanyi.sogou.com/text
+          description: 搜狗翻译
+        - title: 翻译狗
+          logo: https://api.iowen.cn/favicon/www.fanyigou.net.png
+          url: https://www.fanyigou.net/trans/totran/tranText.html
+          description: 翻译狗
+        - title: KEEKIT 翻译
+          logo: https://api.iowen.cn/favicon/www.yeekit.com.png
+          url: https://www.yeekit.com/site/translate
+          description: KEEKIT 翻译
+        - title: 360 翻译
+          logo: https://api.iowen.cn/favicon/fanyi.so.com.png
+          url: https://fanyi.so.com/
+          description: 360 翻译
     - term: 在线词典
       links:
         - title: 有道词典
