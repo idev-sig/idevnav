@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>杰嵩导航</title>
+    <title>杰嵩网址导航</title>
     <link>https://nav.zzzzy.com/</link>
-    <description>Recent content on 杰嵩导航</description>
+    <description>Recent content on 杰嵩网址导航</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language><atom:link href="https://nav.zzzzy.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <pubDate>Tue, 28 Jul 2020 19:27:08 +0800</pubDate>
       
       <guid>https://nav.zzzzy.com/about/</guid>
-      <description>这是 Hugo 版 WebStack 主题 本项目是基于纯静态的网址导航网站 webstack.cc 制作的 Hugo 主题，其中部分代码参考了以下几个开源项目： https://github.com/liutongxu/liutongxu.github.io https://github.com/iplaycode/webstack-hugo 主题安装后，将 exampleSite 目录下的文件复制到 hugo 站</description>
+      <description>本站重新创建于 2020 年 7 月 23 日，是一个开发、学习的笔记型私人网站。 本人平时接触计算机软件的开发、学习过程中，遇到的一些使用的疑难，及开发经验，均</description>
     </item>
     
   </channel>

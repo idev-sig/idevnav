@@ -1,6 +1,6 @@
 baseURL               = "https://nav.zzzzy.com"
 languageCode          = "zh-CN"
-title                 = "杰嵩导航"
+title                 = "杰嵩网址导航"
 theme                 = "WebStack-Hugo"
 preserveTaxonomyNames = true
 disablePathToLower    = true
@@ -10,7 +10,7 @@ publishDir            = "docs"
 
 [params]
     author        = "Jetsung"
-    description   = "杰嵩导航 | 一名热爱 Linux 的软件开发者"
+    description   = "杰嵩网址导航 | 一名热爱 Linux 的软件开发者"
     siteurl       = "./"
     upload        = ""  # 左侧导航栏的"网站提交"
     about         = "https://jetsung.com/p/about"   # 左侧导航栏的"关于导航"页面(./about)
@@ -21,10 +21,14 @@ publishDir            = "docs"
     logosPath     = "assets/images/logos"			   # 网站每个导航地址logo存放地址
     defaultLogo   = "assets/images/logos/default.webp"             # logo图片资源不存在或者错误时, 默认显示的logo; 该参数如为空,将会一直加载对应的logo,直至成功
     nightMode     = false                                      # 默认站点为深色(夜间)模式
+    yiyan         = false                         # 一言
 
 [params.seo]    
     baiduhmid     = ''             # 百度统计 hm.src 的 ID
-    baiduSiteVer  = ''                            # 百度HTML标签验证(baidu-site-verification)
+    baiduSiteVer  = ''             # 百度HTML标签验证(baidu-site-verification)
+
+    tj51laid        = 'Jz7i5wL6XoAnB4Xi'             # 51.LA 网站统计
+    tj51lack        = ''
 
 [params.qweather]
     key = ""
