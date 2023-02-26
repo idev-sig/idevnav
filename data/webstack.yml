@@ -295,22 +295,18 @@
   list:
     - term: 在线翻译
       links:
-        - title: 有道翻译
-          logo: 有道词典.png
-          url: http://fanyi.youdao.com/
-          description: 有道翻译
-        - title: 谷歌翻译
-          logo: 谷歌翻译.jpg
-          url: https://translate.google.com.hk/
-          description: 谷歌翻译
-        - title: 百度翻译
-          logo: https://api.iowen.cn/favicon/fanyi.baidu.com.png
-          url: https://fanyi.baidu.com/
-          description: 百度翻译
         - title: Bing 翻译
           logo: https://api.iowen.cn/favicon/www.bing.com.png
           url: https://www.bing.com/translator/
           description: Bing 翻译
+        - title: 百度翻译
+          logo: https://api.iowen.cn/favicon/fanyi.baidu.com.png
+          url: https://fanyi.baidu.com/
+          description: 百度翻译
+        - title: 谷歌翻译
+          logo: 谷歌翻译.jpg
+          url: https://translate.google.com.hk/
+          description: 谷歌翻译
         - title: 沪江翻译
           logo: https://api.iowen.cn/favicon/dict.hujiang.com.png
           url: https://dict.hujiang.com/app/trans
@@ -323,10 +319,6 @@
           logo: https://api.iowen.cn/favicon/fanyi.caiyunapp.com.png
           url: https://fanyi.caiyunapp.com/
           description: 彩云小译
-        - title: 搜狗翻译
-          logo: https://api.iowen.cn/favicon/fanyi.sogou.com.png
-          url: https://fanyi.sogou.com/text
-          description: 搜狗翻译
         - title: DeepL 翻译
           logo: https://api.iowen.cn/favicon/www.deepl.com.png
           url: https://www.deepl.com/translator
