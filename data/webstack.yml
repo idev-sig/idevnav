@@ -27,6 +27,9 @@
       url: https://www.toutiao.com/c/user/token/MS4wLjABAAAATopQ1LkY3v_vbmTLcW504_Asubeqs24gH-IFJp66CDLoFB2ATjEwBZJhdIsgKEPZ/?
       qrcode:
       description: 平平无奇程序员（头条号）
+    - title: 文章索引
+      url: /article
+      description: 技术文章索引
 
 - taxonomy: 研发的技术
   icon: fas fa-graduation-cap fa-lg

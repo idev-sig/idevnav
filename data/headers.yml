@@ -12,3 +12,7 @@
     - name: JihuLab
       icon: fa fa-gitlab
       url: "https://jihulab.com/jetsung"
+
+- item: 关于
+  icon: fas fa-meh-rolling-eyes
+  link: "https://jetsung.com/p/about"

@@ -1,5 +1,8 @@
 # 教程
 
+- `main` 分支为常用网站
+- `dev` 分支为全部网站
+
 ## 创建项目
 
 ```bash
@@ -70,3 +73,7 @@ hugo -D
 git clone ...
 git module init
 ```
+
+## 图标
+
+- 图标搜寻：https://fontawesome.com/v5/icons/
