@@ -1,6 +1,6 @@
-baseURL               = "https://nav.zzzzy.com"
+baseURL               = "https://navmore.zzzzy.com"
 languageCode          = "zh-CN"
-title                 = "杰嵩网址导航"
+title                 = "杰嵩全量网址导航"
 theme                 = "WebStack-Hugo"
 preserveTaxonomyNames = true
 disablePathToLower    = true
@@ -10,7 +10,7 @@ publishDir            = "docs"
 
 [params]
     author        = "Jetsung"
-    description   = "杰嵩网址导航 | 一名热爱 Linux 的软件开发者"
+    description   = "杰嵩全量网址导航 | 一名热爱 Linux 的软件开发者"
     siteurl       = "./"
     upload        = ""  # 左侧导航栏的"网站提交"
     about         = "/about"   # 左侧导航栏的"关于导航"页面(./about)
