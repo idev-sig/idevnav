@@ -7,7 +7,7 @@ pages:
   script:
     - urlstatus=$(curl -s -m 3 -IL https://github.com | grep 200)
       if [ -z "${urlstatus}" ]; then
-      git config --global url."https://ghproxy.com/https://github.com/".insteadOf https://github.com/
+      sed -i 's/github/ghproxy.com\/https:\/\/github/g' .gitmodules
       fi
     - hugo
   artifacts:
