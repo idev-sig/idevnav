@@ -1,14 +1,17 @@
 image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
+job:
+  before_script:
+    - urlstatus=$(curl -s -m 3 -IL https://google.com | grep 200)
+      if [ -z "${urlstatus}" ]; then
+      sed -i 's/github/ghproxy.com\/https:\/\/github/g' .gitmodules
+      fi
+
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 pages:
   script:
-    - urlstatus=$(curl -s -m 3 -IL https://google.com | grep 200)
-      if [ -z "${urlstatus}" ]; then
-      sed -i 's/github/ghproxy.com\/https:\/\/github/g' .gitmodules
-      fi
     - hugo
   artifacts:
     paths:
