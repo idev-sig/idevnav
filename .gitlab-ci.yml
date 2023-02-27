@@ -10,4 +10,4 @@ pages:
     paths:
       - public
   rules:
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH and $LOCATION != "CHINA"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $LOCATION != "CHINA"
