@@ -28,7 +28,7 @@
       qrcode:
       description: 平平无奇程序员（头条号）
     - title: 文章索引
-      url: /article
+      url: https://post.zzzzy.com/posts/linux-software-recommendations/
       description: 技术文章索引
 
 - taxonomy: 研发的技术
