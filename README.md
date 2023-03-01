@@ -1,7 +1,7 @@
 # 教程
 
-- `main` 分支为常用网站
-- `dev` 分支为全部网站
+- `main` 分支为[常用网站](https://nav.zzzzy.com)
+- `more` 分支为[全部网站](https://navmore.zzzzy.com)
 
 ## 创建项目
 
