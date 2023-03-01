@@ -16,7 +16,7 @@ PROJECT_NAME="nav"
 [[ "${BRANCH_NAME}" = "main" ]] || PROJECT_NAME="navmore"
 
 # publish
-HTTP_PROXY=http://localhost:${PORT} wrangler pages publish docs --project-name "${PROJECT_NAME}"
+HTTP_PROXY=http://localhost:${PORT} wrangler pages publish public --project-name "${PROJECT_NAME}"
 
 # git push
 if [ $# -ge 1 ]; then

@@ -28,7 +28,7 @@
       qrcode:
       description: 平平无奇程序员（头条号）
     - title: 文章索引
-      url: /article
+      url: https://post.zzzzy.com/posts/technical-article-index/
       description: 技术文章索引
 
 - taxonomy: 研发的技术
@@ -125,6 +125,10 @@
           logo: https://api.iowen.cn/favicon/gitlink.org.cn.png
           url: https://code.gitlink.org.cn
           description: （国内）基于 Gitea，代码托管平台
+        - title: envs.net
+          logo: https://api.iowen.cn/favicon/git.envs.net.png
+          url: https://git.envs.net
+          description: 基于 Gitea，代码托管平台
         - title: 更多⇒
           logo:
           url: https://jetsung.com/d/208

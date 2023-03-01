@@ -5,7 +5,6 @@ theme                 = "WebStack-Hugo"
 preserveTaxonomyNames = true
 disablePathToLower    = true
 hasCJKLanguage        = true
-publishDir            = "docs"
 
 
 [params]
@@ -13,7 +12,7 @@ publishDir            = "docs"
     description   = "杰嵩全量网址导航 | 一名热爱 Linux 的软件开发者"
     siteurl       = "./"
     upload        = ""  # 左侧导航栏的"网站提交"
-    about         = "/about"   # 左侧导航栏的"关于导航"页面(./about)
+    about         = "https://nav.zzzzy.com/about"   # 左侧导航栏的"关于导航"页面(./about)
     repository    = "https://github.com/shenweiyan/WebStack-Hugo"  
     enablePreLoad = true		    		           # 网站完全打开前预加载动画
     textPreLoad   = "杰嵩网址导航" 		           # 预加载的动画文字, 只有当enablePreLoad=true时生效
