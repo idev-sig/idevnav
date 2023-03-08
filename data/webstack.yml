@@ -28,7 +28,7 @@
       qrcode:
       description: 平平无奇程序员（头条号）
     - title: 文章索引
-      url: https://post.zzzzy.com/posts/technical-article-index/
+      url: https://article.zzzzy.com/posts/technical-article-index/
       description: 技术文章索引
 
 - taxonomy: 研发的技术
