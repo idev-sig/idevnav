@@ -2,11 +2,11 @@
 - taxonomy: 本站站群
   icon: far fa-star
   links:
-    - title: 杰嵩开发笔记
+    - title: 开发岛
       logo: https://api.iowen.cn/favicon/flarum.org.cn.png
       url: https://jetsung.com
       qrcode:
-      description: 杰嵩开发笔记（社区）
+      description: 开发岛社区
     - title: 平平无奇程序员
       logo: https://zzzzy.com/logo.png
       url: https://zzzzy.com
@@ -14,12 +14,12 @@
       description: 平平无奇程序员（博客）
     - title: GitHub
       logo: https://api.iowen.cn/favicon/github.com.png
-      url: "https://github.com/jetsung"
+      url: 'https://github.com/jetsung'
       qrcode:
       description: （国外）作品项目代码开源
     - title: JihuLab
       logo: https://api.iowen.cn/favicon/jihulab.com.png
-      url: "https://jihulab.com/jetsung"
+      url: 'https://jihulab.com/jetsung'
       qrcode:
       description: （国内）作品项目代码开源
     - title: 头条号
@@ -843,7 +843,7 @@
           description: 阮一峰，科技爱好者周刊。
         - title: 酷壳
           url: https://www.coolshell.cn/
-          logo: ""
+          logo: ''
           description: 酷 壳 – CoolShell。
     - term: 设计规范
       links:
