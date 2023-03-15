@@ -2,11 +2,11 @@
 - taxonomy: 本站站群
   icon: far fa-star
   links:
-    - title: 杰嵩开发笔记
+    - title: 开发岛
       logo: https://api.iowen.cn/favicon/flarum.org.cn.png
       url: https://jetsung.com
       qrcode:
-      description: 杰嵩开发笔记（社区）
+      description: 开发岛社区
     - title: 平平无奇程序员
       logo: https://zzzzy.com/logo.png
       url: https://zzzzy.com
@@ -14,12 +14,12 @@
       description: 平平无奇程序员（博客）
     - title: GitHub
       logo: https://api.iowen.cn/favicon/github.com.png
-      url: "https://github.com/jetsung"
+      url: 'https://github.com/jetsung'
       qrcode:
       description: （国外）作品项目代码开源
     - title: JihuLab
       logo: https://api.iowen.cn/favicon/jihulab.com.png
-      url: "https://jihulab.com/jetsung"
+      url: 'https://jihulab.com/jetsung'
       qrcode:
       description: （国内）作品项目代码开源
     - title: 头条号
@@ -69,12 +69,6 @@
           logo: https://api.iowen.cn/favicon/toutiao.io.png
           url: https://toutiao.io/
           description: 程序员技术文章分享平台
-    - term: 开发者
-      links:
-        - title: 码力全开
-          logo: https://api.iowen.cn/favicon/maliquankai.com.png
-          url: https://maliquankai.com/
-          description: 码力全开科技工作室官方网站
 
 - taxonomy: 研发的资源
   icon: fas fa-server fa-lg
@@ -96,15 +90,15 @@
         - title: ◈阿里云效 Codeup
           logo: https://img.alicdn.com/imgextra/i1/O1CN016ZhHeb1Qk05Dj8B47_!!6000000002013-55-tps-240-240.svg
           url: https://codeup.aliyun.com
-          description: （国内）阿里云效代码托管平台
+          description: （国内）阿里云效代码托管平台，支持 DevOPS。
         - title: ◈Framagit
           logo: https://framagit.org/uploads/-/system/appearance/header_logo/1/logo.svg
           url: https://framagit.org
-          description: 基于 GitLab，代码托管平台
+          description: 基于 GitLab，代码托管平台，支持 Pages。
         - title: ◈Codeberg
           logo: https://api.iowen.cn/favicon/codeberg.org.png
           url: https://codeberg.org
-          description: 基于 Gitea，代码托管平台
+          description: 基于 Gitea，代码托管平台，支持 Pages。
         - title: Gitee
           logo: https://api.iowen.cn/favicon/gitee.com.png
           url: https://gitee.com
@@ -121,10 +115,6 @@
           logo: https://api.iowen.cn/favicon/gitea.com.png
           url: https://gitea.com
           description: Gitea （可自建）代码托管平台
-        - title: GitLink
-          logo: https://api.iowen.cn/favicon/gitlink.org.cn.png
-          url: https://code.gitlink.org.cn
-          description: （国内）基于 Gitea，代码托管平台
         - title: 更多⇒
           logo:
           url: https://jetsung.com/d/208
@@ -134,7 +124,7 @@
         - title: 阿里云
           logo: https://api.iowen.cn/favicon/aliyun.com.png
           url: https://aliyun.com/
-          description: 云服务器、域名解析、免费邮箱
+          description: 云服务器、域名解析、免费邮箱、CDN、云存储
         - title: CloudFlare
           logo: https://api.iowen.cn/favicon/cloudflare.com.png
           url: https://www.cloudflare.com/
@@ -147,6 +137,10 @@
           logo: https://api.iowen.cn/favicon/qiniu.com.png
           url: https://qiniu.com
           description: CDN、云存储
+        - title: 腾讯云
+          logo: https://api.iowen.cn/favicon/cloud.tencent.com.png
+          url: https://cloud.tencent.com/
+          description: 云服务器、域名解析、CDN、云存储
     - term: 免费资源
       links:
         - title: Koyeb
@@ -255,14 +249,6 @@
           logo: 天翼云盘.jpg
           url: https://cloud.189.cn/
           description: 天翼网盘
-        - title: 123 盘
-          logo: https://api.iowen.cn/favicon/www.123pan.com.png
-          url: https://www.123pan.com/
-          description: 123 盘
-        - title: PikPak
-          logo: https://api.iowen.cn/favicon/mypikpak.com.png
-          url: https://mypikpak.com/
-          description: PikPak
         - title: 百度网盘
           logo: 百度网盘.jpg
           url: http://pan.baidu.com/
@@ -271,14 +257,6 @@
           logo: https://api.iowen.cn/favicon/yun.139.com.png
           url: https://yun.139.com/
           description: 中国移动网盘
-        - title: 蓝奏云
-          logo: https://api.iowen.cn/favicon/www.lanzou.com.png
-          url: https://www.lanzou.com/
-          description: 蓝奏云
-        - title: 坚果云
-          logo: 坚果云.png
-          url: https://www.jianguoyun.com/
-          description: 坚果云
         - title: 115 网盘
           logo: https://api.iowen.cn/favicon/115.com.png
           url: https://115.com/
@@ -323,10 +301,6 @@
           logo: 谷歌翻译.jpg
           url: https://translate.google.com.hk/
           description: 谷歌翻译
-        - title: 沪江翻译
-          logo: https://api.iowen.cn/favicon/dict.hujiang.com.png
-          url: https://dict.hujiang.com/app/trans
-          description: 沪江小D 翻译
         - title: 腾讯翻译君
           logo: https://api.iowen.cn/favicon/fanyi.qq.com.png
           url: https://fanyi.qq.com/
@@ -345,18 +319,10 @@
           logo: 有道词典.png
           url: https://www.youdao.com/
           description: 有道词典
-        - title: Bing 词典
-          logo: https://api.iowen.cn/favicon/www.bing.com.png
-          url: https://www.bing.com/dict
-          description: Bing 词典
         - title: 沪江词典
           logo: https://api.iowen.cn/favicon/dict.hujiang.com.png
           url: https://dict.hujiang.com/
           description: 沪江小D 词典
-        - title: 韦氏大辞典
-          logo: https://api.iowen.cn/favicon/www.merriam-webster.com.png
-          url: https://www.merriam-webster.com/
-          description: 韦氏大辞典
         - title: 人人词典
           logo: https://api.iowen.cn/favicon/www.91dict.com.png
           url: https://www.91dict.com/
@@ -373,10 +339,6 @@
           logo: https://api.iowen.cn/favicon/dictionary.cambridge.org.png
           url: https://dictionary.cambridge.org/
           description: 剑桥词典
-        - title: 牛津高阶词典
-          logo: https://api.iowen.cn/favicon/www.oxfordlearnersdictionaries.com.png
-          url: https://www.oxfordlearnersdictionaries.com/
-          description: 牛津高阶词典
 
 # 源站
 # - term: 在线作图
@@ -808,7 +770,7 @@
           description: 阮一峰，科技爱好者周刊。
         - title: 酷壳
           url: https://www.coolshell.cn/
-          logo: ""
+          logo: ''
           description: 酷 壳 – CoolShell。
     - term: 设计规范
       links:
