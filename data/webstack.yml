@@ -138,7 +138,7 @@
         - title: 阿里云
           logo: https://api.iowen.cn/favicon/aliyun.com.png
           url: https://aliyun.com/
-          description: 云服务器、域名解析、免费邮箱
+          description: 云服务器、域名解析、免费邮箱、CDN、云存储
         - title: CloudFlare
           logo: https://api.iowen.cn/favicon/cloudflare.com.png
           url: https://www.cloudflare.com/
@@ -151,6 +151,10 @@
           logo: https://api.iowen.cn/favicon/qiniu.com.png
           url: https://qiniu.com
           description: CDN、云存储
+        - title: 腾讯云
+          logo: https://api.iowen.cn/favicon/cloud.tencent.com.png
+          url: https://cloud.tencent.com/
+          description: 云服务器、域名解析、CDN、云存储
     - term: 免费资源
       links:
         - title: Koyeb
