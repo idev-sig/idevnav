@@ -316,6 +316,14 @@
           logo: https://api.iowen.cn/favicon/www.nerdfonts.com.png
           url: https://github.com/ryanoasis/nerd-fonts
           description: Iconic font aggregator, collection, and patcher
+        - title: Remix Icon
+          logo: https://api.iowen.cn/favicon/remixicon.com.png
+          url: https://remixicon.com/
+          description: Simply Delightful Icon System
+        - title: Bootstrap Icons
+          logo: https://api.iowen.cn/favicon/icons.getbootstrap.com.png
+          url: https://icons.getbootstrap.com/
+          description: Bootstrap Icons
 
 - taxonomy: 办公与学习
   icon: fas fa-flask fa-lg
