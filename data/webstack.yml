@@ -271,6 +271,10 @@
 
     - term: 图标素材
       links:
+        - title: IconPark
+          logo: https://api.iowen.cn/favicon/iconpark.oceanengine.com.png
+          url: https://iconpark.oceanengine.com/
+          description: ByteDance IconPark
         - title: iconfont
           logo: iconfont.png
           url: http://www.iconfont.cn/
