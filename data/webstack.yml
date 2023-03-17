@@ -108,7 +108,7 @@
           url: https://gitcode.net
           description: （国内）基于 GitLab，代码托管平台
         - title: Coding
-          logo: coding_net.png
+          logo: coding.png
           url: https://coding.net
           description: （国内）Coding 代码托管平台
         - title: Gitea
