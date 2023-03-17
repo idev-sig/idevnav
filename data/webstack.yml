@@ -298,6 +298,25 @@
           url: https://115.com/
           description: 115 网盘
 
+    - term: 图标素材
+      links:
+        - title: IconPark
+          logo: https://api.iowen.cn/favicon/iconpark.oceanengine.com.png
+          url: https://iconpark.oceanengine.com/
+          description: ByteDance IconPark
+        - title: iconfont
+          logo: iconfont.png
+          url: http://www.iconfont.cn/
+          description: 阿里巴巴矢量图标库
+        - title: Font Awesome
+          logo: fontawesomeicon.png
+          url: https://fontawesome.com/icons/
+          description: The complete set of 675 icons in Font Awesome.
+        - title: Nerd Fonts
+          logo: https://api.iowen.cn/favicon/www.nerdfonts.com.png
+          url: https://github.com/ryanoasis/nerd-fonts
+          description: Iconic font aggregator, collection, and patcher
+
 - taxonomy: 办公与学习
   icon: fas fa-flask fa-lg
   list:
@@ -426,10 +445,6 @@
           logo: Iconfinder.png
           url: https://www.iconfinder.com
           description: 2,100,000+ free and premium vector icons.
-        - title: iconfont
-          logo: iconfont.png
-          url: http://www.iconfont.cn/
-          description: 阿里巴巴矢量图标库。
         - title: iconmonstr
           logo: iconmonstr.png
           url: https://iconmonstr.com/
@@ -462,10 +477,6 @@
           logo: Materialicons.png
           url: https://material.io/icons/
           description: Access over 900 material system icons, available in a variety of sizes and densities, and as a web font.
-        - title: Font Awesome Icon
-          logo: fontawesomeicon.png
-          url: https://fontawesome.com/icons/
-          description: The complete set of 675 icons in Font Awesome.
         - title: ion icons
           logo: ionicons.png
           url: http://ionicons.com/
