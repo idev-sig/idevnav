@@ -12,15 +12,21 @@ set -e
 
 while IFS= read -r _V; do
   # 提取文件名
-  FILENAME=${_V##*/}
-  CLEANED_NAME=$(echo "$FILENAME" | sed -e 's/www\.//' -e 's/\.com//' -e 's/\./_/g')
-  CLEANED_NAME="${CLEANED_NAME%_*}.png"
-
+  prefix="https://api.iowen.cn"
+  if [[ "$_V" == "$prefix"* ]]; then
+    FILENAME=${_V##*/}
+    CLEANED_NAME=$(echo "$FILENAME" | sed -e 's/www\.//' -e 's/\.com//' -e 's/\./_/g')
+    CLEANED_NAME="${CLEANED_NAME%_*}.png"
+  else
+    DOMAIN=$(echo "$_V" | sed -E 's~https?://([^/]+)/.*~\1~')
+    CLEANED_NAME="${DOMAIN%.*}.png"
+  fi
   # LOGO 路径
   FILEPATH="icons/$CLEANED_NAME"
 
   # 下载 LOGO
   if [ ! -f "$FILEPATH" ]; then
+    printf "fetch logo: %s\n" "$_V"
     curl -fsL -o "$FILEPATH" "$_V" || exit 1
   fi
 
