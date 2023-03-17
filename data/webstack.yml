@@ -88,11 +88,11 @@
           url: https://gitlab.com
           description: GitLab （可自建）代码托管平台
         - title: ◈阿里云效 Codeup
-          logo: codeup.png
+          logo: codeup.svg
           url: https://codeup.aliyun.com
           description: （国内）阿里云效代码托管平台，支持 DevOPS。
         - title: ◈Framagit
-          logo: framagit.png
+          logo: framagit.svg
           url: https://framagit.org
           description: 基于 GitLab，代码托管平台，支持 Pages。
         - title: ◈Codeberg

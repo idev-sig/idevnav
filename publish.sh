@@ -4,6 +4,8 @@ set -e
 set -u
 
 # hugo build
+rm -rf docs
+
 hugo -D
 
 # set port

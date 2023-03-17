@@ -19,7 +19,7 @@ while IFS= read -r _V; do
     CLEANED_NAME="${CLEANED_NAME%_*}.png"
   else
     DOMAIN=$(echo "$_V" | sed -E 's~https?://([^/]+)/.*~\1~')
-    CLEANED_NAME="${DOMAIN%.*}.png"
+    CLEANED_NAME="${DOMAIN%.*}.${_V##*.}"
   fi
   # LOGO 路径
   FILEPATH="icons/$CLEANED_NAME"
