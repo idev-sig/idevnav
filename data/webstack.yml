@@ -324,6 +324,14 @@
           logo: https://api.iowen.cn/favicon/icons.getbootstrap.com.png
           url: https://icons.getbootstrap.com/
           description: Bootstrap Icons
+        - title: Feather Icons
+          logo: https://api.iowen.cn/favicon/feathericons.com.png
+          url: https://feathericons.com/
+          description: Simply beautiful open source icons
+        - title: iconmonstr
+          logo: iconmonstr.png
+          url: https://iconmonstr.com/
+          description: Free simple icons for your next project
 
 - taxonomy: 办公与学习
   icon: fas fa-flask fa-lg
@@ -453,10 +461,6 @@
           logo: Iconfinder.png
           url: https://www.iconfinder.com
           description: 2,100,000+ free and premium vector icons.
-        - title: iconmonstr
-          logo: iconmonstr.png
-          url: https://iconmonstr.com/
-          description: Free simple icons for your next project.
         - title: Icon Archive
           logo: iconarchive.png
           url: http://www.iconarchive.com/
