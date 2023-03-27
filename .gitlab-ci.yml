@@ -4,10 +4,10 @@ variables:
   GIT_SUBMODULE_STRATEGY: recursive
   SSH_PRIVATE_KEY: $SSH_PRIVATE_KEY
   GHPROXY: $GHPROXY
-  PORT: $PORT
-  USER: $USER
-  HOST: $HOST
-  PATH: $PATH
+  WEB_PORT: $WEB_PORT
+  WEB_USER: $WEB_USER
+  WEB_HOST: $WEB_HOST
+  WEB_PATH: $WEB_PATH
 
 stages:
   - build
@@ -41,7 +41,7 @@ deploy:
     - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
     - chmod 600 ~/.ssh/id_rsa
     - hugo --minify
-    - rsync -avz -e "ssh -p $PORT" --delete docs/* "$PORT" "${USER}@${HOST}:${PATH}/"
+    - rsync -avz -e "ssh -p $PORT" --delete docs/* "$WEB_PORT" "${WEB_USER}@${WEB_HOST}:${WEB_PATH}/"
   dependencies:
     - build
   only:
