@@ -21,7 +21,7 @@ before_script: |
     # sed -i "s@https://github.com@${GHPROXY}/https://github.com@" .gitmodules    
   fi
 
-  apk add --no-cache openssh-client rsync
+  apk add --no-cache openssh-client rsync bash
 
   mkdir -p docs
 
@@ -41,9 +41,17 @@ deploy:
     - mkdir ~/.ssh
     - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
     - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -p $WEB_PORT $WEB_HOST >> ~/.ssh/known_hosts
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
     - hugo --minify
+    - rm -rf ./docs/assets/webstack_logos.sketch
+    - rm -rf ./docs/assets/images/logos.tar.gz
     - ./icons.sh
-    - rsync -avz -e "ssh -p $PORT" --delete docs/* "$WEB_PORT" "${WEB_USER}@${WEB_HOST}:${WEB_PATH}/"
+    - if [ -d "icons" ]; then
+      cp icons/* docs/assets/images/logos/
+      fi
+    - rsync -avz -e "ssh -p $WEB_PORT -o StrictHostKeyChecking=no" --delete docs/* "${WEB_USER}@${WEB_HOST}:${WEB_PATH}/"
   dependencies:
     - build
   only:
