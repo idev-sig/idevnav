@@ -51,6 +51,11 @@ before_script:
   - ssh-keyscan -p "$PORT" "$HOST" >> ~/.ssh/known_hosts
   - chmod 644 ~/.ssh/known_hosts
 
+  - if [[ -n "$GHPROXY" ]]; then
+    git config --global url."${GHPROXY}https://github.com/".insteadOf https://github.com/
+    sed -i "s@https://github.com@${GHPROXY}/https://github.com@" .gitmodules
+    fi
+
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
