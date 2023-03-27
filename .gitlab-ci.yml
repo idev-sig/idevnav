@@ -38,9 +38,11 @@ build:
 deploy:
   stage: deploy
   script:
+    - mkdir ~/.ssh
     - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
     - chmod 600 ~/.ssh/id_rsa
     - hugo --minify
+    - ./icons.sh
     - rsync -avz -e "ssh -p $PORT" --delete docs/* "$WEB_PORT" "${WEB_USER}@${WEB_HOST}:${WEB_PATH}/"
   dependencies:
     - build
