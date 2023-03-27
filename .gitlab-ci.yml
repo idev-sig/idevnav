@@ -37,7 +37,7 @@ build:
 
 deploy:
   stage: deploy
-  script:
+  script: |
     - mkdir ~/.ssh
     - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
     - chmod 600 ~/.ssh/id_rsa
@@ -49,7 +49,7 @@ deploy:
     - rm -rf ./docs/assets/images/logos.tar.gz
     - ./icons.sh
     - if [ -d "icons" ]; then
-      cp icons/* docs/assets/images/logos/
+        cp icons/* docs/assets/images/logos/
       fi
     - rsync -avz -e "ssh -p $WEB_PORT -o StrictHostKeyChecking=no" --delete docs/* "${WEB_USER}@${WEB_HOST}:${WEB_PATH}/"
   dependencies:
