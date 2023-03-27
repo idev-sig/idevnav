@@ -1,10 +1,10 @@
 ---
-- taxonomy: 本站站群
+- taxonomy: 杰嵩网站
   icon: far fa-star
   links:
     - title: 开发岛
-      logo: jetsung.png
-      url: https://jetsung.com
+      logo: devdo.png
+      url: https://devdo.cn
       qrcode:
       description: 开发岛社区
     - title: 平平无奇程序员
@@ -14,12 +14,12 @@
       description: 平平无奇程序员（博客）
     - title: GitHub
       logo: github.png
-      url: 'https://github.com/jetsung'
+      url: "https://github.com/jetsung"
       qrcode:
       description: （国外）作品项目代码开源
     - title: JihuLab
       logo: jihulab.png
-      url: 'https://jihulab.com/jetsung'
+      url: "https://jihulab.com/jetsung"
       qrcode:
       description: （国内）作品项目代码开源
     - title: 头条号
@@ -774,7 +774,7 @@
           description: 阮一峰，科技爱好者周刊。
         - title: 酷壳
           url: https://www.coolshell.cn/
-          logo: ''
+          logo: ""
           description: 酷 壳 – CoolShell。
     - term: 设计规范
       links:
