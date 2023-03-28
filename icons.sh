@@ -6,7 +6,8 @@
 
 set -e
 
-[ -d icons ] || mkdir icons
+ICON_PATH="static/assets/images/logos"
+[ -d "$ICON_PATH" ] || mkdir -p $ICON_PATH
 
 # [ $# -eq 0 ] || rm -rf icons/*
 
@@ -22,7 +23,7 @@ while IFS= read -r _V; do
     CLEANED_NAME="${DOMAIN%.*}.${_V##*.}"
   fi
   # LOGO 路径
-  FILEPATH="icons/$CLEANED_NAME"
+  FILEPATH="$ICON_PATH/$CLEANED_NAME"
 
   # 下载 LOGO
   if [ ! -f "$FILEPATH" ]; then

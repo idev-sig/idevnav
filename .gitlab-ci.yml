@@ -21,22 +21,22 @@ before_script: |
     # sed -i "s@https://github.com@${GHPROXY}/https://github.com@" .gitmodules    
   fi
 
-  apk add --no-cache openssh-client rsync bash
+  apk add --no-cache openssh-client rsync
 
   mkdir -p docs
 
-build:
-  stage: build
-  script:
-    - hugo
-    - rm -rf ./docs/assets/webstack_logos.sketch
-    - rm -rf ./docs/assets/images/logos.tar.gz
-  
-  artifacts:
-    paths:
-      - docs
-  only:
-    - main
+# build:
+#   stage: build
+#   script:
+#     - hugo
+#     - rm -rf ./docs/assets/webstack_logos.sketch
+#     - rm -rf ./docs/assets/images/logos.tar.gz
+
+#   artifacts:
+#     paths:
+#       - docs
+#   only:
+#     - main
 
 deploy:
   stage: deploy
@@ -50,10 +50,6 @@ deploy:
     hugo --minify
     rm -rf ./docs/assets/webstack_logos.sketch
     rm -rf ./docs/assets/images/logos.tar.gz
-    bash ./icons.sh
-    if [ -d "icons" ]; then
-      cp icons/* docs/assets/images/logos/
-    fi
     rsync -avz -e "ssh -p $WEB_PORT -o StrictHostKeyChecking=no" --delete docs/* "${WEB_USER}@${WEB_HOST}:${WEB_PATH}/"
   dependencies:
     - build
