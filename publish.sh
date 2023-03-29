@@ -23,8 +23,6 @@ if [[ "$BRANCH_NAME" != "$PUB_BARNCH_NAME" ]]; then
   PROJECT_NAME="navmore"
 fi
 
-[ -d "icons" ] && cp icons/* docs/assets/images/logos/
-
 # publish
 HTTP_PROXY=http://localhost:$PORT wrangler pages publish "$PUBLISH_DIR" --project-name "$PROJECT_NAME" --branch "$PUB_BARNCH_NAME"
 

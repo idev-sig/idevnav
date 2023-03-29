@@ -15,8 +15,8 @@
 
 - item: 导航
   icon: far fa-caret-square-down
-  link: "https://nav.zzzzy.com"
+  link: "https://navs.jetsung.com"
 
-- item: 关于
+- item: 主页
   icon: fas fa-meh-rolling-eyes
-  link: "https://jetsung.com/p/about"
+  link: "https://jetsung.com"

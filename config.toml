@@ -11,7 +11,7 @@ hasCJKLanguage        = true
     author        = "Jetsung"
     description   = "杰嵩全量网址导航 | 一名热爱 Linux 的软件开发者"
     upload        = ""                                   # 左侧导航栏的"网站提交"
-    about         = "https://nav.zzzzy.com/about"        # 左侧导航栏的"关于导航"页面(./about)
+    about         = "https://jetsung.com"        # 左侧导航栏的"关于导航"页面(./about)
     repository    = "https://github.com/shenweiyan/WebStack-Hugo"  
     enablePreLoad = true		    		             # 网站完全打开前预加载动画
     textPreLoad   = "杰嵩全量网址导航" 		                # 预加载的动画文字, 只有当enablePreLoad=true时生效
@@ -44,4 +44,4 @@ hasCJKLanguage        = true
     unsafe = true
 
 [params.footer]
-    copyright = '本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：jetsungchan@gmail.com <br/>&copy; 2023 - {year} By [WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo) | [开发岛社区](https://jetsung.com/)<br/>'
+    copyright = '[杰嵩个人主页](https://jetsung.com/) | [开发岛技术社区](https://devdo.cn/) <br/>本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：jetsungchan@gmail.com <br/>&copy; 2023 - {year} 基于 [WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo) 构建'
