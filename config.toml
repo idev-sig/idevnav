@@ -44,4 +44,4 @@ hasCJKLanguage        = true
     unsafe = true
 
 [params.footer]
-    copyright = '[杰嵩个人主页](https://jetsung.com/) | [开发岛技术社区](https://devdo.cn/) <br/>本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：jetsungchan@gmail.com <br/>&copy; 2023 - {year} 基于 [WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo) 构建'
+    copyright = '[杰嵩个人主页](https://blog.jetsung.com/) | [杰嵩开发笔记](https://www.jetsung.com/) | [开发岛](https://www.devdo.cn/) <br/>本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：jetsungchan@gmail.com <br/>&copy; 2023 - {year} 基于 [WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo) 构建'
