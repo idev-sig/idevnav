@@ -26,6 +26,7 @@ if [[ "$BRANCH_NAME" == "main" ]]; then
   PROJECT_NAME="nav"
 elif [[ "$BRANCH_NAME" == "more" ]]; then
   PROJECT_NAME="navs"
+  BRANCH_NAME="main"
   copy_files
 fi
 
