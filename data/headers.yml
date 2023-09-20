@@ -13,9 +13,9 @@
       icon: fa fa-gitlab
       url: "https://jihulab.com/jetsung"
 
-- item: 导航
+- item: 精选
   icon: far fa-caret-square-down
-  link: "https://navs.jetsung.com"
+  link: "https://nav.w.skiy.net"
 
 - item: 主页
   icon: fas fa-meh-rolling-eyes
