@@ -2,18 +2,13 @@
 - taxonomy: 杰嵩网站
   icon: far fa-star
   links:
-    - title: 杰嵩开发笔记
-      logo:
-      url: https://www.jetsung.com
-      qrcode:
-      description: 杰嵩开发笔记
-    - title: 开发岛
-      logo: devdo.svg
-      url: https://www.devdo.cn
+    - title: 爱开发
+      logo: idev.svg
+      url: https://www.idev.top/
       qrcode: assets/images/weixin.png
       description: 开发岛
     - title: 杰嵩代码片段
-      url: https://paste.jetsung.com/
+      url: https://paste.w.idev.top/
       qrcode:
       description: 杰嵩代码片段
     - title: JihuLab
@@ -32,7 +27,7 @@
       qrcode: assets/images/toutiao.png
       description: 平平无奇程序员（头条号）
     - title: 文件加速下载
-      url: https://file.078.eu/
+      url: https://filetas.w.skiy.net/
       description: 文件加速下载（个人资源有限，请适度使用）
     - title: 文章索引
       url: https://i.jetsung.com/articles/technical-article-index/
@@ -72,10 +67,6 @@
           logo: infoq_cn.png
           url: https://www.infoq.cn/
           description: 一个实践驱动的社区资讯站点
-        - title: 开发者头条
-          logo: toutiao_io.png
-          url: https://toutiao.io/
-          description: 程序员技术文章分享平台
     - term: 开发者
       links:
         - title: 码力全开

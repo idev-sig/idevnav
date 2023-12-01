@@ -9,11 +9,11 @@ function copy_files() {
 
   # update config.toml
   sed -i 's#杰嵩网址导航#杰嵩全量导航#g' config.toml
-  sed -i 's#nav.w.skiy.net#navs.w.skiy.net#g' config.toml
+  sed -i 's#nav.skiy.net#navs.skiy.net#g' config.toml
 
   # update data/headers.yml
   sed -i 's#全量#精选#g' data/headers.yml
-  sed -i 's#navs.w.skiy.net#nav.w.skiy.net#g' data/headers.yml
+  sed -i 's#navs.skiy.net#nav.skiy.net#g' data/headers.yml
 }
 
 PROJECT_NAME=""      # nav or navs
