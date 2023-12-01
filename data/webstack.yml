@@ -2,23 +2,18 @@
 - taxonomy: 杰嵩网站
   icon: far fa-star
   links:
-    - title: 杰嵩开发笔记
-      logo:
-      url: https://www.jetsung.com
-      description: 杰嵩开发笔记
-      qrcode:
-    # - title: 
-    #   logo: 
-    #   url: 
-    #   description: 
+    # - title:
+    #   logo:
+    #   url:
+    #   description:
     #   qrcode:
-    - title: 开发岛
-      logo: devdo.svg
-      url: https://www.devdo.cn
-      description: 开发岛
+    - title: 爱开发
+      logo: idev.svg
+      url: https://www.idev.top/
+      description: 爱开发
       qrcode: assets/images/weixin.png
     - title: 杰嵩代码片段
-      url: https://paste.w.devdo.cn/
+      url: https://paste.w.idev.top/
       description: 杰嵩代码片段
     - title: JihuLab
       logo: jihulab.png
@@ -84,15 +79,15 @@
         - title: Hugging Face
           logo: huggingface.svg
           url: https://huggingface.co/
-          description: 
+          description:
         - title: 魔搭社区
           logo: modelscope.png
           url: https://modelscope.cn/
-          description:           
+          description:
         - title: 哩布哩布AI
-          logo: 
+          logo:
           url: https://www.liblib.ai/
-          description:            
+          description:
 
 - taxonomy: 研发资源
   icon: fas fa-server fa-lg
@@ -218,7 +213,7 @@
           url: https://mirror.sjtu.edu.cn/
           description: 上海交通大学软件镜像站
         - title: 校园网联合镜像站⇒
-          logo: 
+          logo:
           url: https://mirrors.cernet.edu.cn/
           description: ⇒更多镜像站
     - term: 特定源站
