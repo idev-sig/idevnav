@@ -4,8 +4,10 @@
 - https://framagit.org/idev/navsites
 - https://github.com/idev-sig/navsites
 
-- **精选：** https://nav.skiy.net
-- **全量：** https://navs.skiy.net
+## 预览网站
+
+**精选：** https://nav.skiy.net  
+**全量：** https://navs.skiy.net
 
 ## 发布
 
