@@ -2,7 +2,6 @@
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
-  CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
 
 image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
@@ -13,11 +12,28 @@ before_script: |
   apk update
   apk add --no-cache bash npm
   npm install -g wrangler@latest
+  hugo --minify
 
 deploy:
   stage: deploy
   script: |
-    bash deploy.sh yes
+    PUBLISH_DIR="$(grep publishDir config.toml | awk -F '\"' '{print $2}')" # static files
+    if [[ -z "$PUBLISH_DIR" ]]; then
+      echo "Not found publishDir in config.toml"
+      exit 1
+    fi
+
+    BRANCH_NAME="main"
+    if [[ "$CI_COMMIT_BRANCH" == "main" ]]; then
+      PROJECT_NAME="nav"
+    elif [[ "$BRANCH_NAME" == "more" ]]; then
+      PROJECT_NAME="navs"
+    fi
+
+    echo -e "no\n" | wrangler pages deploy "$PUBLISH_DIR" \
+      --project-name "$PROJECT_NAME" \
+      --branch "$BRANCH_NAME"
+
   only:
     - main
     - more
