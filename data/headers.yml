@@ -1,22 +1,18 @@
-- item: 首页
-  icon: fa fa-home
-  link: "./"
-
-- item: 开源
-  icon: fa fa-cog
-  link: ""
-  list:
-    - name: GitHub
-      icon: fa fa-github
-      url: "https://github.com/jetsung"
-    - name: JihuLab
-      icon: fa fa-gitlab
-      url: "https://jihulab.com/jetsung"
-
 - item: 全量
-  icon: far fa-caret-square-down
+  icon: fas fa-chevron-circle-down
   link: "https://navs.skiy.net"
 
+- item: 开源
+  icon: fas fa-code
+  link: ""
+  list:
+    - name: Code
+      icon: fas fa-code
+      url: "https://git.jetsung.com/jetsung"
+    - name: GitHub
+      icon: fab fa-github
+      url: "https://github.com/jetsung"
+
 - item: 主页
-  icon: fas fa-meh-rolling-eyes
+  icon: fas fa-house-damage
   link: "https://i.jetsung.com"

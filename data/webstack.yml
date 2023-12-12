@@ -1,5 +1,5 @@
 ---
-- taxonomy: 杰嵩网站
+- taxonomy: 杰嵩
   icon: far fa-star
   links:
     # - title:
@@ -12,12 +12,9 @@
       url: https://www.idev.top/
       description: 爱开发
       qrcode: assets/images/weixin.png
-    - title: 杰嵩代码片段
-      url: https://paste.w.idev.top/
-      description: 杰嵩代码片段
-    - title: JihuLab
-      logo: jihulab.png
-      url: "https://jihulab.com/jetsung"
+    - title: CodeHub
+      logo: gitlab.png
+      url: "https://git.jetsung.com/jetsung"
       description: （国内）作品项目代码开源
     - title: GitHub
       logo: github.png
@@ -28,12 +25,16 @@
       url: https://www.toutiao.com/c/user/token/MS4wLjABAAAATopQ1LkY3v_vbmTLcW504_Asubeqs24gH-IFJp66CDLoFB2ATjEwBZJhdIsgKEPZ/?
       description: 平平无奇程序员（头条号）
       qrcode: assets/images/toutiao.png
+
+- taxonomy: 杰嵩周边
+  icon: far fa-star
+  links:
+    - title: 代码片段
+      url: https://paste.w.idev.top/
+      description: 杰嵩代码片段
     - title: 文件加速下载
-      url: https://filetas.w.skiy.net
+      url: https://cfiletas.skiy.net
       description: 文件加速下载（个人资源有限，请适度使用）
-    - title: 文章索引
-      url: https://i.jetsung.com/technical-article-index/
-      description: 技术文章索引
 
 - taxonomy: 技术提升
   icon: fas fa-code fa-lg
@@ -56,10 +57,6 @@
           logo: infoq_cn.png
           url: https://www.infoq.cn/
           description: 一个实践驱动的社区资讯站点
-        - title: 开发者头条
-          logo: toutiao_io.png
-          url: https://toutiao.io/
-          description: 程序员技术文章分享平台
         - title: 开源中国
           logo: oschina_net.png
           url: https://oschina.net/
@@ -84,6 +81,8 @@
           logo: modelscope.png
           url: https://modelscope.cn/
           description:
+    - term: 免费AI平台
+      links:
         - title: 哩布哩布AI
           logo:
           url: https://www.liblib.ai/
@@ -98,10 +97,6 @@
           logo: github.png
           url: https://github.com
           description: 全球最大的代码托管平台
-        - title: ◈极狐 GitLab
-          logo: jihulab.png
-          url: https://jihulab.com
-          description: （国内）GitLab 中国（极狐）版
         - title: ◈GitLab
           logo: gitlab.png
           url: https://gitlab.com
@@ -132,7 +127,7 @@
           description: （国内）Coding 代码托管平台
         - title: 更多⇒
           logo:
-          url: https://jetsung.com/d/208
+          url: https://www.idev.top/d/208
           description: ⇒更多代码托管服务平台
     - term: 云服务
       links:
@@ -216,7 +211,7 @@
           logo:
           url: https://mirrors.cernet.edu.cn/
           description: ⇒更多镜像站
-    - term: 特定源站
+    - term: 专用源站
       links:
         - title: npmmirror 镜像站
           logo: npmmirror.png
@@ -296,6 +291,10 @@
           logo: zfont_cn.png
           url: https://www.zfont.cn
           description: 找字体,免费商用字体
+        - title: 猫啃网
+          logo: maoken.png
+          url: https://www.maoken.com
+          description: 专注于免费商用字体
 
     - term: 图标
       links:

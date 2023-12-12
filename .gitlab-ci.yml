@@ -1,0 +1,24 @@
+# 自托管方式
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+  CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
+
+image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+
+stages:
+  - deploy
+
+before_script: |
+  curl https://get.volta.sh | bash
+  volta --version
+  volta install node@lts
+  npm install wrangler --save-dev
+
+deploy:
+  stage: deploy
+  script: |
+    bash deploy.sh yes
+  only:
+    - main
+    - more
