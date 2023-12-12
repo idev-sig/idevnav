@@ -10,6 +10,8 @@ stages:
   - deploy
 
 before_script: |
+  apk update
+  apk add --no-cache curl bash
   curl https://get.volta.sh | bash
   volta --version
   volta install node@lts
