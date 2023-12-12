@@ -50,7 +50,7 @@ if [[ $# -ge 1 ]]; then
 
   if [[ "${1}" == "yes" ]]; then
     # publish
-    wrangler pages deploy "$PUBLISH_DIR" \
+    echo -e "no\n" | wrangler pages deploy "$PUBLISH_DIR" \
       --project-name "$PROJECT_NAME" \
       --branch "$BRANCH_NAME"
   else
@@ -59,7 +59,4 @@ if [[ $# -ge 1 ]]; then
     git commit -am "feat: ${1}"
     git push origin "$BRANCH_NAME"
   fi
-else
-  # debug
-  hugo server
 fi

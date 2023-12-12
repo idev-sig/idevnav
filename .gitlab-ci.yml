@@ -11,11 +11,8 @@ stages:
 
 before_script: |
   apk update
-  apk add --no-cache curl bash
-  curl https://get.volta.sh | bash
-  volta --version
-  volta install node@lts
-  npm install wrangler --save-dev
+  apk add --no-cache bash npm
+  npm install -g wrangler@latest
 
 deploy:
   stage: deploy

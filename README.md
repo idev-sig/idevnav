@@ -7,13 +7,21 @@
 
 ## 开发
 
-1. 更新子模块
+1. 初始化子模块
 
 ```bash
+# 首次使用时
+git submodule update --init --recursive
+```
+
+2. 更新子模块
+
+```bash
+# 需要更新 submodule 时
 git submodule update --recursive --remote
 ```
 
-2. 测试
+3. 测试
 
 ```bash
 hugo server
@@ -29,7 +37,7 @@ bash icons.sh
 ## 发布
 
 ```bash
-# 测试
+# 打包
 bash deploy
 
 # 发布到 CloudFlare Pages
