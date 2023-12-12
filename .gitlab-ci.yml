@@ -27,7 +27,7 @@ deploy:
     BRANCH_NAME="main"
     if [[ "$CI_COMMIT_BRANCH" == "main" ]]; then
       PROJECT_NAME="nav"
-    elif [[ "$BRANCH_NAME" == "more" ]]; then
+    elif [[ "$CI_COMMIT_BRANCH" == "more" ]]; then
       PROJECT_NAME="navs"
     fi
 
