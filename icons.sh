@@ -12,33 +12,46 @@ ICON_PATH="static/assets/images/logos"
 # [ $# -eq 0 ] || rm -rf icons/*
 
 while IFS= read -r _V; do
-  # 提取文件名
-  prefix="https://api.iowen.cn"
-  if [[ "$_V" == "$prefix"* ]]; then
+  # 获取 # 符号前的数据
+  ICON_URL=$(echo "$_V" | awk -F '#' '{print $1}')
 
-    # 从文件名获取图标
-    FILENAME=${_V##*/}
-    if [[ "$FILENAME" == "logo."* ]]; then
-      FILENAME=""
-    fi
+  # 获取 # 符号后的数据
+  FILENAME=$(echo "$_V" | awk -F '#' '{print $2}')
 
-    if [[ -z "$FILENAME" ]]; then
-      FILENAME=$(echo "$_V" | awk -F'/' '{print $5}' | awk -F. '{print $(NF-1)}')
+  if [[ -n "$FILENAME" ]]; then
+    CLEANED_NAME="$FILENAME"
+  else
+    # 提取文件名
+    prefix="https://api.iowen.cn"
+    if [[ "$ICON_URL" == "$prefix"* ]]; then
+      FILENAME=$(echo "$ICON_URL" | awk -F'/' '{print $5}' | awk -F. '{print $(NF-1)}')
       # 处理 .com.cn | .net.cn | .org.cn
-      if [ "$FILENAME" == "com" ] || [ "$FILENAME" == "org" ] || [ "$FILENAME" == "net" ]; then
-        FILENAME=$(echo "$_V" | awk -F'/' '{print $5}' | awk -F. '{print $(NF-2)}')
+      if [[ ${#FILENAME} -eq 3 ]]; then
+        FILENAME=$(echo "$ICON_URL" | awk -F'/' '{print $5}' | awk -F. '{print $(NF-2)}')
+      fi
+      # 处理 cn 或其它如 cc 等国别域名
+      if [[ ${#FILENAME} -eq 2 ]]; then
+        FILENAME=$(echo "$ICON_URL" | awk -F'/' '{print $5}' | sed 's#www.##' |
+          sed 's#.com##' | sed 's#.net##' | sed 's#.org##' | sed "s#.${FILENAME}##")
       fi
     fi
+
+    # 自定义文件名不存在则从 URL 中取
+    [[ -n "$FILENAME" ]] || FILENAME="${ICON_URL##*/}"
+    # echo "FILENAME: $FILENAME"
+
+    # 从文件名获取图标
+    [[ "$FILENAME" != "logo."* ]] || FILENAME=""
+
     CLEANED_NAME=$(echo "$FILENAME" | sed -e 's/www\.//' -e 's/\.com//' -e 's/\./_/g')
     CLEANED_NAME="${CLEANED_NAME%_*}.png"
-  else
-    DOMAIN=$(echo "$_V" | sed -E 's~https?://([^/]+)/.*~\1~')
-    CLEANED_NAME="${DOMAIN%.*}.${_V##*.}"
   fi
+
+  # echo "CLEANED_NAME: $CLEANED_NAME"
+  # continue
 
   # LOGO 路径
   FILEPATH="$ICON_PATH/$CLEANED_NAME"
-  echo "$FILEPATH"
 
   # 下载 LOGO
   if [ ! -f "$FILEPATH" ]; then

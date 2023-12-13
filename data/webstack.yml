@@ -5,52 +5,41 @@
     - title: 爱开发
       logo: idev.svg
       url: https://www.idev.top/
-      qrcode: assets/images/weixin.png
-      description: 开发岛
-    - title: 杰嵩代码片段
-      url: https://paste.w.idev.top/
+      description: 爱开发
       qrcode:
-      description: 杰嵩代码片段
-    - title: JihuLab
-      logo: jihulab.png
-      url: "https://jihulab.com/jetsung"
-      qrcode:
+    - title: CodeHub
+      logo: gitlab.png
+      url: "https://git.jetsung.com/jetsung"
       description: （国内）作品项目代码开源
     - title: GitHub
       logo: github.png
       url: "https://github.com/jetsung"
-      qrcode:
       description: （国外）作品项目代码开源
+    - title: 微信公众号
+      logo: 微信公众号.png
+      description: 爱开发微信公众号
+      qrcode: assets/images/weixin.png
     - title: 头条号
       logo: toutiao.png
       url: https://www.toutiao.com/c/user/token/MS4wLjABAAAATopQ1LkY3v_vbmTLcW504_Asubeqs24gH-IFJp66CDLoFB2ATjEwBZJhdIsgKEPZ/?
-      qrcode: assets/images/toutiao.png
       description: 平平无奇程序员（头条号）
-    - title: 文件加速下载
-      url: https://filetas.w.skiy.net/
-      description: 文件加速下载（个人资源有限，请适度使用）
-    - title: 文章索引
-      url: https://i.jetsung.com/articles/technical-article-index/
-      description: 技术文章索引
+      qrcode: assets/images/toutiao.png
 
-- taxonomy: 研发的技术
-  icon: fas fa-graduation-cap fa-lg
-  list:
-    - term: 前沿技术
-      links:
-        - title: 飞桨 PaddlePaddle
-          logo: paddlepaddle_org_cn.png
-          url: https://www.paddlepaddle.org.cn/
-          description: 百度研发的深度学习平台
-- taxonomy: 研发的资讯
+- taxonomy: 杰嵩周边
+  icon: far fa-star
+  links:
+    - title: 代码片段
+      url: https://paste.w.idev.top/
+      description: 杰嵩代码片段
+    - title: 文件加速下载
+      url: https://cfiletas.skiy.net
+      description: 文件加速下载（个人资源有限，请适度使用）
+
+- taxonomy: 技术提升
   icon: fas fa-code fa-lg
   list:
-    - term: 技术社区
+    - term: 国内技术社区
       links:
-        - title: 开源中国
-          logo: oschina_net.png
-          url: https://oschina.net/
-          description: 中文开源技术资讯社区
         - title: 稀土掘金
           logo: juejin_cn.png
           url: https://juejin.cn/
@@ -67,6 +56,10 @@
           logo: infoq_cn.png
           url: https://www.infoq.cn/
           description: 一个实践驱动的社区资讯站点
+        - title: 开源中国
+          logo: oschina_net.png
+          url: https://oschina.net/
+          description: 中文开源技术资讯社区
     - term: 开发者
       links:
         - title: 码力全开
@@ -74,7 +67,45 @@
           url: https://maliquankai.com/
           description: 码力全开科技工作室官方网站
 
-- taxonomy: 研发的资源
+- taxonomy: 人工智能
+  icon: fas fa-graduation-cap fa-lg
+  list:
+    - term: 深度学习框架
+      links:
+        - title: 飞桨 PaddlePaddle
+          logo: paddlepaddle_org_cn.png
+          url: https://www.paddlepaddle.org.cn/
+          description: 百度研发的深度学习平台
+        - title: PyTorch
+          logo: pytorch.svg
+          url: https://pytorch.org/
+          description: 全球领先的深度学习框架
+        - title: TensorFlow
+          logo: tensorflow.png
+          url: https://tensorflow.org/
+          description: 谷歌推出的开源机器学习框架
+        - title: MegEngine
+          logo: megengine.png
+          url: https://www.megengine.org.cn/
+          description: 旷视天元开源的深度学习框架
+    - term: 模型与数据集
+      links:
+        - title: Hugging Face
+          logo: huggingface.svg
+          url: https://huggingface.co/
+          description:
+        - title: 魔搭社区
+          logo: modelscope.png
+          url: https://modelscope.cn/
+          description:
+    - term: 免费AI平台
+      links:
+        - title: 哩布哩布AI
+          logo: liblib.png
+          url: https://www.liblib.ai/
+          description:
+
+- taxonomy: 研发资源
   icon: fas fa-server fa-lg
   list:
     - term: 代码托管
@@ -115,6 +146,10 @@
           logo: coding.png
           url: https://coding.net
           description: （国内）Coding 代码托管平台
+        - title: AtomGit
+          logo: atomgit.png
+          url: https://atomgit.com
+          description: （国内）开放原子开源基金会提供的代码托管平台
         - title: Gitea
           logo: gitea.png
           url: https://gitea.com
@@ -257,6 +292,11 @@
           logo: zfont_cn.png
           url: https://www.zfont.cn
           description: 找字体,免费商用字体
+        - title: 猫啃网
+          logo: maoken.png
+          url: https://www.maoken.com
+          description: 专注于免费商用字体
+
     - term: 网盘资源
       links:
         - title: 阿里云盘
