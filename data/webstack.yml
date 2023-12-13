@@ -11,7 +11,7 @@
       logo: idev.svg
       url: https://www.idev.top/
       description: 爱开发
-      qrcode: assets/images/weixin.png
+      qrcode:
     - title: CodeHub
       logo: gitlab.png
       url: "https://git.jetsung.com/jetsung"
@@ -20,6 +20,10 @@
       logo: github.png
       url: "https://github.com/jetsung"
       description: （国外）作品项目代码开源
+    - title: 微信公众号
+      logo: 微信公众号.png
+      description: 爱开发微信公众号
+      qrcode: assets/images/weixin.png
     - title: 头条号
       logo: toutiao.png
       url: https://www.toutiao.com/c/user/token/MS4wLjABAAAATopQ1LkY3v_vbmTLcW504_Asubeqs24gH-IFJp66CDLoFB2ATjEwBZJhdIsgKEPZ/?
@@ -65,12 +69,24 @@
 - taxonomy: 人工智能
   icon: fas fa-graduation-cap fa-lg
   list:
-    - term: 人工智能平台
+    - term: 深度学习框架
       links:
         - title: 飞桨 PaddlePaddle
           logo: paddlepaddle_org_cn.png
           url: https://www.paddlepaddle.org.cn/
           description: 百度研发的深度学习平台
+        - title: PyTorch
+          logo: pytorch.svg
+          url: https://pytorch.org/
+          description: 全球领先的深度学习框架
+        - title: TensorFlow
+          logo: tensorflow.png
+          url: https://tensorflow.org/
+          description: 谷歌推出的开源机器学习框架
+        - title: MegEngine
+          logo: megengine.png
+          url: https://www.megengine.org.cn/
+          description: 旷视天元开源的深度学习框架
     - term: 模型与数据集
       links:
         - title: Hugging Face
@@ -84,7 +100,7 @@
     - term: 免费AI平台
       links:
         - title: 哩布哩布AI
-          logo:
+          logo: liblib.png
           url: https://www.liblib.ai/
           description:
 
@@ -125,6 +141,10 @@
           logo: coding.png
           url: https://coding.net
           description: （国内）Coding 代码托管平台
+        - title: AtomGit
+          logo: atomgit.png
+          url: https://atomgit.com
+          description: （国内）开放原子开源基金会提供的代码托管平台
         - title: 更多⇒
           logo:
           url: https://www.idev.top/d/208

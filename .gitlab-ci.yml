@@ -27,8 +27,11 @@ deploy:
     BRANCH_NAME="main"
     if [[ "$CI_COMMIT_BRANCH" == "main" ]]; then
       PROJECT_NAME="nav"
-    elif [[ "$BRANCH_NAME" == "more" ]]; then
+    elif [[ "$CI_COMMIT_BRANCH" == "more" ]]; then
       PROJECT_NAME="navs"
+    else
+      echo "the branch ${CI_COMMIT_BRANCH} is not main or more"
+      exit 1
     fi
 
     echo -e "no\n" | wrangler pages deploy "$PUBLISH_DIR" \
