@@ -16,6 +16,7 @@ SYNC_FILE=".sync.txt"
 SYNC_FOLDER="static/assets/images/logos"
 BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
 if [[ "$BRANCH_NAME" == "more" ]]; then
+  git checkout main -- $SYNC_FILE
   while IFS= read -r _IMAGE; do
     # IMAGE_PATH="$SYNC_FOLDER/$_IMAGE"
     # IMAGE_PATH="$_IMAGE"

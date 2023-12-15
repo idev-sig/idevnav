@@ -5,7 +5,7 @@ set -u
 
 # copy files from branch main
 function copy_files() {
-  git checkout main -- README.md icons.sh deploy.sh config.toml data/friendlinks.yml data/headers.yml
+  git checkout main -- .gitignore .gitlab-ci.yml README.md icons.sh deploy.sh config.toml data/friendlinks.yml data/headers.yml
 
   # update config.toml
   sed -i 's#爱开发导航#爱开发全量导航#g' config.toml
