@@ -259,10 +259,6 @@
           logo: github.png
           url: https://github.com
           description: 全球最大的代码托管平台
-        - title: ◈极狐 GitLab
-          logo: jihulab.png
-          url: https://jihulab.com
-          description: （国内）GitLab 中国（极狐）版
         - title: ◈GitLab
           logo: gitlab.png
           url: https://gitlab.com
@@ -295,6 +291,10 @@
           logo: atomgit.png
           url: https://atomgit.com
           description: （国内）开放原子开源基金会提供的代码托管平台
+        - title: ◈极狐 GitLab
+          logo: jihulab.png
+          url: https://jihulab.com
+          description: （国内）收费，极狐GitLab
         - title: Gitea
           logo: gitea.png
           url: https://gitea.com
@@ -348,7 +348,7 @@
           url: https://fly.io/
           description: (需要验证信用卡)免费托管服务平台
         - title: Firebase
-          logo: google.png
+          logo: firebase.png
           url: https://firebase.google.com/
           description: 静态网站托管服务平台
         - title: Replit
