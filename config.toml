@@ -11,7 +11,7 @@ hasCJKLanguage        = true
     author        = "Jetsung"
     description   = "爱开发导航 | 一名热爱 Linux 的软件开发者"
     upload        = ""                                   # 左侧导航栏的"网站提交"
-    about         = "https://i.jetsung.com"              # 左侧导航栏的"关于导航"页面(./about)
+    about         = "https://www.idev.top/p/about"       # 左侧导航栏的"关于导航"页面(./about)
     contact       = ""                                   # 右侧关于我们    
     repository    = "https://github.com/forkdo/WebStack-Hugo"  
     enablePreLoad = true		    		             # 网站完全打开前预加载动画
@@ -19,7 +19,7 @@ hasCJKLanguage        = true
     expandSidebar = false                                # 默认展开左侧边导航栏
     logosPath     = "assets/images/logos"			     # 网站每个导航地址logo存放地址
     defaultLogo   = "assets/images/logos/default.webp"   # logo图片资源不存在或者错误时, 默认显示的logo; 该参数如为空,将会一直加载对应的logo,直至成功
-    nightMode     = true                                # 默认站点为深色(夜间)模式
+    nightMode     = false                                # 默认站点为深色(夜间)模式
     yiyan         = false                                # 一言
     search        = false                                # 默认启用搜索
 

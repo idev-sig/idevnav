@@ -1,5 +1,6 @@
 .vscode/
 .wrangler/
+.sync.*
 
 /public
 /docs

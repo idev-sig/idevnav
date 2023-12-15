@@ -1,44 +1,44 @@
 ---
 - taxonomy: 杰嵩
-  icon: far fa-star
-  links:
-    # - title:
-    #   logo:
-    #   url:
-    #   description:
-    #   qrcode:
-    - title: 爱开发
-      logo: idev.svg
-      url: https://www.idev.top/
-      description: 爱开发
-      qrcode:
-    - title: CodeHub
-      logo: gitlab.png
-      url: "https://git.jetsung.com/jetsung"
-      description: （国内）作品项目代码开源
-    - title: GitHub
-      logo: github.png
-      url: "https://github.com/jetsung"
-      description: （国外）作品项目代码开源
-    - title: 微信公众号
-      logo: 微信公众号.png
-      description: 爱开发微信公众号
-      qrcode: assets/images/weixin.png
-    - title: 头条号
-      logo: toutiao.png
-      url: https://www.toutiao.com/c/user/token/MS4wLjABAAAATopQ1LkY3v_vbmTLcW504_Asubeqs24gH-IFJp66CDLoFB2ATjEwBZJhdIsgKEPZ/?
-      description: 平平无奇程序员（头条号）
-      qrcode: assets/images/toutiao.png
-
-- taxonomy: 杰嵩周边
-  icon: far fa-star
-  links:
-    - title: 代码片段
-      url: https://paste.w.idev.top/
-      description: 杰嵩代码片段
-    - title: 文件加速下载
-      url: https://cfiletas.skiy.net
-      description: 文件加速下载（个人资源有限，请适度使用）
+  icon: fa-lg fas fa-star
+  list:
+    - term: 网站
+      links:
+        # - title:
+        #   logo:
+        #   url:
+        #   description:
+        #   qrcode:
+        - title: 爱开发
+          logo: idev.svg
+          url: https://www.idev.top/
+          description: 爱开发
+          qrcode:
+        - title: CodeHub
+          logo: gitlab.png
+          url: "https://git.jetsung.com/jetsung"
+          description: （国内）作品项目代码开源
+        - title: GitHub
+          logo: github.png
+          url: "https://github.com/jetsung"
+          description: （国外）作品项目代码开源
+        - title: 微信公众号
+          logo: 微信公众号.png
+          description: 爱开发微信公众号
+          qrcode: assets/images/weixin.png
+        - title: 头条号
+          logo: toutiao.png
+          url: https://www.toutiao.com/c/user/token/MS4wLjABAAAATopQ1LkY3v_vbmTLcW504_Asubeqs24gH-IFJp66CDLoFB2ATjEwBZJhdIsgKEPZ/?
+          description: 平平无奇程序员（头条号）
+          qrcode: assets/images/toutiao.png
+    - term: 站群
+      links:
+        - title: 代码片段
+          url: https://paste.w.idev.top/
+          description: 杰嵩代码片段
+        - title: 文件加速下载
+          url: https://cfiletas.skiy.net
+          description: 文件加速下载（个人资源有限，请适度使用）
 
 - taxonomy: 技术提升
   icon: fas fa-code fa-lg
@@ -67,7 +67,7 @@
           description: 中文开源技术资讯社区
 
 - taxonomy: 人工智能
-  icon: fas fa-graduation-cap fa-lg
+  icon: fa-lg fas fa-robot
   list:
     - term: 深度学习框架
       links:
@@ -97,58 +97,38 @@
           logo: modelscope.png
           url: https://modelscope.cn/
           description:
-    - term: 免费AI平台
+    - term: AI在线平台
       links:
         - title: 哩布哩布AI
           logo: liblib.png
           url: https://www.liblib.ai/
           description:
+        - title: 哩布哩布AI
+          logo: liblib.png
+          url: https://www.liblib.ai/
+          description:
+    - term: LOGO生成器
+      links:
+        - title: AIDesign
+          logo: ailogo.png
+          url: https://ailogo.qq.com/
+          description: 腾讯自研的智能设计平台，免费在线生成品牌logo、企业VI
+        - title: 标小智
+          logo: logosc.png
+          url: https://www.logosc.cn/
+          description: (付费下载)智能LOGO在线设计生成器
+        - title: LogoAI
+          logo: logoai.png
+          url: https://www.logoai.com/
+          description: (付费下载)Generate your free logo online in minutes
+        - title: Free Logo Design
+          logo: freelogodesign.png
+          url: https://www.freelogodesign.org/
+          description: (高清需付费下载)Create Your Own Logo
 
 - taxonomy: 研发资源
-  icon: fas fa-server fa-lg
+  icon: fas fa-cloud fa-lg
   list:
-    - term: 代码托管平台
-      links:
-        - title: ◈GitHub
-          logo: github.png
-          url: https://github.com
-          description: 全球最大的代码托管平台
-        - title: ◈GitLab
-          logo: gitlab.png
-          url: https://gitlab.com
-          description: GitLab （可自建）代码托管平台
-        - title: ◈阿里云效 Codeup
-          logo: codeup.svg
-          url: https://codeup.aliyun.com
-          description: （国内）阿里云效代码托管平台，支持 DevOPS。
-        - title: ◈Framagit
-          logo: framagit.svg
-          url: https://framagit.org
-          description: 基于 GitLab，代码托管平台，支持 Pages。
-        - title: ◈Codeberg
-          logo: codeberg_org.png
-          url: https://codeberg.org
-          description: 基于 Gitea，代码托管平台，支持 Pages。
-        - title: Gitee
-          logo: gitee.png
-          url: https://gitee.com
-          description: （国内）Gitee 代码托管平台
-        - title: GitCode
-          logo: gitcode.png
-          url: https://gitcode.net
-          description: （国内）基于 GitLab，代码托管平台
-        - title: Coding
-          logo: coding.png
-          url: https://coding.net
-          description: （国内）Coding 代码托管平台
-        - title: AtomGit
-          logo: atomgit.png
-          url: https://atomgit.com
-          description: （国内）开放原子开源基金会提供的代码托管平台
-        - title: 更多⇒
-          logo:
-          url: https://www.idev.top/d/208
-          description: ⇒更多代码托管服务平台
     - term: 云服务
       links:
         - title: 阿里云
@@ -250,8 +230,94 @@
           url: https://goproxy.io/
           description: GoProxy
 
+- taxonomy: 开发服务
+  icon: fas fa-code fa-lg
+  list:
+    - term: 代码托管
+      links:
+        - title: ◈GitHub
+          logo: github.png
+          url: https://github.com
+          description: 全球最大的代码托管平台
+        - title: ◈GitLab
+          logo: gitlab.png
+          url: https://gitlab.com
+          description: GitLab （可自建）代码托管平台
+        - title: ◈阿里云效 Codeup
+          logo: codeup.svg
+          url: https://codeup.aliyun.com
+          description: （国内）阿里云效代码托管平台，支持 DevOPS。
+        - title: ◈Framagit
+          logo: framagit.svg
+          url: https://framagit.org
+          description: 基于 GitLab，代码托管平台，支持 Pages。
+        - title: ◈Codeberg
+          logo: codeberg_org.png
+          url: https://codeberg.org
+          description: 基于 Gitea，代码托管平台，支持 Pages。
+        - title: Gitee
+          logo: gitee.png
+          url: https://gitee.com
+          description: （国内）Gitee 代码托管平台
+        - title: GitCode
+          logo: gitcode.png
+          url: https://gitcode.net
+          description: （国内）基于 GitLab，代码托管平台
+        - title: Coding
+          logo: coding.png
+          url: https://coding.net
+          description: （国内）Coding 代码托管平台
+        - title: AtomGit
+          logo: atomgit.png
+          url: https://atomgit.com
+          description: （国内）开放原子开源基金会提供的代码托管平台
+        - title: 更多⇒
+          logo:
+          url: https://www.idev.top/d/208
+          description: ⇒更多代码托管服务平台
+    - term: 在线开发
+      links:
+        - title: CodeSandBox
+          logo: codesandbox.png
+          url: https://codesandbox.io/
+          description: 快速Web开发的在线编辑器
+        - title: StackBlitz
+          logo: stackblitz.png
+          url: https://stackblitz.com/
+          description: Web开发者的在线IDE
+        - title: CodePen
+          logo: codepen.png
+          url: https://codepen.io/
+          description: 面向前端设计师和开发人员的在线开发环境
+        - title: JSFiddle
+          logo: jsfiddle.png
+          url: https://jsfiddle.net/
+          description: 前端代码在线编辑器
+    - term: 服务部署
+      links:
+        - title: Vercel
+          logo: vercel.png
+          url: https://vercel.com/
+          description: 静态网站托管服务平台
+        - title: Netlify
+          logo: netlify.png
+          url: https://www.netlify.com/
+          description: 静态网站托管服务平台
+        - title: Render
+          logo: render.png
+          url: https://render.com/
+          description: 免费云端静态网站托管服务平台
+        - title: Fly.io
+          logo: fly.png
+          url: https://fly.io/
+          description: (需要验证信用卡)免费托管服务平台
+        - title: Firebase
+          logo: google.png
+          url: https://firebase.google.com/
+          description: 静态网站托管服务平台
+
 - taxonomy: 办公学习
-  icon: fas fa-flask fa-lg
+  icon: fas fa-file-word fa-lg
   list:
     - term: 在线翻译
       links:
@@ -303,7 +369,7 @@
           description: 剑桥词典
 
 - taxonomy: 资源素材
-  icon: far fa-folder-open fa-lg
+  icon: fa-lg fab fa-fonticons
   list:
     - term: 字体库
       links:
