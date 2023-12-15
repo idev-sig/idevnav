@@ -11,6 +11,36 @@ ICON_PATH="static/assets/images/logos"
 
 # [ $# -eq 0 ] || rm -rf icons/*
 
+# sync images
+SYNC_FILE=".sync.txt"
+SYNC_FOLDER="static/assets/images/logos"
+BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+if [[ "$BRANCH_NAME" == "more" ]]; then
+  git checkout main -- $SYNC_FILE
+  while IFS= read -r _IMAGE; do
+    # IMAGE_PATH="$SYNC_FOLDER/$_IMAGE"
+    # IMAGE_PATH="$_IMAGE"
+    # if [[ -f "$IMAGE_PATH" ]]; then
+    #   echo "sync main: $IMAGE_PATH"
+    #   git checkout main -- "$IMAGE_PATH"
+    # fi
+    IMAGE_PATH="$_IMAGE"
+    echo "sync main: $IMAGE_PATH"
+    git checkout main -- "$IMAGE_PATH"
+  done < <(tail -n+2 $SYNC_FILE)
+elif [[ "$BRANCH_NAME" == "main" ]]; then
+  echo "# sync logos images" >$SYNC_FILE
+  while IFS= read -r _IMAGE; do
+    IMAGE_NAME=${_IMAGE##*/}
+    IMAGE_PATH="$SYNC_FOLDER/$IMAGE_NAME"
+    if [[ -f "$IMAGE_PATH" ]]; then
+      echo "write to .sync.txt: $IMAGE_NAME"
+      echo "$IMAGE_PATH" >>$SYNC_FILE
+    fi
+  done < <(git status | grep logos)
+fi
+
+# fetch images
 while IFS= read -r _V; do
   # 获取 # 符号前的数据
   ICON_URL=$(echo "$_V" | awk -F '#' '{print $1}')

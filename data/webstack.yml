@@ -1,42 +1,47 @@
 ---
-- taxonomy: 杰嵩网站
-  icon: far fa-star
-  links:
-    - title: 爱开发
-      logo: idev.svg
-      url: https://www.idev.top/
-      description: 爱开发
-      qrcode:
-    - title: CodeHub
-      logo: gitlab.png
-      url: "https://git.jetsung.com/jetsung"
-      description: （国内）作品项目代码开源
-    - title: GitHub
-      logo: github.png
-      url: "https://github.com/jetsung"
-      description: （国外）作品项目代码开源
-    - title: 微信公众号
-      logo: 微信公众号.png
-      description: 爱开发微信公众号
-      qrcode: assets/images/weixin.png
-    - title: 头条号
-      logo: toutiao.png
-      url: https://www.toutiao.com/c/user/token/MS4wLjABAAAATopQ1LkY3v_vbmTLcW504_Asubeqs24gH-IFJp66CDLoFB2ATjEwBZJhdIsgKEPZ/?
-      description: 平平无奇程序员（头条号）
-      qrcode: assets/images/toutiao.png
-
-- taxonomy: 杰嵩周边
-  icon: far fa-star
-  links:
-    - title: 代码片段
-      url: https://paste.w.idev.top/
-      description: 杰嵩代码片段
-    - title: 文件加速下载
-      url: https://cfiletas.skiy.net
-      description: 文件加速下载（个人资源有限，请适度使用）
+- taxonomy: 杰嵩
+  icon: fa-lg fas fa-star
+  list:
+    - term: 网站
+      links:
+        # - title:
+        #   logo:
+        #   url:
+        #   description:
+        #   qrcode:
+        - title: 爱开发
+          logo: idev.svg
+          url: https://www.idev.top/
+          description: 爱开发
+          qrcode:
+        - title: CodeHub
+          logo: gitlab.png
+          url: "https://git.jetsung.com/jetsung"
+          description: （国内）作品项目代码开源
+        - title: GitHub
+          logo: github.png
+          url: "https://github.com/jetsung"
+          description: （国外）作品项目代码开源
+        - title: 微信公众号
+          logo: 微信公众号.png
+          description: 爱开发微信公众号
+          qrcode: assets/images/weixin.png
+        - title: 头条号
+          logo: toutiao.png
+          url: https://www.toutiao.com/c/user/token/MS4wLjABAAAATopQ1LkY3v_vbmTLcW504_Asubeqs24gH-IFJp66CDLoFB2ATjEwBZJhdIsgKEPZ/?
+          description: 平平无奇程序员（头条号）
+          qrcode: assets/images/toutiao.png
+    - term: 站群
+      links:
+        - title: 代码片段
+          url: https://paste.w.idev.top/
+          description: 杰嵩代码片段
+        - title: 文件加速下载
+          url: https://cfiletas.skiy.net
+          description: 文件加速下载（个人资源有限，请适度使用）
 
 - taxonomy: 技术提升
-  icon: fas fa-code fa-lg
+  icon: fa-lg fas fa-graduation-cap
   list:
     - term: 国内技术社区
       links:
@@ -49,7 +54,7 @@
           url: https://www.cnblogs.com/
           description: 一个面向开发者群体的技术社区
         - title: 华为云社区
-          logo: huaweicloud.png
+          logo: 华为云.png
           url: https://bbs.huaweicloud.com/
           description: 华为云社区是华为云官方技术交流社区
         - title: InfoQ
@@ -60,15 +65,9 @@
           logo: oschina_net.png
           url: https://oschina.net/
           description: 中文开源技术资讯社区
-    - term: 开发者
-      links:
-        - title: 码力全开
-          logo: maliquankai.png
-          url: https://maliquankai.com/
-          description: 码力全开科技工作室官方网站
 
 - taxonomy: 人工智能
-  icon: fas fa-graduation-cap fa-lg
+  icon: fa-lg fas fa-robot
   list:
     - term: 深度学习框架
       links:
@@ -98,15 +97,161 @@
           logo: modelscope.png
           url: https://modelscope.cn/
           description:
-    - term: 免费AI平台
+    - term: AI在线平台
       links:
         - title: 哩布哩布AI
           logo: liblib.png
           url: https://www.liblib.ai/
           description:
+        - title: 哩布哩布AI
+          logo: liblib.png
+          url: https://www.liblib.ai/
+          description:
+    - term: LOGO生成器
+      links:
+        - title: AIDesign
+          logo: ailogo.png
+          url: https://ailogo.qq.com/
+          description: 腾讯自研的智能设计平台，免费在线生成品牌logo、企业VI
+        - title: 标小智
+          logo: logosc.png
+          url: https://www.logosc.cn/
+          description: (付费下载)智能LOGO在线设计生成器
+        - title: LogoAI
+          logo: logoai.png
+          url: https://www.logoai.com/
+          description: (付费下载)Generate your free logo online in minutes
+        - title: Free Logo Design
+          logo: freelogodesign.png
+          url: https://www.freelogodesign.org/
+          description: (高清需付费下载)Create Your Own Logo
 
 - taxonomy: 研发资源
-  icon: fas fa-server fa-lg
+  icon: fas fa-cloud fa-lg
+  list:
+    - term: 云服务
+      links:
+        - title: 阿里云
+          logo: 阿里云.jpg
+          url: https://aliyun.com/
+          description: 云服务器、域名解析、免费邮箱、CDN、云存储
+        - title: CloudFlare
+          logo: cloudflare.png
+          url: https://www.cloudflare.com/
+          description: 域名解析、Pages、CDN
+        - title: GCore
+          logo: gcore.png
+          url: https://gcore.com
+          description: CDN、云存储
+        - title: 七牛云
+          logo: qiniu.png
+          url: https://qiniu.com
+          description: CDN、云存储
+        - title: 腾讯云
+          logo: cloud_tencent.png
+          url: https://cloud.tencent.com/
+          description: 云服务器、域名解析、CDN、云存储
+    - term: 网盘资源
+      links:
+        - title: 阿里云盘
+          logo: 阿里云盘.png
+          url: https://www.aliyundrive.com/
+          description: 阿里云盘
+        - title: 天翼网盘
+          logo: 天翼云盘.jpg
+          url: https://cloud.189.cn/
+          description: 天翼网盘
+        - title: 123 盘
+          logo: 123pan.png
+          url: https://www.123pan.com/
+          description: 123 盘
+        - title: PikPak
+          logo: mypikpak.png
+          url: https://mypikpak.com/
+          description: PikPak
+        - title: 百度网盘
+          logo: 百度网盘.jpg
+          url: http://pan.baidu.com/
+          description: 百度网盘
+        - title: 和彩云
+          logo: yun_139.png
+          url: https://yun.139.com/
+          description: 中国移动网盘
+        - title: 蓝奏云
+          logo: lanzou.png
+          url: https://www.lanzou.com/
+          description: 蓝奏云
+        - title: 坚果云
+          logo: 坚果云.png
+          url: https://www.jianguoyun.com/
+          description: 坚果云
+        - title: 115 网盘
+          logo: 115.png
+          url: https://115.com/
+          description: 115 网盘
+    - term: 镜像源站
+      links:
+        - title: 阿里镜像站
+          logo: developer_aliyun.png
+          url: https://developer.aliyun.com/mirror/
+          description: 阿里巴巴开源镜像站
+        - title: 华为镜像站
+          logo: mirrors_huaweicloud.png
+          url: https://mirrors.huaweicloud.com/
+          description: 华为开源镜像站
+        - title: 腾讯软件源
+          logo: cloud_tencent.png
+          url: https://mirrors.cloud.tencent.com/
+          description: 腾讯软件源
+        - title: CNNIC 开源镜像站
+          logo:
+          url: https://mirrors.cnnic.cn/
+          description: CNNIC 开源镜像站
+        - title: ISCAS 开源镜像站
+          logo:
+          url: https://mirror.iscas.ac.cn/
+          description: 中国科学院软件研究所开源镜像站
+        - title: 北外镜像站
+          logo:
+          url: https://mirrors.bfsu.edu.cn/
+          description: 北京外国语大学开源软件镜像站
+        - title: 清华镜像站
+          logo: mirrors_tuna_tsinghua_edu_cn.png
+          url: https://mirrors.tuna.tsinghua.edu.cn/
+          description: 清华大学开源软件镜像站
+        - title: 中科大镜像站
+          logo: mirrors_ustc_edu_cn.png
+          url: https://mirrors.ustc.edu.cn/
+          description: 中国科学技术大学开源软件镜像站
+        - title: 上海交通大学软件镜像站
+          logo: mirror_sjtu_edu_cn.png
+          url: https://mirror.sjtu.edu.cn/
+          description: 上海交通大学软件镜像站
+        - title: MirrorZ⇒
+          logo: mirrorz_org.png
+          url: https://mirrorz.org/
+          description: ⇒更多镜像站
+    - term: 专用源站
+      links:
+        - title: npmmirror 镜像站
+          logo: npmmirror.png
+          url: https://npmmirror.com/
+          description: npm 镜像站
+        - title: RsProxy
+          logo: rsproxy_cn.png
+          url: https://rsproxy.cn/
+          description: 字节跳动 Rust 镜像站
+        - title: Goproxy.cn
+          logo: goproxy_cn.png
+          url: https://goproxy.cn/
+          description: 七牛云 GoProxy
+        - title: Goproxy.io
+          logo: goproxy_io.png
+          url: https://goproxy.io/
+          description: GoProxy
+
+- taxonomy: 开发服务
+  icon: fas fa-code fa-lg
   list:
     - term: 代码托管
       links:
@@ -166,48 +311,62 @@
           logo:
           url: https://jetsung.com/d/208
           description: ⇒更多代码托管服务平台
-    - term: 云服务
+    - term: 在线开发
       links:
-        - title: 阿里云
-          logo: aliyun.png
-          url: https://aliyun.com/
-          description: 云服务器、域名解析、免费邮箱、CDN、云存储
-        - title: CloudFlare
-          logo: cloudflare.png
-          url: https://www.cloudflare.com/
-          description: 域名解析、Pages、CDN
-        - title: GCore
-          logo: gcore.png
-          url: https://gcore.com
-          description: CDN、云存储
-        - title: 七牛云
-          logo: qiniu.png
-          url: https://qiniu.com
-          description: CDN、云存储
-        - title: 腾讯云
-          logo: cloud_tencent.png
-          url: https://cloud.tencent.com/
-          description: 云服务器、域名解析、CDN、云存储
+        - title: CodeSandBox
+          logo: codesandbox.png
+          url: https://codesandbox.io/
+          description: 快速Web开发的在线编辑器
+        - title: StackBlitz
+          logo: stackblitz.png
+          url: https://stackblitz.com/
+          description: Web开发者的在线IDE
+        - title: CodePen
+          logo: codepen.png
+          url: https://codepen.io/
+          description: 面向前端设计师和开发人员的在线开发环境
+        - title: JSFiddle
+          logo: jsfiddle.png
+          url: https://jsfiddle.net/
+          description: 前端代码在线编辑器
+    - term: 服务部署
+      links:
+        - title: Vercel
+          logo: vercel.png
+          url: https://vercel.com/
+          description: 静态网站托管服务平台
+        - title: Netlify
+          logo: netlify.png
+          url: https://www.netlify.com/
+          description: 静态网站托管服务平台
+        - title: Render
+          logo: render.png
+          url: https://render.com/
+          description: 免费云端静态网站托管服务平台
+        - title: Fly.io
+          logo: fly.png
+          url: https://fly.io/
+          description: (需要验证信用卡)免费托管服务平台
+        - title: Firebase
+          logo: google.png
+          url: https://firebase.google.com/
+          description: 静态网站托管服务平台
+        - title: Replit
+          logo: replit.png
+          url: https://replit.com
+          description: 网络应用托管平台
     - term: 免费资源
       links:
         - title: Koyeb
           logo: koyeb.png
           url: https://www.koyeb.com
-          description: Serverless 框架平台（需信用卡）
-        - title: Replit
-          logo: replit.png
-          url: https://replit.com
-          description: 网络应用托管平台
+          description: (需信用卡验证)Serverless 框架平台
         - title: FreeDB
           logo: freedb_tech.png
           url: https://freedb.tech
-          description: 数据库托管（仅建议测试用）
+          description: (仅建议测试用)数据库托管
     - term: 云服务器
       links:
-        - title: LevelOneServers
-          logo: leveloneservers.png
-          url: https://billing.leveloneservers.com/clients/aff.php?aff=378&pid=51
-          description: 美国大硬盘 VPS，1v Core CPU / 1GB RAM / None Swap / 512 GB HDD / 1TB @ 1Gbps Uplink / $25.50 USD
         - title: AlphaVPS
           logo: alphavps.png
           url: https://alphavps.com/clients/store/hdd-kvm-storage-virtual-servers/128g?aff=378
@@ -216,163 +375,21 @@
           logo: dwidc.png
           url: https://www.dwidc.com/cart?action=configureproduct&pid=150
           description: 国内大宽带云服务器，4G RAM / 50G HDD / 20M / 4 CPU / 399 元
-    - term: 镜像源站
-      links:
-        - title: 阿里镜像站
-          logo: developer_aliyun.png
-          url: https://developer.aliyun.com/mirror/
-          description: 阿里巴巴开源镜像站
-        - title: 华为镜像站
-          logo: mirrors_huaweicloud.png
-          url: https://mirrors.huaweicloud.com/
-          description: 华为开源镜像站
-        - title: 腾讯软件源
-          logo: cloud_tencent.png
-          url: https://mirrors.cloud.tencent.com/
-          description: 腾讯软件源
-        - title: CNNIC 开源镜像站
-          logo:
-          url: https://mirrors.cnnic.cn/
-          description: CNNIC 开源镜像站
-        - title: ISCAS 开源镜像站
-          logo:
-          url: https://mirror.iscas.ac.cn/
-          description: 中国科学院软件研究所开源镜像站
-        - title: 北外镜像站
-          logo:
-          url: https://mirrors.bfsu.edu.cn/
-          description: 北京外国语大学开源软件镜像站
-        - title: 清华镜像站
-          logo: mirrors_tuna_tsinghua_edu_cn.png
-          url: https://mirrors.tuna.tsinghua.edu.cn/
-          description: 清华大学开源软件镜像站
-        - title: 中科大镜像站
-          logo: mirrors_ustc_edu_cn.png
-          url: https://mirrors.ustc.edu.cn/
-          description: 中国科学技术大学开源软件镜像站
-        - title: 上海交通大学软件镜像站
-          logo: mirror_sjtu_edu_cn.png
-          url: https://mirror.sjtu.edu.cn/
-          description: 上海交通大学软件镜像站
-        - title: MirrorZ⇒
-          logo: mirrorz_org.png
-          url: https://mirrorz.org/
-          description: ⇒更多镜像站
-    - term: 特定源站
-      links:
-        - title: npmmirror 镜像站
-          logo: npmmirror.png
-          url: https://npmmirror.com/
-          description: npm 镜像站
-        - title: RsProxy
-          logo: rsproxy_cn.png
-          url: https://rsproxy.cn/
-          description: 字节跳动 Rust 镜像站
-        - title: Goproxy.cn
-          logo: goproxy_cn.png
-          url: https://goproxy.cn/
-          description: 七牛云 GoProxy
-        - title: Goproxy.io
-          logo: goproxy_io.png
-          url: https://goproxy.io/
-          description: GoProxy
     - term: 相关资源
       links:
         - title: Paybase
           logo: paybase_cn.png
           url: https://paybase.cn/
           description: 一个专注于支付领域解决方案和技术垂直论坛
-
-- taxonomy: 素材与资源
-  icon: far fa-folder-open fa-lg
-  list:
-    - term: 字体资源
+    - term: 开发者工具
       links:
-        - title: 找字体
-          logo: zfont_cn.png
-          url: https://www.zfont.cn
-          description: 找字体,免费商用字体
-        - title: 猫啃网
-          logo: maoken.png
-          url: https://www.maoken.com
-          description: 专注于免费商用字体
+        - title: 码力全开
+          logo: maliquankai.png
+          url: https://maliquankai.com/
+          description: 码力全开科技工作室官方网站
 
-    - term: 网盘资源
-      links:
-        - title: 阿里云盘
-          logo: 阿里云盘.png
-          url: https://www.aliyundrive.com/
-          description: 阿里云盘
-        - title: 天翼网盘
-          logo: 天翼云盘.jpg
-          url: https://cloud.189.cn/
-          description: 天翼网盘
-        - title: 123 盘
-          logo: 123pan.png
-          url: https://www.123pan.com/
-          description: 123 盘
-        - title: PikPak
-          logo: mypikpak.png
-          url: https://mypikpak.com/
-          description: PikPak
-        - title: 百度网盘
-          logo: 百度网盘.jpg
-          url: http://pan.baidu.com/
-          description: 百度网盘
-        - title: 和彩云
-          logo: yun_139.png
-          url: https://yun.139.com/
-          description: 中国移动网盘
-        - title: 蓝奏云
-          logo: lanzou.png
-          url: https://www.lanzou.com/
-          description: 蓝奏云
-        - title: 坚果云
-          logo: 坚果云.png
-          url: https://www.jianguoyun.com/
-          description: 坚果云
-        - title: 115 网盘
-          logo: 115.png
-          url: https://115.com/
-          description: 115 网盘
-
-    - term: 图标素材
-      links:
-        - title: IconPark
-          logo: iconpark_oceanengine.png
-          url: https://iconpark.oceanengine.com/
-          description: ByteDance IconPark
-        - title: iconfont
-          logo: iconfont.png
-          url: http://www.iconfont.cn/
-          description: 阿里巴巴矢量图标库
-        - title: Font Awesome
-          logo: fontawesomeicon.png
-          url: https://fontawesome.com/icons/
-          description: The complete set of 675 icons in Font Awesome.
-        - title: Nerd Fonts
-          logo: nerdfonts.png
-          url: https://github.com/ryanoasis/nerd-fonts
-          description: Iconic font aggregator, collection, and patcher
-        - title: Remix Icon
-          logo: remixicon.png
-          url: https://remixicon.com/
-          description: Simply Delightful Icon System
-        - title: Bootstrap Icons
-          logo: icons_getbootstrap.png
-          url: https://icons.getbootstrap.com/
-          description: Bootstrap Icons
-        - title: Feather Icons
-          logo: feathericons.png
-          url: https://feathericons.com/
-          description: Simply beautiful open source icons
-        - title: iconmonstr
-          logo: iconmonstr.png
-          url: https://iconmonstr.com/
-          description: Free simple icons for your next project
-
-- taxonomy: 办公与学习
-  icon: fas fa-flask fa-lg
+- taxonomy: 办公学习
+  icon: fas fa-file-word fa-lg
   list:
     - term: 在线翻译
       links:
@@ -481,6 +498,55 @@
           logo: oxfordlearnersdictionaries.png
           url: https://www.oxfordlearnersdictionaries.com/
           description: 牛津高阶词典
+
+- taxonomy: 资源素材
+  icon: fa-lg fab fa-fonticons
+  list:
+    - term: 字体库
+      links:
+        - title: 找字体
+          logo: zfont_cn.png
+          url: https://www.zfont.cn
+          description: 找字体,免费商用字体
+        - title: 猫啃网
+          logo: maoken.png
+          url: https://www.maoken.com
+          description: 专注于免费商用字体
+
+    - term: 图标
+      links:
+        - title: IconPark
+          logo: iconpark_oceanengine.png
+          url: https://iconpark.oceanengine.com/
+          description: ByteDance IconPark
+        - title: iconfont
+          logo: iconfont.png
+          url: http://www.iconfont.cn/
+          description: 阿里巴巴矢量图标库
+        - title: Font Awesome
+          logo: fontawesomeicon.png
+          url: https://fontawesome.com/icons/
+          description: The complete set of 675 icons in Font Awesome.
+        - title: Nerd Fonts
+          logo: nerdfonts.png
+          url: https://github.com/ryanoasis/nerd-fonts
+          description: Iconic font aggregator, collection, and patcher
+        - title: Remix Icon
+          logo: remixicon.png
+          url: https://remixicon.com/
+          description: Simply Delightful Icon System
+        - title: Bootstrap Icons
+          logo: icons_getbootstrap.png
+          url: https://icons.getbootstrap.com/
+          description: Bootstrap Icons
+        - title: Feather Icons
+          logo: feathericons.png
+          url: https://feathericons.com/
+          description: Simply beautiful open source icons
+        - title: iconmonstr
+          logo: iconmonstr.png
+          url: https://iconmonstr.com/
+          description: Free simple icons for your next project
 
 # 源站
 # - term: 在线作图

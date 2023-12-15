@@ -13,6 +13,10 @@
       icon: fab fa-github
       url: "https://github.com/jetsung"
 
+- item: 爱开发
+  icon: fas fa-terminal
+  link: "https://www.idev.top/"
+
 - item: 主页
   icon: fas fa-house-damage
   link: "https://i.jetsung.com"
