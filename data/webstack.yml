@@ -41,7 +41,7 @@
           description: 文件加速下载（个人资源有限，请适度使用）
 
 - taxonomy: 技术提升
-  icon: fas fa-code fa-lg
+  icon: fa-lg fas fa-graduation-cap
   list:
     - term: 国内技术社区
       links:
