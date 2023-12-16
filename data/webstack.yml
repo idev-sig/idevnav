@@ -87,26 +87,30 @@
           logo: megengine.png
           url: https://www.megengine.org.cn/
           description: 旷视天元开源的深度学习框架
+        - title: MindSpore
+          logo: mindspore.png
+          url: https://www.mindspore.cn/
+          description: 华为昇思开源的全场景AI框架
     - term: 模型与数据集
       links:
         - title: Hugging Face
           logo: huggingface.svg
           url: https://huggingface.co/
-          description:
+          description: 全球流行的“模型即服务”(MaaS)平台
         - title: 魔搭社区
           logo: modelscope.png
           url: https://modelscope.cn/
-          description:
+          description: 阿里巴巴旗下的“模型即服务”(MaaS)平台
+        - title: 启智AI协作平台
+          logo: openi.png
+          url: https://openi.pcl.ac.cn/
+          description: OpenI - 启智AI开源社区提供普惠算力！
     - term: AI在线平台
       links:
         - title: 哩布哩布AI
           logo: liblib.png
           url: https://www.liblib.ai/
-          description:
-        - title: 哩布哩布AI
-          logo: liblib.png
-          url: https://www.liblib.ai/
-          description:
+          description: 中国领先的AI创作平台
     - term: LOGO生成器
       links:
         - title: AIDesign
