@@ -97,16 +97,20 @@
           logo: modelscope.png
           url: https://modelscope.cn/
           description:
+        - title: 启智AI协作平台
+          logo: openi.png
+          url: https://openi.pcl.ac.cn/
+          description: OpenI - 启智AI开源社区提供普惠算力！
     - term: AI在线平台
       links:
         - title: 哩布哩布AI
           logo: liblib.png
           url: https://www.liblib.ai/
-          description:
-        - title: 哩布哩布AI
-          logo: liblib.png
-          url: https://www.liblib.ai/
-          description:
+          description: AI绘画原创模型网站
+        - title: Civitai
+          logo: civitai.png
+          url: https://civitai.com/
+          description: The Home of Open-Source Generative AI
     - term: LOGO生成器
       links:
         - title: AIDesign
@@ -365,6 +369,14 @@
           logo: freedb_tech.png
           url: https://freedb.tech
           description: (仅建议测试用)数据库托管
+        - title: Patr
+          logo: patr.png
+          url: https://patr.cloud/
+          description: (有免费额度，仅用于开发测试)Docker 容器云托管平台
+        - title: Uffizzi
+          logo: uffizzi.png
+          url: https://www.uffizzi.com/
+          description: (有免费额度，仅用于开发测试)Docker 容器云托管平台
     - term: 云服务器
       links:
         - title: AlphaVPS
