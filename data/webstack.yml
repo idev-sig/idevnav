@@ -61,10 +61,6 @@
           logo: infoq_cn.png
           url: https://www.infoq.cn/
           description: 一个实践驱动的社区资讯站点
-        - title: 开源中国
-          logo: oschina_net.png
-          url: https://oschina.net/
-          description: 中文开源技术资讯社区
 
 - taxonomy: 人工智能
   icon: fa-lg fas fa-robot
@@ -233,6 +229,10 @@
           logo: goproxy_io.png
           url: https://goproxy.io/
           description: GoProxy
+        - title: AtomHub
+          logo: atomhub.png
+          url: https://atomhub.openatom.cn/
+          description: AtomHub Docker 可信镜像中心
 
 - taxonomy: 开发服务
   icon: fas fa-code fa-lg
