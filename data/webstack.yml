@@ -14,7 +14,12 @@
           url: https://www.idev.top/
           description: 爱开发
           qrcode:
-        - title: CodeHub
+        - title: 爱开发社区
+          logo: idev.svg
+          url: https://forum.idev.top/
+          description: 开发者技术交流社区
+          qrcode:
+        - title: Repo Hub
           logo: gitlab.png
           url: "https://git.jetsung.com/jetsung"
           description: （国内）作品项目代码开源
@@ -33,11 +38,14 @@
           qrcode: assets/images/toutiao.png
     - term: 站群
       links:
-        - title: 代码片段
-          url: https://paste.w.idev.top/
-          description: 杰嵩代码片段
+        - title: 杰嵩随手记
+          url: https://snap.jetsung.com/
+          description: 代码片段、即时手记
         - title: 文件加速下载
           url: https://cfiletas.skiy.net
+          description: 文件加速下载（CloudFlare）
+        - title: 文件加速下载（VPS）
+          url: https://filetas.skiy.net
           description: 文件加速下载（个人资源有限，请适度使用）
 
 - taxonomy: 技术提升
@@ -277,7 +285,7 @@
           description: （国内）开放原子开源基金会提供的代码托管平台
         - title: 更多⇒
           logo:
-          url: https://www.idev.top/d/208
+          url: https://forum.idev.top/d/208
           description: ⇒更多代码托管服务平台
     - term: 在线开发
       links:
