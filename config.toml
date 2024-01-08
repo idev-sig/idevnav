@@ -9,9 +9,9 @@ hasCJKLanguage        = true
 
 [params]
     author        = "Jetsung"
-    description   = "爱开发全量导航 | 一名热爱 Linux 的软件开发者"
+    description   = "爱开发全量导航"
     upload        = ""                                   # 左侧导航栏的"网站提交"
-    about         = "https://www.idev.top/p/about"       # 左侧导航栏的"关于导航"页面(./about)
+    about         = "https://forum.idev.top/p/about"       # 左侧导航栏的"关于导航"页面(./about)
     contact       = ""                                   # 右侧关于我们    
     repository    = "https://github.com/forkdo/WebStack-Hugo"  
     enablePreLoad = true		    		             # 网站完全打开前预加载动画
@@ -49,4 +49,4 @@ hasCJKLanguage        = true
     unsafe = true
 
 [params.footer]
-    copyright = '[爱开发](https://www.idev.top/) <br/>本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：jetsungchan@gmail.com <br/>&copy; 2023 - {year} 基于 [WebStack-Hugo](https://github.com/forkdo/WebStack-Hugo) 构建，fork 自 [shenweiyan](https://github.com/shenweiyan/WebStack-Hugo)'
+    copyright = '[爱开发交流社区](https://forum.idev.top/) <br/>本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：jetsungchan@gmail.com <br/>&copy; 2023 - {year} 基于 [WebStack-Hugo](https://github.com/forkdo/WebStack-Hugo) 构建，fork 自 [shenweiyan](https://github.com/shenweiyan/WebStack-Hugo)'

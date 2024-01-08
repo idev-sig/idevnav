@@ -6,7 +6,7 @@
   icon: fas fa-code
   link: ""
   list:
-    - name: Code
+    - name: Repo Hub
       icon: fas fa-code
       url: "https://git.jetsung.com/jetsung"
     - name: GitHub
@@ -15,7 +15,7 @@
 
 - item: 爱开发
   icon: fas fa-terminal
-  link: "https://www.idev.top/"
+  link: "https://forum.idev.top/"
 
 - item: 主页
   icon: fas fa-house-damage
