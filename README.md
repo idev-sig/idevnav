@@ -1,6 +1,6 @@
 # 爱开发导航
 
-## 预览网站
+## 示例
 
 **精选：** https://nav.skiy.net  
 **全量：** https://navs.skiy.net
@@ -30,7 +30,8 @@ hugo server
 ## 下载 icon
 
 ```bash
-# logo: https://api.iowen.cn/favicon/x.com/x.png
+# logo: https://api.iowen.cn/favicon/x.com.png
+# logo: https://api.iowen.cn/favicon/x.com.png#custom.png
 bash icons.sh
 ```
 
