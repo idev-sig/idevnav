@@ -12,13 +12,17 @@
         - title: 爱开发
           logo: idev.svg
           url: https://www.idev.top/
-          description: 爱开发
+          description: 开发者技术资讯网站
           qrcode:
         - title: 爱开发社区
           logo: idev.svg
           url: https://forum.idev.top/
           description: 开发者技术交流社区
           qrcode:
+        - title: 爱开发手记
+          logo: idev.svg
+          url: https://snap.idev.top/
+          description: 代码片段、即时手记
         - title: Repo Hub
           logo: gitlab.png
           url: "https://git.jetsung.com/jetsung"
@@ -38,9 +42,6 @@
           qrcode: assets/images/toutiao.png
     - term: 站群
       links:
-        - title: 杰嵩随手记
-          url: https://snap.jetsung.com/
-          description: 代码片段、即时手记
         - title: 文件加速下载
           url: https://cfiletas.skiy.net
           description: 文件加速下载（CloudFlare）
@@ -331,6 +332,36 @@
           logo:
           url: https://jetsung.com/d/208
           description: ⇒更多代码托管服务平台
+    - term: 服务部署
+      links:
+        - title: Vercel
+          logo: vercel.png
+          url: https://vercel.com/
+          description: 静态网站托管服务平台
+        - title: Netlify
+          logo: netlify.png
+          url: https://www.netlify.com/
+          description: 静态网站托管服务平台
+        - title: Render
+          logo: render.png
+          url: https://render.com/
+          description: 免费云端静态网站托管服务平台
+        - title: Firebase
+          logo: firebase.png
+          url: https://firebase.google.com/
+          description: 静态网站托管服务平台
+        - title: ImageKit
+          logo: imagekit.png
+          url: https://imagekit.io/
+          description: 图片和媒体托管服务平台
+        - title: Replit
+          logo: replit.png
+          url: https://replit.com
+          description: 网络应用托管平台
+        - title: Fly.io
+          logo: fly.png
+          url: https://fly.io/
+          description: (需信用卡)免费托管服务平台
     - term: 在线开发
       links:
         - title: CodeSandBox
@@ -349,32 +380,6 @@
           logo: jsfiddle.png
           url: https://jsfiddle.net/
           description: 前端代码在线编辑器
-    - term: 服务部署
-      links:
-        - title: Vercel
-          logo: vercel.png
-          url: https://vercel.com/
-          description: 静态网站托管服务平台
-        - title: Netlify
-          logo: netlify.png
-          url: https://www.netlify.com/
-          description: 静态网站托管服务平台
-        - title: Render
-          logo: render.png
-          url: https://render.com/
-          description: 免费云端静态网站托管服务平台
-        - title: Fly.io
-          logo: fly.png
-          url: https://fly.io/
-          description: (需要验证信用卡)免费托管服务平台
-        - title: Firebase
-          logo: firebase.png
-          url: https://firebase.google.com/
-          description: 静态网站托管服务平台
-        - title: Replit
-          logo: replit.png
-          url: https://replit.com
-          description: 网络应用托管平台
     - term: 免费资源
       links:
         - title: Koyeb
@@ -540,7 +545,6 @@
           logo: maoken.png
           url: https://www.maoken.com
           description: 专注于免费商用字体
-
     - term: 图标
       links:
         - title: IconPark
