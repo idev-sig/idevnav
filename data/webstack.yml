@@ -45,8 +45,8 @@
         - title: 文件加速下载
           url: https://cfiletas.skiy.net
           description: 文件加速下载（CloudFlare）
-        - title: 文件加速下载（VPS）
-          url: https://filetas.skiy.net
+        - title: 文件加速下载（NLVPS）
+          url: https://filetas.chunghwa.tech/
           description: 文件加速下载（个人资源有限，请适度使用）
 
 - taxonomy: 技术提升
@@ -118,7 +118,7 @@
       links:
         - title: 哩布哩布AI
           logo: liblib.png
-          url: https://www.liblib.ai/
+          url: https://www.liblib.art/
           description: AI绘画原创模型网站
         - title: Civitai
           logo: civitai.png
@@ -270,6 +270,10 @@
           logo: atomhub.png
           url: https://atomhub.openatom.cn/
           description: AtomHub Docker 可信镜像中心
+        - title: HF Mirror
+          logo:
+          url: https://hf-mirror.com
+          description: HuggingFace 镜像站
 
 - taxonomy: 开发服务
   icon: fas fa-code fa-lg
@@ -299,15 +303,15 @@
         - title: Gitee
           logo: gitee.png
           url: https://gitee.com
-          description: （国内）Gitee 代码托管平台
+          description: （国内）代码托管平台
         - title: GitCode
           logo: gitcode.png
-          url: https://gitcode.net
-          description: （国内）基于 GitLab，代码托管平台
+          url: https://gitcode.com
+          description: （国内）代码托管平台
         - title: Coding
           logo: coding.png
           url: https://coding.net
-          description: （国内）Coding 代码托管平台
+          description: （国内）代码托管平台
         - title: AtomGit
           logo: atomgit.png
           url: https://atomgit.com
@@ -421,7 +425,7 @@
           url: https://maliquankai.com/
           description: 码力全开科技工作室官方网站
 
-- taxonomy: 办公学习
+- taxonomy: 工作学习
   icon: fas fa-file-word fa-lg
   list:
     - term: 在线翻译
@@ -531,6 +535,12 @@
           logo: oxfordlearnersdictionaries.png
           url: https://www.oxfordlearnersdictionaries.com/
           description: 牛津高阶词典
+    - term: 市场营销
+      links:
+        - title: TempMail
+          logo:
+          url: https://tempmail.plus
+          description: 临时邮件发送
 
 - taxonomy: 资源素材
   icon: fa-lg fab fa-fonticons
