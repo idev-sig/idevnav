@@ -255,7 +255,7 @@
         - title: ◈GitLab
           logo: gitlab.png
           url: https://gitlab.com
-          description: GitLab （可自建）代码托管平台
+          description: （可自建）代码托管平台
         - title: ◈阿里云效 Codeup
           logo: codeup.svg
           url: https://codeup.aliyun.com
@@ -271,15 +271,15 @@
         - title: Gitee
           logo: gitee.png
           url: https://gitee.com
-          description: （国内）Gitee 代码托管平台
+          description: （国内）代码托管平台
         - title: GitCode
           logo: gitcode.png
-          url: https://gitcode.net
-          description: （国内）基于 GitLab，代码托管平台
+          url: https://gitcode.com
+          description: （国内）代码托管平台
         - title: Coding
           logo: coding.png
           url: https://coding.net
-          description: （国内）Coding 代码托管平台
+          description: （国内）代码托管平台
         - title: AtomGit
           logo: atomgit.png
           url: https://atomgit.com
@@ -383,7 +383,7 @@
     - term: 市场营销
       links:
         - title: TempMail
-          logo: https://tempmail.plus/
+          logo:
           url: https://tempmail.plus
           description: 临时邮件发送
 
