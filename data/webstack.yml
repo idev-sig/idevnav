@@ -45,8 +45,8 @@
         - title: 文件加速下载
           url: https://cfiletas.skiy.net
           description: 文件加速下载（CloudFlare）
-        - title: 文件加速下载（VPS）
-          url: https://filetas.skiy.net
+        - title: 文件加速下载（NLVPS）
+          url: https://filetas.chunghwa.tech
           description: 文件加速下载（个人资源有限，请适度使用）
 
 - taxonomy: 技术提升
@@ -329,7 +329,7 @@
           url: https://jsfiddle.net/
           description: 前端代码在线编辑器
 
-- taxonomy: 办公学习
+- taxonomy: 工作学习
   icon: fas fa-file-word fa-lg
   list:
     - term: 在线翻译
@@ -380,6 +380,12 @@
           logo: dictionary_cambridge_org.png
           url: https://dictionary.cambridge.org/
           description: 剑桥词典
+    - term: 市场营销
+      links:
+        - title: TempMail
+          logo: https://tempmail.plus/
+          url: https://tempmail.plus
+          description: 临时邮件发送
 
 - taxonomy: 资源素材
   icon: fa-lg fab fa-fonticons
