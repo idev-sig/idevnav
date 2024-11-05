@@ -126,10 +126,6 @@
           description: The Home of Open-Source Generative AI
     - term: LOGO生成器
       links:
-        - title: AIDesign
-          logo: ailogo.png
-          url: https://ailogo.qq.com/
-          description: 腾讯自研的智能设计平台，免费在线生成品牌logo、企业VI
         - title: 标小智
           logo: logosc.png
           url: https://www.logosc.cn/
@@ -174,6 +170,18 @@
           logo: 阿里云盘.png
           url: https://www.aliyundrive.com/
           description: 阿里云盘
+        - title: 百度网盘
+          logo: 百度网盘.jpg
+          url: http://pan.baidu.com/
+          description: 百度网盘
+        - title: 夸克网盘
+          logo: quark.png
+          url: https://pan.quark.cn/
+          description: 夸克网盘
+        - title: 蓝奏云
+          logo: lanzou.png
+          url: https://www.lanzou.com/
+          description: 蓝奏云
         - title: 天翼网盘
           logo: 天翼云盘.jpg
           url: https://cloud.189.cn/
@@ -186,18 +194,10 @@
           logo: mypikpak.png
           url: https://mypikpak.com/
           description: PikPak
-        - title: 百度网盘
-          logo: 百度网盘.jpg
-          url: http://pan.baidu.com/
-          description: 百度网盘
         - title: 和彩云
           logo: yun_139.png
           url: https://yun.139.com/
           description: 中国移动网盘
-        - title: 蓝奏云
-          logo: lanzou.png
-          url: https://www.lanzou.com/
-          description: 蓝奏云
         - title: 坚果云
           logo: 坚果云.png
           url: https://www.jianguoyun.com/
@@ -220,6 +220,10 @@
           logo: cloud_tencent.png
           url: https://mirrors.cloud.tencent.com/
           description: 腾讯软件源
+        - title: 火山引擎开源镜像站
+          logo: volcengine.png
+          url: https://developer.volcengine.com/mirror/
+          description: 字节跳动旗下开源软件镜像站
         - title: CNNIC 开源镜像站
           logo:
           url: https://mirrors.cnnic.cn/
@@ -438,6 +442,10 @@
           logo: fanyi_baidu.png
           url: https://fanyi.baidu.com/
           description: 百度翻译
+        - title: 火山翻译
+          logo: translate_volcengine.png
+          url: https://translate.volcengine.com/
+          description: 火山翻译
         - title: 谷歌翻译
           logo: 谷歌翻译.jpg
           url: https://translate.google.com.hk/
