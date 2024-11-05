@@ -118,10 +118,6 @@
           description: 中国领先的AI创作平台
     - term: LOGO生成器
       links:
-        - title: AIDesign
-          logo: ailogo.png
-          url: https://ailogo.qq.com/
-          description: 腾讯自研的智能设计平台，免费在线生成品牌logo、企业VI
         - title: 标小智
           logo: logosc.png
           url: https://www.logosc.cn/
@@ -166,18 +162,26 @@
           logo: 阿里云盘.png
           url: https://www.aliyundrive.com/
           description: 阿里云盘
-        - title: 天翼网盘
-          logo: 天翼云盘.jpg
-          url: https://cloud.189.cn/
-          description: 天翼网盘
         - title: 百度网盘
           logo: 百度网盘.jpg
           url: http://pan.baidu.com/
           description: 百度网盘
+        - title: 夸克网盘
+          logo: quark.png
+          url: https://pan.quark.cn/
+          description: 夸克网盘
+        - title: 蓝奏云
+          logo: lanzou.png
+          url: https://www.lanzoui.com/
+          description: 蓝奏云
         - title: 和彩云
           logo: yun_139.png
           url: https://yun.139.com/
           description: 中国移动网盘
+        - title: 天翼网盘
+          logo: 天翼云盘.jpg
+          url: https://cloud.189.cn/
+          description: 天翼网盘
         - title: 115 网盘
           logo: 115.png
           url: https://115.com/
@@ -196,6 +200,10 @@
           logo: cloud_tencent.png
           url: https://mirrors.cloud.tencent.com/
           description: 腾讯软件源
+        - title: 火山引擎开源镜像站
+          logo: volcengine.png
+          url: https://developer.volcengine.com/mirror/
+          description: 字节跳动旗下开源软件镜像站
         - title: ISCAS 开源镜像站
           logo:
           url: https://mirror.iscas.ac.cn/
@@ -238,10 +246,6 @@
           logo: goproxy_io.png
           url: https://goproxy.io/
           description: GoProxy
-        - title: AtomHub
-          logo: atomhub.png
-          url: https://atomhub.openatom.cn/
-          description: AtomHub Docker 可信镜像中心
 
 - taxonomy: 开发服务
   icon: fas fa-code fa-lg
@@ -303,11 +307,11 @@
           url: https://render.com/
           description: 免费云端静态网站托管服务平台
         - title: Firebase
-          logo: google.png
+          logo: firebase.png
           url: https://firebase.google.com/
           description: 静态网站托管服务平台
         - title: ImageKit
-          logo: https://imagekit.io/favicon-32x32.png#imagekit.png
+          logo: imagekit.png
           url: https://imagekit.io/
           description: 图片和媒体托管服务平台
     - term: 在线开发
@@ -342,10 +346,10 @@
           logo: fanyi_baidu.png
           url: https://fanyi.baidu.com/
           description: 百度翻译
-        - title: 谷歌翻译
-          logo: 谷歌翻译.jpg
-          url: https://translate.google.com.hk/
-          description: 谷歌翻译
+        - title: 火山翻译
+          logo: translate_volcengine.png
+          url: https://translate.volcengine.com/
+          description: 火山翻译
         - title: 腾讯翻译君
           logo: fanyi_qq.png
           url: https://fanyi.qq.com/
