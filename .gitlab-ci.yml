@@ -18,25 +18,7 @@ before_script: |
 deploy:
   stage: deploy
   script: |
-    PUBLISH_DIR="$(grep publishDir config.toml | awk -F '\"' '{print $2}')" # static files
-    if [[ -z "$PUBLISH_DIR" ]]; then
-      echo "Not found publishDir in config.toml"
-      exit 1
-    fi
-
-    BRANCH_NAME="main"
-    if [[ "$CI_COMMIT_BRANCH" == "main" ]]; then
-      PROJECT_NAME="nav"
-    elif [[ "$CI_COMMIT_BRANCH" == "more" ]]; then
-      PROJECT_NAME="navs"
-    else
-      echo "the branch ${CI_COMMIT_BRANCH} is not main or more"
-      exit 1
-    fi
-
-    echo -e "no\n" | wrangler pages deploy "$PUBLISH_DIR" \
-      --project-name "$PROJECT_NAME" \
-      --branch "$BRANCH_NAME"
+    bash ./deploy.sh yes
 
   only:
     - main

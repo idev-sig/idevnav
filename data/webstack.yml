@@ -42,12 +42,18 @@
           qrcode: assets/images/toutiao.png
     - term: 站群
       links:
+        - title: 文件加速下载（NLVPS）
+          url: https://filetas.asfd.cn
+          description: 文件加速下载（CF 优速）
+        - title: 文件加速下载（NLVPS）
+          url: https://filetas.skiy.net
+          description: 文件加速下载（VPS 原速）
+        - title: 文件加速下载（NLVPS）
+          url: https://filetas-cf.skiy.net
+          description: 文件加速下载（CF 加速）                    
         - title: 文件加速下载
           url: https://cfiletas.skiy.net
           description: 文件加速下载（CloudFlare）
-        - title: 文件加速下载（NLVPS）
-          url: https://filetas.chunghwa.tech
-          description: 文件加速下载（个人资源有限，请适度使用）
 
 - taxonomy: 技术提升
   icon: fa-lg fas fa-graduation-cap
@@ -88,10 +94,6 @@
           logo: tensorflow.png
           url: https://tensorflow.org/
           description: 谷歌推出的开源机器学习框架
-        - title: MegEngine
-          logo: megengine.png
-          url: https://www.megengine.org.cn/
-          description: 旷视天元开源的深度学习框架
         - title: MindSpore
           logo: mindspore.png
           url: https://www.mindspore.cn/
@@ -256,14 +258,10 @@
           logo: github.png
           url: https://github.com
           description: 全球最大的代码托管平台
-        - title: ◈GitLab
-          logo: gitlab.png
-          url: https://gitlab.com
-          description: （可自建）代码托管平台
-        - title: ◈阿里云效 Codeup
-          logo: codeup.svg
-          url: https://codeup.aliyun.com
-          description: （国内）阿里云效代码托管平台，支持 DevOPS。
+        - title: GitCode
+          logo: gitcode.png
+          url: https://gitcode.com
+          description: （国内）代码托管平台
         - title: ◈Framagit
           logo: framagit.svg
           url: https://framagit.org
@@ -272,14 +270,18 @@
           logo: codeberg_org.png
           url: https://codeberg.org
           description: 基于 Gitea，代码托管平台，支持 Pages。
+        - title: 阿里云效 Codeup
+          logo: codeup.svg
+          url: https://codeup.aliyun.com
+          description: （国内）阿里云效代码托管平台，支持 DevOPS。
         - title: Gitee
           logo: gitee.png
           url: https://gitee.com
           description: （国内）代码托管平台
-        - title: GitCode
-          logo: gitcode.png
-          url: https://gitcode.com
-          description: （国内）代码托管平台
+        - title: GitLab
+          logo: gitlab.png
+          url: https://gitlab.com
+          description: （可自建）代码托管平台
         - title: Coding
           logo: coding.png
           url: https://coding.net
@@ -292,7 +294,7 @@
           logo:
           url: https://forum.idev.top/d/208
           description: ⇒更多代码托管服务平台
-    - term: 服务部署
+    - term: 服务部署（WEB 方向）      
       links:
         - title: Vercel
           logo: vercel.png
@@ -302,10 +304,20 @@
           logo: netlify.png
           url: https://www.netlify.com/
           description: 静态网站托管服务平台
-        - title: Render
-          logo: render.png
-          url: https://render.com/
-          description: 免费云端静态网站托管服务平台
+        - title: Fleek
+          logo: fleek.png    
+          url: https://fleek.xyz/
+          description: 静态网站托管服务平台  
+        - title: Surge
+          logo: surge.png
+          url: https://surge.sh/
+          description: 静态网站托管服务平台
+        - title: Fermyon
+          logo: fermyon.png
+          url: https://fermyon.com/
+          description: WebAssembly 服务托管平台
+    - term: 服务部署
+      links:
         - title: Firebase
           logo: firebase.png
           url: https://firebase.google.com/
