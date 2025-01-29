@@ -2,8 +2,8 @@
 
 ## 示例
 
-**精选：** https://nav.skiy.net  
-**全量：** https://navs.skiy.net
+**精选：** https://nav.idev.top 
+**全量：** https://navs.idev.top
 
 ## 开发
 
@@ -27,17 +27,27 @@ git submodule update --recursive --remote
 hugo server
 ```
 
-## 下载 icon
+## 获取 ICON 图标
 
-```bash
-# logo: https://api.iowen.cn/favicon/x.com.png
-# logo: https://api.iowen.cn/favicon/x.com.png#custom.png
-bash icons.sh
-```
+1. 从 Google
+   ```sh
+   https://www.google.com/s2/favicons?sz=48&domain_url=https%3A%2F%2Fgitcode.com
+   
+   # 或直接
+   https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
+   ```
+
+2. 从自建 PHP 获取方式
+
+    ```sh
+    # logo: https://api.iowen.cn/favicon/x.com.png
+    # logo: https://api.iowen.cn/favicon/x.com.png#custom.png
+    bash icons.sh
+    ```
 
 ## 发布
 
-```bash
+```sh
 # 打包
 bash deploy
 
@@ -54,4 +64,5 @@ bash deploy.sh "commit"
 
 - https://git.jetsung.com/idev/navsites
 - https://framagit.org/idev/navsites
-- https://github.com/idev-sig/navsites
+- https://gitcode.com/idev/navsites
+- https://github.com/idevsig/navsites

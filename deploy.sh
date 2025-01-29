@@ -7,6 +7,7 @@ copy_file_from_main() {
   git checkout main -- .gitignore .gitlab-ci.yml README.md icons.sh deploy.sh config.toml data/friendlinks.yml data/headers.yml
 }
 
+# update nav url
 update_nav_url() {
   # update config.toml
   sed -i 's#爱开发导航#爱开发全量导航#g' config.toml
@@ -17,7 +18,6 @@ update_nav_url() {
   sed -i 's#navs.idev.top#nav.idev.top#g' data/headers.yml
 }
 
-PROJECT_NAME=""                                                         # nav or navs
 PUBLISH_DIR="$(grep publishDir config.toml | awk -F '\"' '{print $2}')" # static files
 
 if [ -z "$PUBLISH_DIR" ]; then
@@ -26,21 +26,19 @@ if [ -z "$PUBLISH_DIR" ]; then
 fi
 
 # get branch name
-BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+GIT_BRANCH_NAME="$CI_COMMIT_BRANCH"
 
-if [ "$BRANCH_NAME" == "main" ]; then
+if [ "$GIT_BRANCH_NAME" = "main" ]; then   # 精选
   PROJECT_NAME="nav"
-elif [ "$BRANCH_NAME" == "more" ]; then
+elif [ "$GIT_BRANCH_NAME" = "more" ]; then # 全量
   PROJECT_NAME="navs"
   BRANCH_NAME="main"
 
   copy_file_from_main
 
   update_nav_url
-fi
-
-if [ -z "$PROJECT_NAME" ]; then
-  echo -e "\033[31merror: branch name is not correct.\033[m"
+else
+  echo -e "\033[31merror: git branch name is not correct.\033[m"
   exit 1
 fi
 

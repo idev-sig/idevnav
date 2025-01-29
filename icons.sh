@@ -4,10 +4,12 @@
 # 从 icon 抓取图标
 ##
 
-set -e
+set -euo pipefail
 
 ICON_PATH="static/assets/images/logos"
-[ -d "$ICON_PATH" ] || mkdir -p $ICON_PATH
+if [ ! -d "$ICON_PATH" ]; then 
+  mkdir -p "$ICON_PATH"
+fi
 
 # [ $# -eq 0 ] || rm -rf icons/*
 
