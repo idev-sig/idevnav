@@ -3,6 +3,7 @@
   icon: fa-lg fas fa-star
   list:
     - term: 站群（社交）
+      icon: fa-lg fas fa-star
       links:
         # - title:
         #   logo:
@@ -38,7 +39,7 @@
           url: "https://github.com/jetsung"
           description: （国外）作品项目代码开源
         - title: 微信公众号
-          logo: 微信公众号.png
+          logo: weixin.png
           favicon:
           description: 爱开发微信公众号
           qrcode: assets/images/weixin.png
@@ -55,11 +56,11 @@
           favicon: https://demo.usememos.com/apple-touch-icon.png
           url: https://snap.idev.top/
           description: 代码片段、即时手记
-        - title: 命令行动画
+        - title: 终端录播
           logo: asciinema.png
           favicon: 
           url: https://recode.idev.top/
-          description: 命令行动画
+          description: Asciinema 终端录播
     - term: 站群（下载）
       links:
         - title: 文件加速下载（NLVPS）
@@ -288,8 +289,8 @@
           url: https://mirror.sjtu.edu.cn/
           description: 上海交通大学软件镜像站
         - title: 校园网联合镜像站⇒
-          logo:
-          favicon:
+          logo: mirrorz.svg
+          favicon: https://mirrors.cernet.edu.cn/static/img/mirrorz.svg
           url: https://mirrors.cernet.edu.cn/
           description: ⇒更多镜像站
     - term: 专用源站
@@ -325,14 +326,14 @@
           favicon:
           url: https://github.com
           description: 全球最大的代码托管平台
-        - title: GitCode
+        - title: ◈GitCode
           logo: gitcode.png
           favicon:
           url: https://gitcode.com
           description: （国内）代码托管平台
         - title: ◈Framagit
           logo: framagit.svg
-          favicon:
+          favicon: https://framagit.org/uploads/-/system/appearance/header_logo/1/logo.svg
           url: https://framagit.org
           description: 基于 GitLab，代码托管平台，支持 Pages。
         - title: ◈Codeberg
@@ -471,7 +472,7 @@
           description: 有道词典
         - title: 沪江词典
           logo: dict_hujiang.png
-          favicon:
+          favicon: https://res.hjfile.cn/tool/dict.hjenglish.com/img/logo@2x-e5fcc.png
           url: https://dict.hujiang.com/
           description: 沪江小D词典
         - title: 人人词典
@@ -537,6 +538,6 @@
           description: The complete set of 675 icons in Font Awesome.
         - title: Nerd Fonts
           logo: nerdfonts.png
-          favicon:
-          url: https://github.com/ryanoasis/nerd-fonts
+          favicon: 
+          url: https://www.nerdfonts.com/
           description: Iconic font aggregator, collection, and patcher
