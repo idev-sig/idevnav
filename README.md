@@ -2,8 +2,8 @@
 
 ## 示例
 
-**精选：** https://nav.idev.top 
-**全量：** https://navs.idev.top
+- **精选：** https://nav.idev.top    
+- **全量：** https://navs.idev.top
 
 ## 开发
 
