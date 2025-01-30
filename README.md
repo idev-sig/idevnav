@@ -27,38 +27,38 @@ git submodule update --recursive --remote
 hugo server
 ```
 
+4. 构建与拉取 ICON
+```sh
+bash ./.deploy.sh
+
+# 部署
+bash ./.deploy.sh -d
+```
+
 ## 获取 ICON 图标
+
+需要先修改 `logo:` 部分的文件名，以提供下述方式 `favicon:` 保存。
 
 1. 从 Google
    ```sh
+   # favicon: <URL>
+
    https://www.google.com/s2/favicons?sz=48&domain_url=https%3A%2F%2Fgitcode.com
-   
+
    # 或直接
    https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
+   https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
+
+   # 中国加速
+   https://c.kkgo.cc/t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
    ```
 
-2. 从自建 PHP 获取方式
-
+2. 从自建 PHP 获取方式 [**GetFavicon**](https://github.com/sy-records/GetFavicon)
     ```sh
-    # logo: https://api.iowen.cn/favicon/x.com.png
-    # logo: https://api.iowen.cn/favicon/x.com.png#custom.png
-    bash icons.sh
+    # favicon: <URL>
     ```
 
-## 发布
-
-```sh
-# 打包
-bash deploy
-
-# 发布到 CloudFlare Pages
-bash deploy.sh yes
-
-# 编写 commit
-bash deploy.sh "commit"
-```
-
-1. [使用教程](https://git.jetsung.com/idev/navsites/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
+3. [使用教程](https://git.jetsung.com/idev/navsites/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 
 ## 仓库镜像
 

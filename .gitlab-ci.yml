@@ -11,12 +11,11 @@ before_script: |
   apk update
   apk add --no-cache bash npm
   npm install -g wrangler@latest
-  hugo --minify
 
 deploy:
   stage: deploy
   script: |
-    bash ./deploy.sh yes
+    bash ./.deploy.sh -d
 
   only:
     - main
