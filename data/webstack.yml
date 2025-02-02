@@ -1,9 +1,9 @@
 ---
 - taxonomy: 杰森
-  icon: fa-lg fas fa-star
+  # icon: fa-lg fas fa-star
+  icon: bi bi-star-fill
   list:
-    - term: 站群（社交）
-      icon: fa-lg fas fa-star
+    - term: 社交
       links:
         # - title:
         #   logo:
@@ -49,7 +49,7 @@
           url: https://www.toutiao.com/c/user/token/MS4wLjABAAAATopQ1LkY3v_vbmTLcW504_Asubeqs24gH-IFJp66CDLoFB2ATjEwBZJhdIsgKEPZ/?
           description: 平平无奇程序员（头条号）
           qrcode: assets/images/toutiao.png
-    - term: 站群（项目）
+    - term: 项目
       links:
         - title: 爱开发手记
           logo: snap.png
@@ -61,7 +61,7 @@
           favicon: 
           url: https://recode.idev.top/
           description: Asciinema 终端录播
-    - term: 站群（下载）
+    - term: 下载
       links:
         - title: 文件加速下载（NLVPS）
           url: https://filetas.asfd.cn
@@ -77,7 +77,8 @@
           description: 文件加速下载（CloudFlare）
 
 - taxonomy: 技术提升
-  icon: fa-lg fas fa-graduation-cap
+  # icon: fa-lg fas fa-graduation-cap
+  icon: bi bi-stack
   list:
     - term: 国内技术社区
       links:
@@ -103,7 +104,8 @@
           description: 一个实践驱动的社区资讯站点
 
 - taxonomy: 人工智能
-  icon: fa-lg fas fa-robot
+  # icon: fa-lg fas fa-robot
+  icon: bi bi-robot
   list:
     - term: 深度学习框架
       links:
@@ -175,7 +177,8 @@
           description: (高清需付费下载)Create Your Own Logo
 
 - taxonomy: 研发资源
-  icon: fas fa-cloud fa-lg
+  # icon: fas fa-cloud fa-lg
+  icon: bi bi-archive-fill
   list:
     - term: 云服务
       links:
@@ -317,7 +320,8 @@
           description: GoProxy
 
 - taxonomy: 开发服务
-  icon: fas fa-code fa-lg
+  # icon: fas fa-code fa-lg
+  icon: bi bi-cloudy-fill
   list:
     - term: 代码托管
       links:
@@ -371,7 +375,7 @@
           favicon:
           url: https://forum.idev.top/d/208
           description: ⇒更多代码托管服务平台
-    - term: 服务部署（WEB 方向）      
+    - term: 网站部署      
       links:
         - title: Vercel
           logo: vercel.png
@@ -434,7 +438,8 @@
           description: 前端代码在线编辑器
 
 - taxonomy: 工作学习
-  icon: fas fa-file-word fa-lg
+  # icon: fas fa-file-word fa-lg
+  icon: bi bi-incognito
   list:
     - term: 在线翻译
       links:
@@ -505,6 +510,7 @@
 
 - taxonomy: 资源素材
   icon: fa-lg fab fa-fonticons
+  # icon: bi bi-floppy-fill
   list:
     - term: 字体库
       links:
