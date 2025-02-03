@@ -15,6 +15,7 @@ before_script: |
 deploy:
   stage: deploy
   script: |
+    git fetch origin main
     bash ./.deploy.sh -d
 
   only:
