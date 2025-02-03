@@ -142,8 +142,8 @@
           url: https://code.gitlink.org.cn
           description: （国内）基于 Gitea，代码托管平台
         - title: envs.net
-          logo: git_envs_net.png
-          favicon:
+          logo: gitea.svg
+          favicon: https://git.envs.net/assets/img/logo.svg
           url: https://git.envs.net
           description: 基于 Gitea，代码托管平台
         - title:
@@ -483,7 +483,7 @@
     - term: 云服务
       links:
         - title: 阿里云
-          logo: 阿里云.jpg
+          logo: aliyun.png
           favicon:
           url: https://aliyun.com/
           description: 云服务器、域名解析、免费邮箱、CDN、云存储
@@ -510,12 +510,12 @@
     - term: 在线网盘
       links:
         - title: 阿里云盘
-          logo: 阿里云盘.png
+          logo: aliyundrive.png
           favicon:
           url: https://www.aliyundrive.com/
           description: 阿里云盘
         - title: 百度网盘
-          logo: 百度网盘.jpg
+          logo: pan_baidu.jpg
           favicon:
           url: http://pan.baidu.com/
           description: 百度网盘
@@ -530,7 +530,7 @@
           url: https://www.lanzou.com/
           description: 蓝奏云
         - title: 天翼网盘
-          logo: 天翼云盘.jpg
+          logo: cloud_189.jpg
           favicon:
           url: https://cloud.189.cn/
           description: 天翼网盘
@@ -572,7 +572,7 @@
           url: https://developer.aliyun.com/mirror/
           description: 阿里巴巴开源镜像站
         - title: 华为镜像站
-          logo: mirrors_huaweicloud.png
+          logo: huaweicloud.png
           favicon:
           url: https://mirrors.huaweicloud.com/
           description: 华为开源镜像站
@@ -643,11 +643,6 @@
           favicon:
           url: https://goproxy.io/
           description: GoProxy
-        - title: AtomHub
-          logo: atomhub.png
-          favicon:
-          url: https://atomhub.openatom.cn/
-          description: AtomHub Docker 可信镜像中心
         - title: HF Mirror
           logo:
           favicon:
@@ -670,7 +665,7 @@
           url: https://www.cnblogs.com/
           description: 一个面向开发者群体的技术社区
         - title: 华为云社区
-          logo: 华为云.png
+          logo: huaweicloud.png
           favicon:
           url: https://bbs.huaweicloud.com/
           description: 华为云社区是华为云官方技术交流社区
@@ -706,13 +701,13 @@
           url: https://translate.volcengine.com/
           description: 火山翻译
         - title: 谷歌翻译
-          logo: 谷歌翻译.jpg
+          logo: translate_google.png
           favicon:
           url: https://translate.google.com.hk/
           description: 谷歌翻译
         - title: 彩云小译
           logo: fanyi_caiyunapp.png
-          favicon:
+          favicon: https://www.caiyunapp.com/imgs/xiaoyilogo.png
           url: https://fanyi.caiyunapp.com/
           description: 彩云小译
         - title: 腾讯翻译君
@@ -755,12 +750,12 @@
           url: https://fsoufsou.com/translate
           description: F 搜翻译
         - title: 有道翻译
-          logo: 有道词典.png
+          logo: youdao.png
           favicon:
           url: http://fanyi.youdao.com/
           description: 有道翻译
         - title: 搜狗翻译
-          logo: fanyi_sogou.png
+          logo: sogou.png
           favicon:
           url: https://fanyi.sogou.com/text
           description: 搜狗翻译
@@ -770,8 +765,8 @@
           url: https://www.fanyigou.net/trans/totran/tranText.html
           description: 翻译狗
         - title: KEEKIT 翻译
-          logo: yeekit.png
-          favicon:
+          logo: yeekit.ico
+          favicon: https://www.yeekit.com/favicon.ico
           url: https://www.yeekit.com/site/translate
           description: KEEKIT 翻译
         - title: 360 翻译
@@ -782,7 +777,7 @@
     - term: 在线词典
       links:      
         - title: 有道词典
-          logo: 有道词典.png
+          logo: youdao_dict.png
           favicon:
           url: https://www.youdao.com/
           description: 有道词典
@@ -812,8 +807,8 @@
           url: https://www.collinsdictionary.com/
           description: 柯林斯在线词典
         - title: CNKI 翻译助手
-          logo: dict_cnki_net.png
-          favicon:
+          logo: dict_cnki_net.ico
+          favicon: https://dict.cnki.net/favicon.ico
           url: https://dict.cnki.net/
           description: CNKI 翻译助手
         - title: 剑桥词典
@@ -927,21 +922,11 @@
           favicon:
           url: https://icomoon.io/app/
           description: Icon Font, SVG, PDF &amp; PNG Generator.
-        - title: easyicon
-          logo: easyicon.png
-          favicon:
-          url: http://www.easyicon.net/
-          description: PNG、ICO、ICNS格式图标搜索、图标下载服务。
         - title: flaticon
           logo: flaticon.png
           favicon:
           url: https://www.flaticon.com/
           description: 634,000+ Free vector icons in SVG, PSD, PNG, EPS format or as ICON FONT.
-        - title: UICloud
-          logo: UICloud.png
-          favicon:
-          url: http://ui-cloud.com/
-          description: The largest user interface design database in the world.
         - title: Material icons
           logo: Materialicons.png
           favicon:
@@ -1026,21 +1011,6 @@
           favicon:
           url: http://www.nipic.com/
           description: 原创素材共享平台。
-        - title: 懒人图库
-          logo: lanrentuku.png
-          favicon:
-          url: http://www.lanrentuku.com/
-          description: 懒人图库专注于提供网页素材下载。
-        - title: 素材搜索
-          logo: sousucai.png
-          favicon:
-          url: http://so.ui001.com/
-          description: 设计素材搜索聚合。
-        - title: PS 饭团网
-          logo: psefan.png
-          favicon:
-          url: http://psefan.com/
-          description: 不一样的设计素材库！让自己的设计与众不同！
         - title: 素材中国
           logo: sccnn.png
           favicon:
@@ -1068,36 +1038,26 @@
           logo: ziticq.png
           favicon:
           description: 中国首个字体品牌设计师交流网。
-        - title: 私藏字体
-          url: http://sicangziti.com/
-          logo: sicangziti.png
-          favicon:
-          description: 优质字体免费下载站。
         - title: Fontsquirrel
           url: https://www.fontsquirrel.com/
           logo: fontsquirrel.png
           favicon:
           description: FREE fonts for graphic designers.
         - title: Urban Fonts
+          logo: urbanfonts.ico
+          favicon: https://www.urbanfonts.com/favicon.ico
           url: https://www.urbanfonts.com/
-          logo: UrbanFonts.png
-          favicon:
           description: Download Free Fonts and Free Dingbats.
         - title: Lost Type
-          url: http://www.losttype.com/
           logo: losttype.png
-          favicon:
+          favicon: https://www.losttype.com/images/lost_type_logo.png
+          url: http://www.losttype.com/
           description: Lost Type is a Collaborative Digital Type Foundry.
         - title: FONTS2U
           url: https://fonts2u.com/
           logo: fonts2u.png
           favicon:
           description: Download free fonts for Windows and Macintosh.
-        - title: Fontex
-          url: http://www.fontex.org/
-          logo: fontex.png
-          favicon:
-          description: Free Fonts to Download + Premium Typefaces.
         - title: FontM
           url: http://fontm.com/
           logo: FontM.png
@@ -1126,25 +1086,15 @@
     - term: PPT资源
       links:
         - title: OfficePLUS
-          url: http://www.officeplus.cn/Template/Home.shtml
-          logo: officeplus.png
-          favicon:
+          url: https://www.officeplus.cn/
+          logo: officeplus.svg
+          favicon: https://www.officeplus.cn/imgs/OfficePlus.svg
           description: OfficePLUS，微软Office官方在线模板网站！
         - title: 优品PPT
           url: http://www.ypppt.com/
           logo: ypppt.png
           favicon:
           description: 高质量的模版，而且还有PPT图表，PPT背景图等资源。
-        - title: PPT+
-          url: http://www.pptplus.cn/
-          logo: pptplus.png
-          favicon:
-          description: PPT加直播、录制和分享—PPT+语音内容分享平台。
-        - title: PPTMind
-          url: http://www.pptmind.com/
-          logo: pptmind.png
-          favicon:
-          description: 分享高端 ppt 模板与 keynote 模板的数字作品交易平台。
         - title: tretars
           url: http://www.tretars.com/ppt-templates
           logo: tretars.png
@@ -1214,9 +1164,9 @@
           favicon:
           description: Powerful design prototyping tools
         - title: marvelapp
-          url: https://marvelapp.com/
           logo: marvelapp.png
           favicon:
+          url: https://marvelapp.com/
           description: Simple design, prototyping and collaboration
         - title: Muse CC
           url: https://creative.adobe.com/zh-cn/products/download/muse
@@ -1246,9 +1196,9 @@
           favicon:
           description: Curated gradients for designers and developers.
         - title: Coolest
+          logo: coolest.png
+          favicon: https://webkul.github.io/coolhue/images/coolhue-logo.png
           url: https://webkul.github.io/coolhue/
-          logo: Coolest.png
-          favicon:
           description: Coolest handpicked Gradient Hues for your next super ⚡ amazing stuff.
         - title: webgradients
           url: https://webgradients.com/
@@ -1328,13 +1278,13 @@
           favicon:
           description: Android 9-patch shadow generator fully customizable shadows.
         - title: screen sizes
-          url: http://screensiz.es/
           logo: screensizes.png
+          url: http://screensiz.es/
           favicon:
           description: Viewport Sizes and Pixel Densities for Popular Devices.
         - title: svgomg
+          logo: svgomg.svg
           url: https://jakearchibald.github.io/svgomg/
-          logo: svgomg.png
           favicon:
           description: SVG 在线压缩平台。
         - title: 稿定抠图
@@ -1373,7 +1323,7 @@
         - title: mustsee
           url: http://mustsee.earth/
           logo: mustsee.png
-          favicon:
+          favicon: https://mustsee.earth/favicon.ico/apple-touch-icon.png
           description: Discover the world's most beautiful places at every opened tab.
 
 - taxonomy: 资讯学习
@@ -1383,12 +1333,12 @@
       links:
         - title: 微信读书
           url: https://weread.qq.com/
-          logo: 微信读书.jpg
+          logo: weread.png
           favicon:
           description: 微信读书电脑版。
         - title: 书栈网
           url: https://www.bookstack.cn/
-          logo: 书栈网.jpg
+          logo: bookstack.png
           favicon:
           description: IT 互联网开源编程书籍免费阅读与下载。
     - term: 博客论坛
@@ -1405,17 +1355,17 @@
           description: 一家关于计算机黑客和创业公司的社会化新闻网站。
         - title: 经管之家
           url: https://bbs.pinggu.org/
-          logo: 经管之家.jpg
+          logo: pinggu.png
           favicon:
           description: 国内活跃的经济、管理、金融、统计在线教育和咨询网站。
         - title: 阮一峰的网络日志
           url: http://www.ruanyifeng.com/blog/
-          logo: 阮一峰.png
+          logo: ruanyifeng.png
           favicon:
           description: 阮一峰，科技爱好者周刊。
         - title: 酷壳
           url: https://www.coolshell.cn/
-          logo: ""
+          logo: coolshell.png
           favicon:
           description: 酷 壳 – CoolShell。
     - term: 设计规范
