@@ -216,6 +216,7 @@ process_icons() {
     printf "Downloading logo: \n  %-40s => %s\n" "$favicon_url" "$cleaned_name"
     if ! curl -fsL -o "$filepath" "$favicon_url"; then
       echo -e "\033[33mWarning: favicon $logo skipped...\033[0m"
+      echo "$logo" >> "$SYNC_FILE.error.log"
     fi
   fi
 }
@@ -224,6 +225,8 @@ process_icons() {
 process_webstack() {
   declare -A current_block
   in_block=0
+
+  touch "$SYNC_FILE.error.log"
 
   # 逐行读取文件
   while IFS= read -r line; do
@@ -271,9 +274,8 @@ fetch_icons() {
     mkdir -p "$ICON_DIR"
   fi
   
-  process_webstack
-
   sync_images
+  process_webstack
 }
 
 main() {
