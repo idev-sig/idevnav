@@ -2,8 +2,7 @@
 
 # https://github.com/idevsig/navsites/blob/main/.deploy.sh
 
-# set -euo pipefail
-set -eux
+set -euo pipefail
 
 IN_CHINA=""
 
@@ -288,8 +287,10 @@ main() {
 
   check_parameters
 
-  if [ "$GIT_BRANCH_NAME" = "more" ]; then
-    action_for_more_bracnch
+  if [ -z "${GITLAB_CI:-}" ]; then
+    if [ "$GIT_BRANCH_NAME" = "more" ]; then
+      action_for_more_bracnch
+    fi
   fi
 
   # remove hugo old data
