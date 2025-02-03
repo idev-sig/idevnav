@@ -16,7 +16,6 @@ DEPLOY=""      # 部署
 readonly ICON_DIR="static/assets/images/logos"
 readonly WEBSTACK_FILE="./data/webstack.yml"
 readonly SYNC_FILE=".sync.txt"
-readonly SYNC_FILE_ERROR_LOG="$SYNC_FILE.error.log" 
 
 check_command() {
     command -v "$1" >/dev/null 2>&1
@@ -94,6 +93,7 @@ action_for_more_bracnch() {
   # update data/headers.yml
   sed -i 's#全量#精选#g' data/headers.yml
   sed -i 's#navs.idev.top#nav.idev.top#g' data/headers.yml    
+  sed -i 's#bi-circle-fill#bi-circle-half#g' data/headers.yml
 }
 
 # 检测参数是否正确
@@ -217,7 +217,7 @@ process_icons() {
     printf "Downloading logo: \n  %-40s => %s\n" "$favicon_url" "$cleaned_name"
     if ! curl -fsL -o "$filepath" "$favicon_url"; then
       echo -e "\033[33mWarning: favicon $logo skipped...\033[0m"
-      echo "$logo" >> "$SYNC_FILE_ERROR_LOG"
+      echo "$logo" >> "$SYNC_FILE.error.log"
     fi
   fi
 }
@@ -227,9 +227,7 @@ process_webstack() {
   declare -A current_block
   in_block=0
 
-  if [ -f "$SYNC_FILE_ERROR_LOG" ]; then
-    rm -rf "$SYNC_FILE_ERROR_LOG"
-  fi
+  touch "$SYNC_FILE.error.log"
 
   # 逐行读取文件
   while IFS= read -r line; do
