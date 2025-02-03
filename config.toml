@@ -1,52 +1,42 @@
-baseURL               = "https://navs.skiy.net"
+baseURL               = "https://navs.idev.top"
 languageCode          = "zh-CN"
 title                 = "爱开发全量导航"
-theme                 = "WebStack-Hugo"
+theme                 = "navside"
 publishDir            = "public"
-preserveTaxonomyNames = true
+
+disableKinds = ["taxonomy", "term"] # 忽略告警和不生成 category 和 tag 的页面
 disablePathToLower    = true
 hasCJKLanguage        = true
+enableGitInfo         = true
 
 [params]
-    author        = "Jetsung"
-    description   = "爱开发全量导航"
-    upload        = ""                                   # 左侧导航栏的"网站提交"
-    about         = "https://forum.idev.top/p/about"       # 左侧导航栏的"关于导航"页面(./about)
-    contact       = ""                                   # 右侧关于我们    
-    repository    = "https://github.com/forkdo/WebStack-Hugo"  
+    author        = "Jetsung Chan"
+    submit        = ""                                   # 左侧导航栏的"网站提交"
+    about         = "https://forum.idev.top/p/about"     # 左侧导航栏的"关于导航"页面(./about)    
     enablePreLoad = true		    		             # 网站完全打开前预加载动画
-    textPreLoad   = "爱开发全量导航" 		                   # 预加载的动画文字, 只有当enablePreLoad=true时生效
-    expandSidebar = false                                # 默认展开左侧边导航栏
-    logosPath     = "assets/images/logos"			     # 网站每个导航地址logo存放地址
-    defaultLogo   = "assets/images/logos/default.webp"   # logo图片资源不存在或者错误时, 默认显示的logo; 该参数如为空,将会一直加载对应的logo,直至成功
-    nightMode     = false                                # 默认站点为深色(夜间)模式
-    yiyan         = false                                # 一言
-    search        = false                                # 默认启用搜索
+    textPreLoad   = "爱开发全量导航" 		                # 预加载的动画文字, 只有当enablePreLoad=true时生效    
+    expandSidebar = true                                 # 默认展开左侧边导航栏
+    displayMode   = 2                                    # 显示模式，0.日间模式，1.深色(夜间)模式。2.实时模式，３.日间模式，４.夜间模式
 
-
-[params.seo]    
-    baiduhmid     = ''             # 百度统计 hm.src 的 ID
-    baiduSiteVer  = ''             # 百度HTML标签验证(baidu-site-verification)
-
-    tj51laid        = 'Jz7i5wL6XoAnB4Xi' # 51.LA 网站统计
-    tj51lack        = 'Jz7i5wL6XoAnB4Xi'
-
-    GoogleAdsClient = ''            # Google AdSense 
-
-[params.qweather]
-    key = ""
+[params.seo]
+    keywords      = "开发导航,程序员导航,技术资源导航,AI工具导航"
+    description   = "爱开发全量导航 - 收录优质开发者工具、技术社区、云服务、AI平台等资源"
 
 [params.images]
     favicon           = "assets/images/favicon.png"
-    searchImageL      = "assets/images/bg-dna.jpg"		# 搜索部分浅色背景图
-    searchImageD      = "assets/images/bg-dna.jpg"		# 搜索部分深色背景图
+    logosPath         = "assets/images/logos"			     # 网站每个导航地址logo存放地址
+    defaultLogo       = "assets/images/default.webp"     
     logoExpandLight   = "assets/images/bt8-expand-light.png"
     logoExpandDark    = "assets/images/bt8-expand-dark.png"
     logoCollapseLight = "assets/images/bt.png"
-    logoCollapseDark  = "assets/images/bt.png"
-    
-[markup.goldmark.renderer]
-    unsafe = true
+    logoCollapseDark  = "assets/images/bt.png"    
+
+[params.analytics]
+    a51laid = "Jz7i5wL6XoAnB4Xi" # 51.LA 网站统计
+    a51lack = "Jz7i5wL6XoAnB4Xi" #
 
 [params.footer]
-    copyright = '本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：jetsungchan#gmail.com <br/>&copy; 2023 - {year} 基于 [WebStack-Hugo](https://github.com/forkdo/WebStack-Hugo) 构建，fork 自 [shenweiyan](https://github.com/shenweiyan/WebStack-Hugo)'
+    copyright = '&copy; 2023 - {year} 基于 [Hugo](https://gohugo.io/) & [NavSide](https://github.com/idevsig/navside) 构建'
+
+[markup.goldmark.renderer]
+    unsafe = true # 忽略告警

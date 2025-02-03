@@ -1,9 +1,9 @@
 # 爱开发导航
 
-## 示例
+基于 [**Hugo**](https://gohugo.io/) & [**NavSide 主题**](https://github.com/idevsig/navside)。   
 
-**精选：** https://nav.skiy.net  
-**全量：** https://navs.skiy.net
+- **精选：** https://nav.idev.top    
+- **全量：** https://navs.idev.top
 
 ## 开发
 
@@ -27,31 +27,42 @@ git submodule update --recursive --remote
 hugo server
 ```
 
-## 下载 icon
+4. 构建与拉取 ICON
+```sh
+bash ./.deploy.sh
 
-```bash
-# logo: https://api.iowen.cn/favicon/x.com.png
-# logo: https://api.iowen.cn/favicon/x.com.png#custom.png
-bash icons.sh
+# 部署
+bash ./.deploy.sh -d
 ```
 
-## 发布
+## 获取 ICON 图标
 
-```bash
-# 打包
-bash deploy
+需要先修改 `logo:` 部分的文件名，以提供下述方式 `favicon:` 保存。
 
-# 发布到 CloudFlare Pages
-bash deploy.sh yes
+1. 从 Google
+   ```sh
+   # favicon: <URL>
 
-# 编写 commit
-bash deploy.sh "commit"
-```
+   https://www.google.com/s2/favicons?sz=48&domain_url=https%3A%2F%2Fgitcode.com
 
-1. [使用教程](https://git.jetsung.com/idev/navsites/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
+   # 或直接
+   https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
+   https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
+
+   # 中国加速
+   https://c.kkgo.cc/t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
+   ```
+
+2. 从自建 PHP 获取方式 [**GetFavicon**](https://github.com/sy-records/GetFavicon)
+    ```sh
+    # favicon: <URL>
+    ```
+
+3. [使用教程](https://git.jetsung.com/idev/navsites/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 
 ## 仓库镜像
 
 - https://git.jetsung.com/idev/navsites
 - https://framagit.org/idev/navsites
-- https://github.com/idev-sig/navsites
+- https://gitcode.com/idev/navsites
+- https://github.com/idevsig/navsites
