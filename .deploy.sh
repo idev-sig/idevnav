@@ -208,7 +208,13 @@ process_icons() {
 
   favicon_url=$(echo "$favicon_url" | tr -d '[:space:]')
 
-  if [ ! -f "public/$filepath" ] && [ ! -f "$filepath" ]; then
+  if [ ! -f "$filepath" ] && [ ! -f "$filepath" ]; then
+    # 从 main 拉取 LOGO
+    git checkout main -- "$filepath"
+    if [ -f "$filepath" ]; then
+      return
+    fi
+
     if [ -z "$favicon_url" ]; then
       favicon_url=$(get_icon_from_google "$url")
     fi
