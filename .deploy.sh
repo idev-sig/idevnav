@@ -312,9 +312,10 @@ main() {
 
   # check_in_china
 
-  fetch_icons
-
-  git_commit_and_push
+  if [ -z "${GITLAB_CI:-}" ]; then
+    fetch_icons
+    git_commit_and_push
+  fi
 
   deploy_to_cloudflare
 }
