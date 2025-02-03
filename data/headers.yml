@@ -1,6 +1,6 @@
-- item: 全量
-  icon: fas fa-chevron-circle-down
-  link: "https://navs.idev.top"
+- item: 精选
+  icon: bi bi-circle-half
+  link: "https://nav.idev.top"
 
 - item: 爱开发
   icon: fas fa-code
