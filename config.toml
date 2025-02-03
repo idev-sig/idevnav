@@ -32,11 +32,11 @@ enableGitInfo         = true
     logoCollapseDark  = "assets/images/bt.png"    
 
 [params.analytics]
-    a51laid = "" # 51.LA 网站统计
-    a51lack = "" #
+    a51laid = "Jz7i5wL6XoAnB4Xi" # 51.LA 网站统计
+    a51lack = "Jz7i5wL6XoAnB4Xi" #
 
 [params.footer]
-    copyright = '本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：i@jetsung.com <br/>&copy; 2023 - {year} 基于 [NavSide](https://github.com/idevsig/navside) 构建'
+    copyright = '&copy; 2023 - {year} 基于 [Hugo](https://gohugo.io/) & [NavSide](https://github.com/idevsig/navside) 构建'
 
 [markup.goldmark.renderer]
     unsafe = true # 忽略告警

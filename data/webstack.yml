@@ -76,35 +76,151 @@
           url: https://cfiletas.skiy.net
           description: 文件加速下载（CloudFlare）
 
-- taxonomy: 技术提升
-  # icon: fa-lg fas fa-graduation-cap
-  icon: bi bi-stack
+- taxonomy: 开发服务
+  icon: bi bi-code-square
   list:
-    - term: 国内技术社区
+    - term: 代码托管
       links:
-        - title: 稀土掘金
-          logo: juejin.png
+        - title: ◈GitHub
+          logo: github.png
           favicon:
-          url: https://juejin.cn/
-          description: 一个帮助开发者成长的社区（偏前端）
-        - title: 博客园
-          logo: cnblogs.png
+          url: https://github.com
+          description: 全球最大的代码托管平台
+        - title: ◈GitCode
+          logo: gitcode.png
           favicon:
-          url: https://www.cnblogs.com/
-          description: 一个面向开发者群体的技术社区
-        - title: 华为云社区
-          logo: huaweicloud.png
+          url: https://gitcode.com
+          description: （国内）代码托管平台
+        - title: ◈Framagit
+          logo: framagit.svg
+          favicon: https://framagit.org/uploads/-/system/appearance/header_logo/1/logo.svg
+          url: https://framagit.org
+          description: 基于 GitLab，代码托管平台，支持 Pages。
+        - title: ◈Codeberg
+          logo: codeberg.png
           favicon:
-          url: https://bbs.huaweicloud.com/
-          description: 华为云社区是华为云官方技术交流社区
-        - title: InfoQ
-          logo: infoq.png
+          url: https://codeberg.org
+          description: 基于 Gitea，代码托管平台，支持 Pages。
+        - title: 阿里云效 Codeup
+          logo: codeup.svg
           favicon:
-          url: https://www.infoq.cn/
-          description: 一个实践驱动的社区资讯站点
+          url: https://codeup.aliyun.com
+          description: （国内）阿里云效代码托管平台，支持 DevOPS。
+        - title: Gitee
+          logo: gitee.png
+          favicon:
+          url: https://gitee.com
+          description: （国内）代码托管平台
+        - title: GitLab
+          logo: gitlab.png
+          favicon:
+          url: https://gitlab.com
+          description: （可自建）代码托管平台
+        - title: Coding
+          logo: coding.png
+          favicon:
+          url: https://coding.net
+          description: （国内）代码托管平台
+        - title: AtomGit
+          logo: atomgit.png
+          favicon:
+          url: https://atomgit.com
+          description: （国内）开放原子开源基金会提供的代码托管平台
+        - title: 
+          logo:
+          favicon:
+          url: https://forum.idev.top/d/208
+          description: ⇒更多代码托管服务平台
+    - term: 网站部署      
+      links:
+        - title: Vercel
+          logo: vercel.png
+          favicon:
+          url: https://vercel.com/
+          description: 静态网站托管服务平台
+        - title: Netlify
+          logo: netlify.png
+          favicon:
+          url: https://www.netlify.com/
+          description: 静态网站托管服务平台
+        - title: Fleek
+          logo: fleek.png    
+          favicon:
+          url: https://fleek.xyz/
+          description: 静态网站托管服务平台  
+        - title: Surge
+          logo: surge.svg
+          favicon: https://surge.sh/images/logos/svg/surge-logo.svg
+          url: https://surge.sh/
+          description: 静态网站托管服务平台
+        - title: Fermyon
+          logo: fermyon.png
+          favicon:
+          url: https://fermyon.com/
+          description: WebAssembly 服务托管平台
+    - term: IDE与编辑器
+      links:
+        - title: VSCode
+          logo: vscode.png
+          favicon:
+          url: https://code.visualstudio.com/
+          description: 微软开发的免费、开源的代码编辑器
+        - title: JetBrains iDEA
+          logo: idea.png
+          favicon:
+          url: https://www.jetbrains.com/idea/
+          description: JetBrains 开发的免费、开源的代码编辑器
+        - title: Zed
+          logo: zed.png
+          favicon:
+          url: https://zed.dev/
+          description: 下一代高性能代码编辑器
+        - title: Neovim
+          logo: neovim.png
+          favicon:
+          url: https://neovim.io/
+          description: 一个高速、功能强大的文本编辑器
+        - title: Sublime Text
+          logo: sublimetext.png
+          favicon:
+          url: https://www.sublimetext.com/
+          description: 一个功能强大的代码编辑器
+    - term: 服务部署
+      links:
+        - title: Firebase
+          logo: firebase.png
+          favicon:
+          url: https://firebase.google.com/
+          description: 静态网站托管服务平台
+        - title: ImageKit
+          logo: imagekit.png
+          favicon:
+          url: https://imagekit.io/
+          description: 图片和媒体托管服务平台
+    - term: 在线编辑
+      links:
+        - title: CodeSandBox
+          logo: codesandbox.png
+          favicon:
+          url: https://codesandbox.io/
+          description: 快速Web开发的在线编辑器
+        - title: StackBlitz
+          logo: stackblitz.png
+          favicon:
+          url: https://stackblitz.com/
+          description: Web开发者的在线IDE
+        - title: CodePen
+          logo: codepen.png
+          favicon:
+          url: https://codepen.io/
+          description: 面向前端设计师和开发人员的在线开发环境
+        - title: JSFiddle
+          logo: jsfiddle.png
+          favicon:
+          url: https://jsfiddle.net/
+          description: 前端代码在线编辑器
 
 - taxonomy: 人工智能
-  # icon: fa-lg fas fa-robot
   icon: bi bi-robot
   list:
     - term: 深度学习框架
@@ -129,7 +245,7 @@
           favicon:
           url: https://www.mindspore.cn/
           description: 华为昇思开源的全场景AI框架
-    - term: 人工智能平台
+    - term: 模型平台
       links:
         - title: Hugging Face
           logo: huggingface.png
@@ -145,13 +261,105 @@
           logo: openi.png
           favicon:
           url: https://openi.pcl.ac.cn/
-          description: OpenI - 启智AI开源社区提供普惠算力
+          description: 一站式AI开发协作平台
+        - title: 魔乐社区
+          logo: modelers.svg
+          favicon:
+          url: https://modelers.cn/
+          description: 华为昇腾旗下的“模型即服务”(MaaS)平台       
+    - term: 工具
+      links:          
         - title: Ollama
           logo: ollama.png
           favicon:
           url: https://ollama.com/
           description: 启动并运行大型语言模型
-    - term: AI在线平台
+
+- taxonomy: 人工智能服务
+  icon: bi bi-backpack2-fill
+  list:
+    - term: 对话平台
+      links:
+        - title: DeepSeek
+          logo: deepseek.png
+          favicon:
+          url: https://chat.deepseek.com/
+          description: 深度求索旗下
+        - title: Kimi
+          logo: kimi.png
+          favicon:
+          url: https://kimi.moonshot.cn/
+          description: 月之暗面旗下
+        - title: ChatGPT
+          logo: chatgpt.png
+          favicon:
+          url: https://chatgpt.com/
+          description: OpenAI旗下
+        - title: 豆包
+          logo: doubao.png
+          favicon:
+          url: https://www.doubao.com/chat/
+          description: 字节跳动旗下
+        - title: 通义千问
+          logo: tongyi.svg
+          favicon: https://img.alicdn.com/imgextra/i1/O1CN01asLYeX1WhbsyEZn5u_!!6000000002820-55-tps-56-56.svg
+          url: https://tongyi.aliyun.com/
+          description: 阿里巴巴旗下
+        - title: 文心一言
+          logo: yiyan.png
+          favicon:
+          url: https://yiyan.baidu.com/
+          description: 百度旗下
+    - term: 编程助手
+      links:
+        - title: CodeGeex
+          logo: codegeex.png
+          favicon:
+          url: https://codegeex.cn/
+          description: 基于AI大模型的编程辅助工具
+        - title: Codeium
+          logo: codeium.png
+          favicon:
+          url: https://codeium.com/
+          description: The AI code assistant platform that developers love and enterprises trust
+        - title: 通义灵码
+          logo: lingma.png
+          favicon:
+          url: https://lingma.aliyun.com/
+          description: 基于通义大模型的 AI 研发辅助工具
+        - title: Copilot
+          logo: copilot.png
+          favicon: https://github.com/favicons/favicon-copilot.png
+          url: https://github.com/features/copilot
+          description: GitHub Copilot · Your AI pair programmer    
+        - title: 文心快码
+          logo: comate.png
+          favicon:
+          url: https://comate.baidu.com/
+          description: 百度基于文心大模型研发的编程辅助工具
+        - title: MarsCode
+          logo: marscode.png
+          favicon:
+          url: https://www.marscode.cn/
+          description: 基于豆包大模型，提供智能 AI IDE 和 AI 编程助手
+    - term: 云端开发
+      links:
+        - title: MarsCode
+          logo: marscode.png
+          favicon:
+          url: https://www.marscode.cn/introduction-of-ide
+          description: 豆包旗下的 AI 原生 IDE，提供云端开发环境   
+        - title: Cloud Studio   
+          logo: cloudstudio.png
+          favicon: 
+          url: https://ide.cloud.tencent.com/
+          description: 腾讯云旗下的 AI 云端开发环境
+        - title: Project IDX
+          logo: projectidx.png
+          favicon: https://www.gstatic.com/monospace/230530/icon-192.png
+          url: https://idx.google.com/
+          description: Google 旗下的 AI 云端开发环境
+    - term: 在线服务平台
       links:
         - title: 哩布哩布AI
           logo: liblib.png
@@ -178,7 +386,7 @@
 
 - taxonomy: 研发资源
   # icon: fas fa-cloud fa-lg
-  icon: bi bi-archive-fill
+  icon: bi bi-file-earmark-code-fill
   list:
     - term: 云服务
       links:
@@ -234,11 +442,6 @@
           favicon:
           url: https://yun.139.com/
           description: 中国移动网盘
-        - title: 天翼网盘
-          logo: cloud_189.jpg
-          favicon:
-          url: https://cloud.189.cn/
-          description: 天翼网盘
         - title: 115 网盘
           logo: 115.png
           favicon:
@@ -291,11 +494,11 @@
           favicon:
           url: https://mirror.sjtu.edu.cn/
           description: 上海交通大学软件镜像站
-        - title: 校园网联合镜像站⇒
+        - title: 
           logo: mirrorz.svg
           favicon: https://mirrors.cernet.edu.cn/static/img/mirrorz.svg
           url: https://mirrors.cernet.edu.cn/
-          description: ⇒更多镜像站
+          description: ⇒更多校园网联合镜像站
     - term: 专用源站
       links:
         - title: npmmirror 镜像站
@@ -319,123 +522,32 @@
           url: https://goproxy.io/
           description: GoProxy
 
-- taxonomy: 开发服务
-  # icon: fas fa-code fa-lg
-  icon: bi bi-cloudy-fill
+- taxonomy: 技术提升
+  # icon: fa-lg fas fa-graduation-cap
+  icon: bi bi-stack
   list:
-    - term: 代码托管
+    - term: 国内技术社区
       links:
-        - title: ◈GitHub
-          logo: github.png
+        - title: 稀土掘金
+          logo: juejin.png
           favicon:
-          url: https://github.com
-          description: 全球最大的代码托管平台
-        - title: ◈GitCode
-          logo: gitcode.png
+          url: https://juejin.cn/
+          description: 一个帮助开发者成长的社区（偏前端）
+        - title: 博客园
+          logo: cnblogs.png
           favicon:
-          url: https://gitcode.com
-          description: （国内）代码托管平台
-        - title: ◈Framagit
-          logo: framagit.svg
-          favicon: https://framagit.org/uploads/-/system/appearance/header_logo/1/logo.svg
-          url: https://framagit.org
-          description: 基于 GitLab，代码托管平台，支持 Pages。
-        - title: ◈Codeberg
-          logo: codeberg_org.png
+          url: https://www.cnblogs.com/
+          description: 一个面向开发者群体的技术社区
+        - title: 华为云社区
+          logo: huaweicloud.png
           favicon:
-          url: https://codeberg.org
-          description: 基于 Gitea，代码托管平台，支持 Pages。
-        - title: 阿里云效 Codeup
-          logo: codeup.svg
+          url: https://bbs.huaweicloud.com/
+          description: 华为云社区是华为云官方技术交流社区
+        - title: InfoQ
+          logo: infoq.png
           favicon:
-          url: https://codeup.aliyun.com
-          description: （国内）阿里云效代码托管平台，支持 DevOPS。
-        - title: Gitee
-          logo: gitee.png
-          favicon:
-          url: https://gitee.com
-          description: （国内）代码托管平台
-        - title: GitLab
-          logo: gitlab.png
-          favicon:
-          url: https://gitlab.com
-          description: （可自建）代码托管平台
-        - title: Coding
-          logo: coding.png
-          favicon:
-          url: https://coding.net
-          description: （国内）代码托管平台
-        - title: AtomGit
-          logo: atomgit.png
-          favicon:
-          url: https://atomgit.com
-          description: （国内）开放原子开源基金会提供的代码托管平台
-        - title: 更多⇒
-          logo:
-          favicon:
-          url: https://forum.idev.top/d/208
-          description: ⇒更多代码托管服务平台
-    - term: 网站部署      
-      links:
-        - title: Vercel
-          logo: vercel.png
-          favicon:
-          url: https://vercel.com/
-          description: 静态网站托管服务平台
-        - title: Netlify
-          logo: netlify.png
-          favicon:
-          url: https://www.netlify.com/
-          description: 静态网站托管服务平台
-        - title: Fleek
-          logo: fleek.png    
-          favicon:
-          url: https://fleek.xyz/
-          description: 静态网站托管服务平台  
-        - title: Surge
-          logo: surge.svg
-          favicon: https://surge.sh/images/logos/svg/surge-logo.svg
-          url: https://surge.sh/
-          description: 静态网站托管服务平台
-        - title: Fermyon
-          logo: fermyon.png
-          favicon:
-          url: https://fermyon.com/
-          description: WebAssembly 服务托管平台
-    - term: 服务部署
-      links:
-        - title: Firebase
-          logo: firebase.png
-          favicon:
-          url: https://firebase.google.com/
-          description: 静态网站托管服务平台
-        - title: ImageKit
-          logo: imagekit.png
-          favicon:
-          url: https://imagekit.io/
-          description: 图片和媒体托管服务平台
-    - term: 在线开发
-      links:
-        - title: CodeSandBox
-          logo: codesandbox.png
-          favicon:
-          url: https://codesandbox.io/
-          description: 快速Web开发的在线编辑器
-        - title: StackBlitz
-          logo: stackblitz.png
-          favicon:
-          url: https://stackblitz.com/
-          description: Web开发者的在线IDE
-        - title: CodePen
-          logo: codepen.png
-          favicon:
-          url: https://codepen.io/
-          description: 面向前端设计师和开发人员的在线开发环境
-        - title: JSFiddle
-          logo: jsfiddle.png
-          favicon:
-          url: https://jsfiddle.net/
-          description: 前端代码在线编辑器
+          url: https://www.infoq.cn/
+          description: 一个实践驱动的社区资讯站点
 
 - taxonomy: 工作学习
   # icon: fas fa-file-word fa-lg
@@ -509,24 +621,38 @@
           description: 临时邮件发送
 
 - taxonomy: 资源素材
-  icon: fa-lg fab fa-fonticons
-  # icon: bi bi-floppy-fill
+  # icon: fa-lg fab fa-fonticons
+  icon: bi bi-archive-fill
   list:
     - term: 字体库
       links:
+        - title: 猫啃网
+          logo: maoken.png
+          favicon:
+          url: https://www.maoken.com
+          description: 专注于免费商用字体      
         - title: 找字体
           logo: zfont_cn.png
           favicon:
           url: https://www.zfont.cn
           description: 找字体,免费商用字体
-        - title: 猫啃网
-          logo: maoken.png
-          favicon:
-          url: https://www.maoken.com
-          description: 专注于免费商用字体
-
     - term: 图标
       links:
+        - title: Font Awesome
+          logo: fontawesomeicon.png
+          favicon:
+          url: https://fontawesome.com/icons/
+          description: The complete set of 675 icons in Font Awesome.
+        - title: Bootstrap Icons
+          logo: icons_bootstrap.png
+          favicon:
+          url: https://icons.getbootstrap.com/
+          description: Bootstrap Icons          
+        - title: Nerd Fonts
+          logo: nerdfonts.png
+          favicon: 
+          url: https://www.nerdfonts.com/
+          description: Iconic font aggregator, collection, and patcher
         - title: IconPark
           logo: iconpark_oceanengine.png
           favicon:
@@ -537,13 +663,4 @@
           favicon:
           url: http://www.iconfont.cn/
           description: 阿里巴巴矢量图标库
-        - title: Font Awesome
-          logo: fontawesomeicon.png
-          favicon:
-          url: https://fontawesome.com/icons/
-          description: The complete set of 675 icons in Font Awesome.
-        - title: Nerd Fonts
-          logo: nerdfonts.png
-          favicon: 
-          url: https://www.nerdfonts.com/
-          description: Iconic font aggregator, collection, and patcher
+          

@@ -1,6 +1,6 @@
 # 爱开发导航
 
-## 示例
+基于 [**Hugo**](https://gohugo.io/) & [**NavSide 主题**](https://github.com/idevsig/navside)。   
 
 - **精选：** https://nav.idev.top    
 - **全量：** https://navs.idev.top

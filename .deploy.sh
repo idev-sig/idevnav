@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# https://github.com/idevsig/navsites/blob/main/.deploy.sh
+
 set -euo pipefail
 
 IN_CHINA=""
