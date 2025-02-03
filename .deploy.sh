@@ -2,7 +2,8 @@
 
 # https://github.com/idevsig/navsites/blob/main/.deploy.sh
 
-set -euo pipefail
+# set -euo pipefail
+set -eux
 
 IN_CHINA=""
 
