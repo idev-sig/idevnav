@@ -93,7 +93,7 @@ action_for_more_bracnch() {
   # update data/headers.yml
   sed -i 's#全量#精选#g' data/headers.yml
   sed -i 's#navs.idev.top#nav.idev.top#g' data/headers.yml    
-  sed -i 's#bi-circle-half#bi-circle-fill##g' data/headers.yml
+  sed -i 's#bi-circle-fill#bi-circle-half#g' data/headers.yml
 }
 
 # 检测参数是否正确
