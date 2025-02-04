@@ -210,11 +210,11 @@ process_icons() {
 
   if [ ! -f "$filepath" ] && [ ! -f "$filepath" ]; then
     # 从 main 拉取 LOGO
-    if git cat-file -e main:"$filepath" 2>/dev/null; then
+    if [ "$GIT_BRANCH_NAME" = "more" ]; then    
       git checkout main -- "$filepath"
-    fi    
-    if [ -f "$filepath" ]; then
-      return
+      if [ -f "$filepath" ]; then
+        return
+      fi
     fi
 
     if [ -z "$favicon_url" ]; then
