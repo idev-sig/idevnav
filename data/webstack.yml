@@ -263,8 +263,8 @@
           url: https://openi.pcl.ac.cn/
           description: 一站式AI开发协作平台
         - title: 魔乐社区
-          logo: modelers.svg
-          favicon:
+          logo: modelers.ico
+          favicon: https://modelers.cn/favicon.ico
           url: https://modelers.cn/
           description: 华为昇腾旗下的“模型即服务”(MaaS)平台       
     - term: 工具
