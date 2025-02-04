@@ -210,7 +210,9 @@ process_icons() {
 
   if [ ! -f "$filepath" ] && [ ! -f "$filepath" ]; then
     # 从 main 拉取 LOGO
-    git checkout main -- "$filepath"
+    if git cat-file -e main:"$filepath" 2>/dev/null; then
+      git checkout main -- "$filepath"
+    fi    
     if [ -f "$filepath" ]; then
       return
     fi

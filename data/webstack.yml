@@ -1,6 +1,5 @@
 ---
 - taxonomy: 杰森
-  # icon: fa-lg fas fa-star
   icon: bi bi-star-fill
   list:
     - term: 社交
@@ -314,7 +313,7 @@
           url: https://www.paddlepaddle.org.cn/
           description: 百度研发的深度学习平台
         - title: PyTorch
-          logo: pytorch.svg
+          logo: pytorch.png
           favicon:
           url: https://pytorch.org/
           description: 全球领先的深度学习框架
@@ -388,6 +387,11 @@
           favicon:
           url: https://www.doubao.com/chat/
           description: 字节跳动旗下
+        - title: Huggingface Chat
+          logo: huggingface.png
+          favicon:
+          url: https://huggingface.co/chat/
+          description: HuggingFace旗下
         - title: 通义千问
           logo: tongyi.svg
           favicon: https://img.alicdn.com/imgextra/i1/O1CN01asLYeX1WhbsyEZn5u_!!6000000002820-55-tps-56-56.svg
@@ -398,6 +402,56 @@
           favicon:
           url: https://yiyan.baidu.com/
           description: 百度旗下
+        - title: 商量
+          logo: chat_sensetime.png
+          favicon:
+          url: https://chat.sensetime.com/
+          description: 商汤科技旗下
+        - title: 智谱清言 ChatGLM
+          logo: chatglm.png
+          favicon:
+          url: https://chatglm.cn/
+          description: 智谱华章旗下
+        - title: Gemini
+          logo: gemini.png
+          favicon:
+          url: https://gemini.google.com/
+          description: Google 旗下
+        - title: Codeium Live
+          logo: codeium.png
+          favicon:
+          url: https://codeium.com/live/
+          description: Codeium 旗下
+        - title: 海螺AI
+          logo: hailuoai.png
+          favicon:
+          url: https://hailuoai.com/
+          description: MiniMax 旗下
+        - title: 讯飞星火
+          logo: xinghuo_xfyun.png
+          favicon:
+          url: https://xinghuo.xfyun.cn/
+          description: 讯飞旗下
+        - title: 百小应
+          logo: ying_baichuan.png
+          favicon:
+          url: https://ying.baichuan-ai.com/
+          description: 百川智能旗下
+        - title: 天工 AI
+          logo: tiangong.png
+          favicon:
+          url: https://www.tiangong.cn/
+          description: 昆仑万维旗下
+        - title: 紫东太初
+          logo: taichi.png
+          favicon:
+          url: https://taichu-web.ia.ac.cn/
+          description: 中国科学院自动化研究所和武汉人工智能研究院推出新一代多模态大模型
+        - title: 阿帕斯大模型
+          logo: apas.png
+          favicon:
+          url: https://chat.apusai.com/
+          description: 麒麟合盛旗下
     - term: 编程助手
       links:
         - title: CodeGeex
@@ -430,6 +484,36 @@
           favicon:
           url: https://www.marscode.cn/
           description: 基于豆包大模型，提供智能 AI IDE 和 AI 编程助手
+        - title: Amazon Q
+          logo: amazonq.png
+          favicon:
+          url: https://aws.amazon.com/q/developer/
+          description: AWS旗下生成式人工智能助手
+        - title: Cody AI 
+          logo: cody_ai.png
+          favicon:
+          url: https://sourcegraph.com/cody
+          description: Sourcegraph 旗下的人工智能编程助手
+        - title: 代码小浣熊
+          logo: raccoon.png
+          favicon:
+          url: https://xiaohuanxiong.com/code
+          description: 商汤科技旗下的 AI 编程助手
+        - title: CodeFuse
+          logo: codefuse.png
+          favicon: https://mdn.alipayobjects.com/huamei_o7lflc/afts/img/A*B-VWQafj0FsAAAAAAAAAAAAADkO7AQ/original
+          url: https://codefuse.alipay.com/
+          description: 支付宝旗下的 AI 编程助手
+        - title: 星火飞码
+          logo: iflycode.png
+          favicon:
+          url: https://iflycode.xfyun.cn/
+          description: 讯飞旗下的 AI 编程助手
+        - title: 天工智码
+          logo: skycode.png
+          favicon:
+          url: https://sky-code.singularity-ai.com/
+          description: Singularity AI 旗下的 AI 编程助手
     - term: 云端开发
       links:
         - title: MarsCode
