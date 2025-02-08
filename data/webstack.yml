@@ -619,7 +619,12 @@
           favicon:
           url: https://tempmail.plus
           description: 临时邮件发送
-
+        - title: TempMail100
+          logo: tempmail100.png
+          favicon:
+          url: https://tempmail100.com/
+          description: 临时邮件发送          
+          
 - taxonomy: 资源素材
   # icon: fa-lg fab fa-fonticons
   icon: bi bi-archive-fill
