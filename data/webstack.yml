@@ -911,7 +911,12 @@
           logo: tempmail.png
           favicon:
           url: https://tempmail.plus
-          description: 临时邮件发送
+          description: 临时邮件接收
+        - title: TempMail100
+          logo: tempmail100.png
+          favicon:
+          url: https://tempmail100.com/
+          description: 临时邮件接收    
 
 - taxonomy: 资源素材
   # icon: fa-lg fab fa-fonticons
