@@ -185,6 +185,18 @@
           favicon:
           url: https://www.sublimetext.com/
           description: 一个功能强大的代码编辑器
+    - term: 在线开发
+      links:
+        - title: Cloud Shell
+          logo: cloudshell.png
+          favicon: https://www.gstatic.com/cloudssh/images/favicon-192-5bf59255b7c44caaae3120868153fed9.png
+          url: https://shell.cloud.google.com/
+          description: Google Cloud Shell 云端开发环境
+        - title: GitHub Dev
+          logo: github.png
+          favicon:
+          url: https://github.dev/
+          description: GitHub 云端开发者平台
     - term: 服务部署
       links:
         - title: Firebase
