@@ -293,6 +293,10 @@ process_icons() {
     return
   fi
 
+  if [ -z "$url" ] && [ -z "$favicon_url" ]; then
+    return
+  fi
+  
   # 生成文件名
   local cleaned_name
   cleaned_name=$(echo "$logo" | tr -d '[:space:]')
