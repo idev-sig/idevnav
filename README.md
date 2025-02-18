@@ -53,10 +53,13 @@ bash ./.deploy.sh -d
    https://c.kkgo.cc/t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
    ```
 
-2. 从自建 PHP 获取方式 [**GetFavicon**](https://github.com/sy-records/GetFavicon)
+2. 从自建方式获取
     ```sh
     # favicon: <URL>
     ```
+    - 自建方式一（PHP）:<https://github.com/deploybox/GetFavicon>
+    - 自建方式二（PHP）:<https://github.com/deploybox/FetchFavicon>
+    - 自建方式三（CloudFlare）:<https://github.com/Aetherinox/searxico-worker>
 
 3. [使用教程](https://git.jetsung.com/idev/navsites/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 

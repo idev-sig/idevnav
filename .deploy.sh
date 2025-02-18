@@ -4,17 +4,29 @@
 
 set -euo pipefail
 
-IN_CHINA=""
+IN_CHINA="${CHINA:-}"
 
 COMMIT_MSG="" # 提交信息
 PUBLISH_DIR=""  # 发布目录
 PROJECT_NAME="" # 项目名称
-GIT_BRANCH_NAME="${CI_COMMIT_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}" # 分支名称
+
+PROJECT_NAME_MAIN="${BRANCH:-nav}"
+PROJECT_NAME_MORE="${BRANCHM:-navs}"
+
+GIT_BRANCH_NAME="${CI_COMMIT_BRANCH:-}"
+if [ -z "$GIT_BRANCH_NAME" ]; then
+  if git rev-parse --verify HEAD >/dev/null 2>&1; then
+    GIT_BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+  else
+    GIT_BRANCH_NAME="main"
+  fi
+fi
 
 DEPLOY=""      # 部署
 
+readonly DATA_DIR="./data"
 readonly ICON_DIR="static/assets/images/logos"
-readonly WEBSTACK_FILE="./data/webstack.yml"
+readonly NAVSITES_FILE="${DATA_DIR}/navsites.yml"
 readonly SYNC_FILE=".sync.txt"
 readonly SYNC_FILE_ERROR_LOG="$SYNC_FILE.error.log"
 
@@ -25,6 +37,17 @@ check_command() {
 check_in_china() {
     if [ "$(curl -s -m 3 -o /dev/null -w "%{http_code}" https://www.google.com)" != "200" ]; then
         IN_CHINA=1
+    fi
+}
+
+# 判断是否为 URL 的函数
+is_url() {
+    local url="$1"
+    # 正则表达式匹配 URL
+    if [[ "$url" =~ ^https?://[^[:space:]]+ ]]; then
+        return 0  # 是 URL
+    else
+        return 1  # 不是 URL
     fi
 }
 
@@ -76,25 +99,25 @@ get_publish_dir() {
 # 获取项目名称
 get_project_name() {
   if [ "$GIT_BRANCH_NAME" = "main" ]; then   # 精选
-    PROJECT_NAME="nav"
+    PROJECT_NAME="$PROJECT_NAME_MAIN"
   elif [ "$GIT_BRANCH_NAME" = "more" ]; then # 全量 
-    PROJECT_NAME="navs"
+    PROJECT_NAME="$PROJECT_NAME_MORE"
   fi 
 }
 
 # more 分支处理
 action_for_more_bracnch() {
   # 拉取 main 分支文件
-  git checkout main -- .gitignore .gitlab-ci.yml README.md .deploy.sh config.toml data/friendlinks.yml data/headers.yml
+  git checkout main -- .gitignore .gitlab-ci.yml README.md .deploy.sh config.toml "${DATA_DIR}"/friendlinks.yml "${DATA_DIR}"/headers.yml
 
   # update config.toml
   sed -i 's#精选导航#全量导航#g' config.toml
   sed -i 's#nav.idev.top#navs.idev.top#g' config.toml
 
-  # update data/headers.yml
-  sed -i 's#全量#精选#g' data/headers.yml
-  sed -i 's#navs.idev.top#nav.idev.top#g' data/headers.yml    
-  sed -i 's#bi-circle-fill#bi-circle-half#g' data/headers.yml
+  # update content/headers.yml
+  sed -i 's#全量#精选#g' "${DATA_DIR}/headers.yml"
+  sed -i 's#navs.idev.top#nav.idev.top#g' "${DATA_DIR}/headers.yml"
+  sed -i 's#bi-circle-fill#bi-circle-half#g' "${DATA_DIR}/headers.yml"
 }
 
 # 检测参数是否正确
@@ -147,7 +170,7 @@ sync_images() {
     fi
 }
 
-# 提取域名部分
+# 提取域名部分，补充协议和域名
 extract_domain() {
   local url=$1
   local domain_part
@@ -175,20 +198,101 @@ extract_domain() {
   echo "$domain_part"
 }
 
-# 从 Google 获取图标
-get_icon_from_google() {
-  local url=$1
-  local domain_part
+# URL 转义函数
+url_escape() {
+  local input="$1"
+  local escaped=""
+  
+  # 遍历输入字符串中的每一个字符
+  for (( i=0; i<${#input}; i++ )); do
+    char="${input:$i:1}"
+    
+    # 检查字符是否需要转义
+    case "$char" in
+      # 保留字符无需转义 (RFC 3986)
+      [A-Za-z0-9-_.~])
+        escaped+="$char"
+        ;;
+      # 其他字符进行转义
+      *)
+        # 将字符转换为 ASCII 十六进制形式
+        hex=$(printf "%02X" "'$char")
+        escaped+="%$hex"
+        ;;
+    esac
+  done
+  
+  echo "$escaped"
+}
 
-  if [ -z "$url" ]; then
-    return
-  fi
+# URL 去除协议
+strip_protocol() {
+  local url="$1"
+  local protocol="${url%%://*}"
+  local rest="${url#"$protocol://"}"
+  echo "$rest"
+}
 
-  domain_part=$(extract_domain "$url")
-  url="${domain_part//:\/\//%3A%2F%2F}"
-  url=$(printf "https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=%s&size=48" "$url")
+# 下载图标
+download_icon() {
+    if ! is_url "$1"; then
+      echo -e "\033[33mWarning: $1 is not a url\033[0m"
+      return
+    fi
+  
+    local download_url="$1"
 
-  echo "$url"
+    printf "Saving %s: \n  %-40s" "$cleaned_name" "$download_url"
+    if ! curl --connect-timeout 30 -fsL -o "$filepath" "$download_url"; then
+      echo -e "\033[33mWarning: favicon $logo skipped...\033[0m"
+      echo "$logo" >> "$SYNC_FILE_ERROR_LOG"
+    fi
+}
+
+# 获取图标 URL
+get_icon_url() {
+  local hub="$1"
+  local part="$2"
+  local icon_url=""
+  case "${hub:-}" in
+    google)
+      url_part=$(url_escape "$part")
+      icon_url=$(printf "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=%s&size=48" "$url_part")
+      ;;
+    google_cn)
+      url_part=$(url_escape "$part")
+      icon_url=$(printf "https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=%s&size=48" "$url_part")
+      ;;
+    yandex)
+      url_part=$(strip_protocol "$part")
+      icon_url=$(printf "https://favicon.yandex.net/favicon/%s" "$url_part")
+      ;;
+    toolb)
+      url_part=$(strip_protocol "$part")
+      icon_url=$(printf "https://toolb.cn/favicon/%s" "$url_part")
+      ;;
+    faviconextractor)
+      url_part=$(strip_protocol "$part")
+      icon_url=$(printf "https://www.faviconextractor.com/favicon/%s" "$url_part")
+      ;;
+    cccyun)
+      icon_url=$(printf "https://favicon.cccyun.cc/%s" "$part")
+      ;;
+    skiy)
+      url_part=$(strip_protocol "$part")
+      icon_url=$(printf "https://favicon.skiy.net/%s" "$url_part")
+      ;;
+    api_1)
+      url_part=$(strip_protocol "$part")
+      icon_url=$(printf "https://favicons.ooos.top/?url=%s" "$url_part")
+      ;;
+    api_2)
+      url_part=$(strip_protocol "$part")
+      icon_url=$(printf "https://favicon.ooos.top/?url=%s" "$url_part")
+      ;;
+  esac
+  
+  echo "$icon_url" | tr -d '[:space:]'
 }
 
 # 处理图标
@@ -201,14 +305,18 @@ process_icons() {
     return
   fi
 
+  if [ -z "$url" ] && [ -z "$favicon_url" ]; then
+    return
+  fi
+
   # 生成文件名
   local cleaned_name
   cleaned_name=$(echo "$logo" | tr -d '[:space:]')
-  local filepath="$ICON_DIR/$cleaned_name"  
+  filepath="$ICON_DIR/$cleaned_name"  
 
   favicon_url=$(echo "$favicon_url" | tr -d '[:space:]')
 
-  if [ ! -f "$filepath" ] && [ ! -f "$filepath" ]; then
+  if [ ! -f "$filepath" ]; then
     # 从 main 拉取 LOGO
     if [ "$GIT_BRANCH_NAME" = "more" ]; then    
       git checkout main -- "$filepath"
@@ -217,19 +325,37 @@ process_icons() {
       fi
     fi
 
-    if [ -z "$favicon_url" ]; then
-      favicon_url=$(get_icon_from_google "$url")
+    if [ -n "$favicon_url" ]; then 
+      download_icon "$favicon_url"
     fi
 
-    if [ -z "$favicon_url" ]; then
+    if [ -f "$filepath" ]; then
       return
     fi
 
-    printf "Downloading logo: \n  %-40s => %s\n" "$favicon_url" "$cleaned_name"
-    if ! curl -fsL -o "$filepath" "$favicon_url"; then
-      echo -e "\033[33mWarning: favicon $logo skipped...\033[0m"
-      echo "$logo" >> "$SYNC_FILE_ERROR_LOG"
-    fi
+    url_part=$(extract_domain "$url")
+
+    local icon_hub=(
+      "google_cn"
+      "api_1"
+      "google"
+      "cccyun"
+      "faviconextractor"
+      "toolb"
+      "yandex"
+      "skiy"      
+      "api_2"
+    )
+
+    for hub in "${icon_hub[@]}"; do
+      if [ -f "$filepath" ]; then
+        return
+      fi
+
+      local dl_url
+      dl_url=$(get_icon_url "$hub" "$url_part")
+      download_icon "$dl_url"
+    done
   fi
 }
 
@@ -267,7 +393,7 @@ process_webstack() {
               current_block[favicon]=${BASH_REMATCH[1]}
           fi
       fi
-  done < "$WEBSTACK_FILE"
+  done < "$NAVSITES_FILE"
 
   # 输出最后一个块的 logo、url 和 favicon
   if [[ $in_block -eq 1 ]]; then
@@ -304,7 +430,6 @@ main() {
     fi
   fi
 
-  # remove hugo old data
   rm -rf "$PUBLISH_DIR"  
 
   echo
@@ -315,15 +440,18 @@ main() {
   echo "GIT_BRANCH_NAME: $GIT_BRANCH_NAME"
   echo
 
-  # hugo gen data
-  hugo --minify
+  if [ "$(command -v hugo)" ]; then
+    hugo --minify
+  fi
 
   if [ ! -d "$PUBLISH_DIR" ]; then
-      echo -e "\033[31mpublishDir $PUBLISH_DIR not found\033[0m"
+      echo -e "\033[31moutput dir $PUBLISH_DIR not found\033[0m"
       exit 1
   fi    
 
-  # check_in_china
+  # if [ -z "$IN_CHINA" ]; then
+  #   check_in_china
+  # fi
 
   if [ -z "${GITLAB_CI:-}" ]; then
     fetch_icons
