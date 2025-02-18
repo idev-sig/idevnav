@@ -9,12 +9,24 @@ IN_CHINA="${CHINA:-}"
 COMMIT_MSG="" # 提交信息
 PUBLISH_DIR=""  # 发布目录
 PROJECT_NAME="" # 项目名称
-GIT_BRANCH_NAME="${CI_COMMIT_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}" # 分支名称
+
+PROJECT_NAME_MAIN="${BRANCH:-nav}"
+PROJECT_NAME_MORE="${BRANCHM:-navs}"
+
+GIT_BRANCH_NAME="${CI_COMMIT_BRANCH:-}"
+if [ -z "$GIT_BRANCH_NAME" ]; then
+  if git rev-parse --verify HEAD >/dev/null 2>&1; then
+    GIT_BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
+  else
+    GIT_BRANCH_NAME="main"
+  fi
+fi
 
 DEPLOY=""      # 部署
 
+readonly DATA_DIR="./data"
 readonly ICON_DIR="static/assets/images/logos"
-readonly WEBSTACK_FILE="./data/webstack.yml"
+readonly NAVSITES_FILE="${DATA_DIR}/navsites.yml"
 readonly SYNC_FILE=".sync.txt"
 readonly SYNC_FILE_ERROR_LOG="$SYNC_FILE.error.log"
 
@@ -87,25 +99,25 @@ get_publish_dir() {
 # 获取项目名称
 get_project_name() {
   if [ "$GIT_BRANCH_NAME" = "main" ]; then   # 精选
-    PROJECT_NAME="nav"
+    PROJECT_NAME="$PROJECT_NAME_MAIN"
   elif [ "$GIT_BRANCH_NAME" = "more" ]; then # 全量 
-    PROJECT_NAME="navs"
+    PROJECT_NAME="$PROJECT_NAME_MORE"
   fi 
 }
 
 # more 分支处理
 action_for_more_bracnch() {
   # 拉取 main 分支文件
-  git checkout main -- .gitignore .gitlab-ci.yml README.md .deploy.sh config.toml data/friendlinks.yml data/headers.yml
+  git checkout main -- .gitignore .gitlab-ci.yml README.md .deploy.sh config.toml "${DATA_DIR}"/friendlinks.yml "${DATA_DIR}"/headers.yml
 
   # update config.toml
   sed -i 's#精选导航#全量导航#g' config.toml
   sed -i 's#nav.idev.top#navs.idev.top#g' config.toml
 
-  # update data/headers.yml
-  sed -i 's#全量#精选#g' data/headers.yml
-  sed -i 's#navs.idev.top#nav.idev.top#g' data/headers.yml    
-  sed -i 's#bi-circle-fill#bi-circle-half#g' data/headers.yml
+  # update content/headers.yml
+  sed -i 's#全量#精选#g' "${DATA_DIR}/headers.yml"
+  sed -i 's#navs.idev.top#nav.idev.top#g' "${DATA_DIR}/headers.yml"
+  sed -i 's#bi-circle-fill#bi-circle-half#g' "${DATA_DIR}/headers.yml"
 }
 
 # 检测参数是否正确
@@ -296,7 +308,7 @@ process_icons() {
   if [ -z "$url" ] && [ -z "$favicon_url" ]; then
     return
   fi
-  
+
   # 生成文件名
   local cleaned_name
   cleaned_name=$(echo "$logo" | tr -d '[:space:]')
@@ -381,7 +393,7 @@ process_webstack() {
               current_block[favicon]=${BASH_REMATCH[1]}
           fi
       fi
-  done < "$WEBSTACK_FILE"
+  done < "$NAVSITES_FILE"
 
   # 输出最后一个块的 logo、url 和 favicon
   if [[ $in_block -eq 1 ]]; then
@@ -418,7 +430,6 @@ main() {
     fi
   fi
 
-  # remove hugo old data
   rm -rf "$PUBLISH_DIR"  
 
   echo
@@ -429,11 +440,12 @@ main() {
   echo "GIT_BRANCH_NAME: $GIT_BRANCH_NAME"
   echo
 
-  # hugo gen data
-  hugo --minify
+  if [ "$(command -v hugo)" ]; then
+    hugo --minify
+  fi
 
   if [ ! -d "$PUBLISH_DIR" ]; then
-      echo -e "\033[31mpublishDir $PUBLISH_DIR not found\033[0m"
+      echo -e "\033[31moutput dir $PUBLISH_DIR not found\033[0m"
       exit 1
   fi    
 
