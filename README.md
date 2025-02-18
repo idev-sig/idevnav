@@ -61,11 +61,11 @@ bash ./.deploy.sh -d
     - 自建方式二（PHP）:<https://github.com/deploybox/FetchFavicon>
     - 自建方式三（CloudFlare）:<https://github.com/Aetherinox/searxico-worker>
 
-3. [使用教程](https://git.jetsung.com/idev/navsites/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
+3. [使用教程](https://git.jetsung.com/idev/idevnav/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 
 ## 仓库镜像
 
-- https://git.jetsung.com/idev/navsites
-- https://framagit.org/idev/navsites
-- https://gitcode.com/idev/navsites
-- https://github.com/idevsig/navsites
+- https://git.jetsung.com/idev/idevnav
+- https://framagit.org/idev/idevnav
+- https://gitcode.com/idev/idevnav
+- https://github.com/idevsig/idevnav
