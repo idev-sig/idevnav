@@ -9,26 +9,30 @@
 
 1. 初始化子模块
 
-```bash
+```sh
 # 首次使用时
 git submodule update --init --recursive
 ```
 
 2. 更新子模块
 
-```bash
+```sh
 # 需要更新 submodule 时
 git submodule update --recursive --remote
 ```
 
 3. 测试
 
-```bash
-hugo server
+```sh
+hugo serve
 ```
 
-4. 构建与拉取 ICON
+4. 构建
 ```sh
+# 构建
+hugo build --minify
+
+# 拉取 icon
 bash ./.deploy.sh
 
 # 部署
