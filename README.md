@@ -61,9 +61,9 @@ bash ./.deploy.sh -d
     ```sh
     # favicon: <URL>
     ```
-    - 自建方式一（PHP）:<https://github.com/deploybox/GetFavicon>
-    - 自建方式二（PHP）:<https://github.com/deploybox/FetchFavicon>
-    - 自建方式三（CloudFlare）:<https://github.com/Aetherinox/searxico-worker>
+    - 自建方式一（PHP）： <https://github.com/deploybox/GetFavicon>
+    - 自建方式二（PHP）： <https://github.com/deploybox/FetchFavicon>
+    - 自建方式三（CloudFlare）： <https://github.com/Aetherinox/searxico-worker>
 
 3. [使用教程](https://git.jetsung.com/idev/idevnav/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 
