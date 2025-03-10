@@ -516,11 +516,6 @@
           favicon:
           url: https://kimi.moonshot.cn/
           description: 月之暗面旗下
-        - title: ChatGPT
-          logo: chatgpt.png
-          favicon:
-          url: https://chatgpt.com/
-          description: OpenAI旗下
         - title: 豆包
           logo: doubao.png
           favicon:
@@ -545,7 +540,44 @@
           logo: qwen.png
           favicon: 
           url: https://chat.qwen.ai/
-          description: 阿里巴巴旗下通义千问海外版          
+          description: 阿里巴巴旗下通义千问海外版     
+    - term: Chat(海外)
+      links:
+        - title: ChatGPT
+          logo: chatgpt.png
+          favicon:
+          url: https://chatgpt.com/
+          description: OpenAI旗下
+        - title: Gemini
+          logo: gemini.png
+          favicon:
+          url: https://gemini.google.com/
+          description: Google旗下
+        - title: HuggingfaceChat
+          logo: huggingfacechat.png
+          favicon:
+          url: https://huggingface.co/chat/
+          description: Huggingface旗下
+        - title: Codeium
+          logo: codeium.png
+          favicon:
+          url: https://codeium.com/live/
+          description: Codeium旗下
+        - title: Duck AI
+          logo: duckduckgo.svg
+          favicon:
+          url: https://duck.ai/
+          description: DuckDuckGo旗下
+        - title: You
+          logo: you.png
+          favicon:
+          url: https://you.com/
+          description: You.com旗下
+        - title: Grok
+          logo: grok.png
+          favicon:
+          url: https://grok.com/
+          description: X 旗下
     - term: 编程助手
       links:
         - title: CodeGeex
