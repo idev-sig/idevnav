@@ -303,6 +303,23 @@
           favicon:
           url: https://quicklypdf.com
           description: 免费和易于使用的在线 PDF 工具
+        - title: ASCII 艺术字生成器
+          logo: patorjk.png
+          favicon:
+          url: https://patorjk.com/software/taag/
+          description: ASCII 艺术字生成器
+        - title: ASCII 和 Unicode 图表构建器
+          logo: cascii.png
+          favicon:
+          url: https://cascii.app/
+          description: 基于 Web 的 ASCII 和 Unicode 图表构建器
+    - term: 开发者网站
+      links:
+        - title: patorjk
+          logo: patorjk.png
+          favicon:
+          url: https://patorjk.com/
+          description: 前端开发者(GitHub:patorjk)
 
 - taxonomy: 开发・资源
   icon: bi bi-file-earmark-code-fill
@@ -615,7 +632,18 @@
           favicon:
           url: https://copilot.tencent.com/
           description: 腾讯云 AI 编程助手
-
+    - term: 编程工具
+      links:
+        - title: Cursor
+          logo: cursor.png
+          favicon:
+          url: https://cursor.com/
+          description: AI 编程助手
+        - title: Windsurf
+          logo: windsurf.png
+          favicon:
+          url: https://windsurf.com/
+          description: AI 编程助手
     - term: 云端开发
       links:
         - title: MarsCode
@@ -661,7 +689,7 @@
           url: https://www.pulsemcp.com/
           description: MCP 服务器和客户端综合平台
         - title: MCP Servers
-          logo: 
+          logo: mcpservers.png
           favicon: 
           url: https://mcpservers.org/
           description: (wong2/awesome-mcp-servers)
@@ -887,3 +915,19 @@
           favicon:
           url: http://www.iconfont.cn/
           description: 阿里巴巴矢量图标库          
+    - term: 图片资源站
+      links:
+        - title: Unsplash
+          logo: unsplash.png
+          favicon:
+          url: https://unsplash.com/
+          description: 免费高分辨率图片
+        - title: Pexels
+          logo: pexels.png
+          favicon:
+          url: https://www.pexels.com/
+          description: 免费高分辨率图片
+        - title: Pixabay
+          logo: pixabay.png
+          favicon:
+          url: https://pixabay.com
