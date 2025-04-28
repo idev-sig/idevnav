@@ -633,6 +633,53 @@
           favicon: https://www.gstatic.com/monospace/230530/icon-192.png
           url: https://idx.google.com/
           description: Google 旗下的 AI 云端开发环境
+    - term: MCP
+      links:
+        - title: MCP.so
+          logo: mcpso.png
+          favicon:
+          url: https://mcp.so/
+          description: MCP 服务器和客户端综合平台
+        - title: Smithery
+          logo: smithery.png
+          favicon:
+          url: https://smithery.ai/
+          description: 帮助开发人员查找和交付代理服务的平台
+        - title: Glama MCP Server
+          logo: glama.png
+          favicon:
+          url: https://glama.ai/mcp/servers
+          description: (punkpeye/awesome-mcp-servers)
+        - title: Cline MCP Server
+          logo: cline.png
+          favicon:
+          url: https://cline.bot/mcp-marketplace
+          description: MCP 服务器和客户端综合平台
+        - title: PulseMCP
+          logo: pulsemcp.png
+          favicon:
+          url: https://www.pulsemcp.com/
+          description: MCP 服务器和客户端综合平台
+        - title: MCP Servers
+          logo: 
+          favicon: 
+          url: https://mcpservers.org/
+          description: (wong2/awesome-mcp-servers)
+        - title: Model Context Protocol servers
+          logo: github.png
+          favicon: 
+          url: https://github.com/modelcontextprotocol/servers
+          description: (modelcontextprotocol/servers)
+        - title: Cursor Directory MCP
+          logo: cursor_directory.png
+          favicon: 
+          url: https://cursor.directory/mcp
+          description: MCP 服务器和客户端综合平台
+        - title: MCP Server Finder
+          logo: mcpserverfinder.png
+          favicon: 
+          url: https://www.mcpserverfinder.com/servers
+          description: MCP 服务器和客户端综合平台
     - term: 在线创作
       links:
         - title: 哩布哩布AI
@@ -640,6 +687,16 @@
           favicon:
           url: https://www.liblib.art/
           description: AI绘画创作平台
+        - title: 推友 D.DESIGN
+          logo: d_design.png
+          favicon:
+          url: https://d.design/
+          description: 多风格AI绘画神器免费生成平台
+        - title: 吐司TusiArt
+          logo: tusiart.png
+          favicon:
+          url: https://tusiart.com/
+          description: 模型分享社区和在线生图平台
         - title: Raphael AI
           logo: raphael.png
           favicon:
