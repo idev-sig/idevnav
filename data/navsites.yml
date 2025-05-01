@@ -157,12 +157,7 @@
           logo: netlify.png
           favicon:
           url: https://www.netlify.com/
-          description: 静态网站托管服务平台
-        - title: Fleek
-          logo: fleek.png    
-          favicon:
-          url: https://fleek.xyz/
-          description: 静态网站托管服务平台  
+          description: 静态网站托管服务平台 
         - title: Surge
           logo: surge.svg
           favicon: https://surge.sh/images/logos/svg/surge-logo.svg
@@ -602,11 +597,6 @@
           favicon:
           url: https://codegeex.cn/
           description: 基于AI大模型的编程辅助工具
-        - title: Codeium
-          logo: codeium.png
-          favicon:
-          url: https://codeium.com/
-          description: The AI code assistant platform that developers love and enterprises trust
         - title: 通义灵码
           logo: lingma.png
           favicon:
@@ -622,11 +612,6 @@
           favicon:
           url: https://comate.baidu.com/
           description: 百度基于文心大模型研发的编程辅助工具
-        - title: MarsCode
-          logo: marscode.png
-          favicon:
-          url: https://www.marscode.cn/
-          description: 基于豆包大模型，提供智能 AI IDE 和 AI 编程助手
         - title: 腾讯云 AI 编程助手
           logo: copilot_tencent.png
           favicon:
@@ -644,13 +629,13 @@
           favicon:
           url: https://windsurf.com/
           description: AI 编程助手
+        - title: Trae
+          logo: trae.png
+          favicon:
+          url: https://www.trae.com.cn/
+          description: AI 编程助手
     - term: 云端开发
       links:
-        - title: MarsCode
-          logo: marscode.png
-          favicon:
-          url: https://www.marscode.cn/introduction-of-ide
-          description: 豆包旗下的 AI 原生 IDE，提供云端开发环境   
         - title: Cloud Studio   
           logo: cloudstudio.png
           favicon: 
