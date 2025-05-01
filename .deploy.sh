@@ -3,7 +3,11 @@
 # origin: https://git.jetsung.com/idev/idevnav/blob/main/.deploy.sh
 # lastmod: 2025-02-24
 
-set -euo pipefail
+if [[ -n "${DEBUG:-}" ]]; then
+  set -eux
+else
+  set -euo pipefail
+fi
 
 IN_CHINA="${CHINA:-}"
 

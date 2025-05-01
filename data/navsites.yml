@@ -570,11 +570,6 @@
           favicon:
           url: https://huggingface.co/chat/
           description: Huggingface旗下
-        - title: Codeium
-          logo: codeium.png
-          favicon:
-          url: https://codeium.com/live/
-          description: Codeium旗下
         - title: Duck AI
           logo: duckduckgo.svg
           favicon:
@@ -914,5 +909,7 @@
           description: 免费高分辨率图片
         - title: Pixabay
           logo: pixabay.png
-          favicon:
+          favicon: https://pixabay.com/favicon-32x32.png
           url: https://pixabay.com
+          description: 免费高分辨率图片
+          
