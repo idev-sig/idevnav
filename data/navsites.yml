@@ -543,11 +543,21 @@
           favicon:
           url: https://yiyan.baidu.com/
           description: 百度旗下
+        - title: 小艺
+          logo: xiaoyi.png
+          favicon:
+          url: https://xiaoyi.huawei.com/chat/
+          description: 华为旗下
         - title: 元宝
           logo: yuanbao.png
           favicon:
           url: https://yuanbao.tencent.com/
           description: 腾讯旗下
+        - title: 商量
+          logo: sensetime.png
+          favicon:
+          url: https://chat.sensetime.com/
+          description: 商汤旗下
         - title: Qwen
           logo: qwen.png
           favicon: 
@@ -688,6 +698,11 @@
           favicon: 
           url: https://www.mcpserverfinder.com/servers
           description: MCP 服务器和客户端综合平台
+        - title: 阿里云百炼 MCP
+          logo: bailian.svg
+          favicon: https://gw.alicdn.com/imgextra/i4/O1CN01vVn7g32134zNZEeAR_!!6000000006928-55-tps-24-24.svg
+          url: https://bailian.console.aliyun.com/?tab=mcp#/mcp-market
+          description: 阿里云百炼 MCP
     - term: 在线创作
       links:
         - title: 哩布哩布AI
