@@ -1,3 +1,4 @@
+---
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
   CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
@@ -5,11 +6,11 @@ variables:
 image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
 stages:
-  - deploy
+- deploy
 
 before_script: |
   apk update
-  apk add --no-cache bash npm
+  apk add --no-cache bash npm curl
   npm install -g wrangler@latest
 
 deploy:
@@ -18,5 +19,5 @@ deploy:
     bash ./.deploy.sh -d
 
   only:
-    - main
-    - more
+  - main
+  - more
