@@ -2,42 +2,46 @@
 
 基于 [**Hugo**](https://gohugo.io/) & [**NavSide 主题**](https://github.com/idevsig/navside)。   
 
-- **精选：** https://nav.idev.top    
-- **全量：** https://navs.idev.top
+- **精选：** https://nav.ooos.top    
+- **全量：** https://navs.ooos.top
+
+---
+
+## 先决条件
+- **Hugo**
+  ```bash
+  curl -L https://s.fx4.cn/iuyTvo | bash -s -- -w
+  ```
 
 ## 开发
 
-1. 初始化子模块
+1. 初始化或更新子模块
 
-```sh
-# 首次使用时
-git submodule update --init --recursive
-```
+    ```sh
+    # 初次使用时
+    git submodule update --init --recursive
 
-2. 更新子模块
+    # 需要更新 submodule （主题）时
+    git submodule update --recursive --remote
+    ```
 
-```sh
-# 需要更新 submodule 时
-git submodule update --recursive --remote
-```
+2. 测试
 
-3. 测试
-
-```sh
-hugo serve
-```
+    ```sh
+    hugo serve
+    ```
 
 4. 构建
-```sh
-# 构建
-hugo build --minify
+    ```sh
+    # 构建
+    hugo build --minify
 
-# 拉取 icon
-bash ./.deploy.sh
+    # 拉取 icon
+    bash ./.deploy.sh
 
-# 部署
-bash ./.deploy.sh -d
-```
+    # 部署
+    bash ./.deploy.sh -d
+    ```
 
 ## 获取 ICON 图标
 
@@ -53,16 +57,12 @@ bash ./.deploy.sh -d
    https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
    https://t3.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
 
-   # 中国加速
-   https://c.kkgo.cc/t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gitcode.com&size=48
-   ```
-
 2. 从自建方式获取
     ```sh
     # favicon: <URL>
     ```
-    - 自建方式一（PHP）： <https://github.com/deploybox/GetFavicon>
-    - 自建方式二（PHP）： <https://github.com/deploybox/FetchFavicon>
+    - 自建方式一（PHP）： <https://github.com/deploybox/favicon-1>
+    - 自建方式二（PHP）： <https://github.com/deploybox/favicon-2>
     - 自建方式三（CloudFlare）： <https://github.com/Aetherinox/searxico-worker>
 
 3. [使用教程](https://git.jetsung.com/idev/idevnav/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)

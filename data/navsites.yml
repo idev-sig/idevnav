@@ -622,6 +622,11 @@
           favicon:
           url: https://copilot.tencent.com/
           description: 腾讯云 AI 编程助手
+        - title: Augment Code
+          logo: augmentcode.png
+          favicon:
+          url: https://www.augmentcode.com/
+          description: Augment Code AI 编程助手          
     - term: 编程工具
       links:
         - title: Cursor
@@ -637,7 +642,7 @@
         - title: Trae
           logo: trae.png
           favicon:
-          url: https://www.trae.com.cn/
+          url: https://www.trae.cn/
           description: AI 编程助手
     - term: 云端开发
       links:
