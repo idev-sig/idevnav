@@ -526,7 +526,7 @@
         - title: Kimi
           logo: kimi.png
           favicon:
-          url: https://kimi.moonshot.cn/
+          url: https://www.kimi.com/
           description: 月之暗面旗下
         - title: 豆包
           logo: doubao.png
@@ -548,11 +548,6 @@
           favicon:
           url: https://xiaoyi.huawei.com/chat/
           description: 华为旗下
-        - title: 元宝
-          logo: yuanbao.png
-          favicon:
-          url: https://yuanbao.tencent.com/
-          description: 腾讯旗下
         - title: 商量
           logo: sensetime.png
           favicon:
@@ -595,6 +590,18 @@
           favicon:
           url: https://grok.com/
           description: X 旗下
+    - term: Chat(非自模型)
+      links:  
+        - title: 元宝
+          logo: yuanbao.png
+          favicon:
+          url: https://yuanbao.tencent.com/
+          description: 腾讯旗下  
+        - title: 超算互联网
+          logo: scnet.png
+          favicon:
+          url: https://www.scnet.cn/ui/chatbot/
+          description: 超算互联网旗下             
     - term: 编程助手
       links:
         - title: CodeGeex
@@ -627,7 +634,7 @@
           favicon:
           url: https://www.augmentcode.com/
           description: Augment Code AI 编程助手          
-    - term: 编程工具
+    - term: 编程 IDE
       links:
         - title: Cursor
           logo: cursor.png
