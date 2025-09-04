@@ -1,8 +1,8 @@
 # 爱开发导航
 
-基于 [**Hugo**](https://gohugo.io/) & [**NavSide 主题**](https://github.com/idevsig/navside)。   
+基于 [**Hugo**](https://gohugo.io/) & [**NavSide 主题**](https://github.com/idev-sig/navside)。   
 
-- **精选：** https://nav.ooos.top    
+- **精选：** https://nav.asfd.cn   
 - **全量：** https://navs.ooos.top
 
 ---
@@ -72,4 +72,4 @@
 - https://git.jetsung.com/idev/idevnav
 - https://framagit.org/idev/idevnav
 - https://gitcode.com/idev/idevnav
-- https://github.com/idevsig/idevnav
+- https://github.com/idev-sig/idevnav

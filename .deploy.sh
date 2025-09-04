@@ -54,9 +54,13 @@ check_command() {
 }
 
 check_in_china() {
-    if [ "$(curl -s -m 3 -o /dev/null -w "%{http_code}" https://www.google.com)" != "200" ]; then
-        IN_CHINA=1
+    if [[ -n "${CN:-}" ]]; then
+        return 0 # 手动指定
     fi
+    if [[ "$(curl -s -m 3 -o /dev/null -w "%{http_code}" https://www.google.com)" == "000" ]]; then
+        return 0 # 中国网络
+    fi
+    return 1 # 非中国网络
 }
 
 # 判断是否为 URL 的函数
@@ -131,11 +135,11 @@ action_for_more_bracnch() {
 
   # update config.toml
   sed -i 's#精选导航#全量导航#g' config.toml
-  sed -i 's#nav.ooos.top#navs.ooos.top#g' config.toml
+  sed -i 's#nav.asfd.cn#navs.ooos.top#g' config.toml
 
   # update {data,content}/headers.yml
   sed -i 's#全量#精选#g' "${DATA_DIR}/headers.yml"
-  sed -i 's#navs.ooos.top#nav.ooos.top#g' "${DATA_DIR}/headers.yml"
+  sed -i 's#navs.ooos.top#nav.asfd.cn#g' "${DATA_DIR}/headers.yml"
   sed -i 's#bi-circle-fill#bi-circle-half#g' "${DATA_DIR}/headers.yml"
 }
 
@@ -160,9 +164,7 @@ git_commit_and_push() {
 deploy_to_cloudflare() {
   if [ -n "${DEPLOY:-}" ]; then
     if [ -n "${PROJECT_NAME:-}" ]; then
-      echo -e "no\n" | wrangler pages deploy "$PUBLISH_DIR" \
-        --project-name "$PROJECT_NAME" \
-        --branch main  
+      echo -e "no\n" | wrangler deploy
     fi
   fi
 }
@@ -467,6 +469,9 @@ main() {
     elif [ "$CMD" = "zola" ]; then
       zola build
     fi
+  else
+    echo "not found command: $CMD"
+    exit 1
   fi
 
   if [ ! -d "$PUBLISH_DIR" ]; then
@@ -474,8 +479,8 @@ main() {
       exit 1
   fi    
 
-  if [ -z "$IN_CHINA" ]; then
-    check_in_china
+  if check_in_china; then
+      IN_CHINA="YES"
   fi
 
   if [ -z "${GITLAB_CI:-}" ]; then

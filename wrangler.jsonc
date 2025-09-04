@@ -1,0 +1,8 @@
+{
+  "name": "navmain",
+  "compatibility_date": "2025-04-01",
+  "account_id": "b9b779dc8c2e097c2a467261a8fa64e3",
+  "assets": {
+    "directory": "./public/"
+  }
+}
