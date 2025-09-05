@@ -9,14 +9,14 @@ else
   set -euo pipefail
 fi
 
-IN_CHINA="${CHINA:-}"
-
 COMMIT_MSG="" # 提交信息
 PUBLISH_DIR=""  # 发布目录
 PROJECT_NAME="" # 项目名称
+IS_WORKERS="" # 是否是 workers
+DEPLOY="" # 部署
 
-PROJECT_NAME_MAIN="${BRANCH:-nav}"
-PROJECT_NAME_MORE="${BRANCHM:-navs}"
+PROJECT_NAME_MAIN="${BRANCH1:-navmain}"
+PROJECT_NAME_MORE="${BRANCH2:-navmore}"
 
 GIT_BRANCH_NAME="${CI_COMMIT_BRANCH:-}"
 if [ -z "$GIT_BRANCH_NAME" ]; then
@@ -26,8 +26,6 @@ if [ -z "$GIT_BRANCH_NAME" ]; then
     GIT_BRANCH_NAME="main"
   fi
 fi
-
-DEPLOY="" # 部署
 
 # 判断是 HUGO 还是 ZOLA 项目
 if grep -q publishDir config.toml; then
@@ -48,20 +46,6 @@ readonly ICON_DIR="static/assets/images/logos"
 readonly NAVSITES_FILE="${DATA_DIR}/navsites.yml"
 readonly SYNC_FILE=".sync.txt"
 readonly SYNC_FILE_ERROR_LOG="$SYNC_FILE.error.log"
-
-check_command() {
-    command -v "$1" >/dev/null 2>&1
-}
-
-check_in_china() {
-    if [[ -n "${CN:-}" ]]; then
-        return 0 # 手动指定
-    fi
-    if [[ "$(curl -s -m 3 -o /dev/null -w "%{http_code}" https://www.google.com)" == "000" ]]; then
-        return 0 # 中国网络
-    fi
-    return 1 # 非中国网络
-}
 
 # 判断是否为 URL 的函数
 is_url() {
@@ -84,6 +68,9 @@ judgment_parameters() {
             '-p' | '--publish') # 部署目录
                 shift
                 PUBLISH_DIR="${1:?"error: Please specify the correct publish directory."}"
+                ;;
+            '-w' | '--workers') # 是否是 workers
+                IS_WORKERS="true"
                 ;;
             '-g' | '--git')
                 shift
@@ -110,6 +97,7 @@ usage: $0 [ options ]
   -d, --deploy                         deploy
   -p, --publish <publish>              set publish directory
   -g, --git <git>                      set commit message
+  -w, --workers                        is workers
 EOF
     exit 0
 }
@@ -162,9 +150,11 @@ git_commit_and_push() {
 
 # 部署到 Cloudflare
 deploy_to_cloudflare() {
-  if [ -n "${DEPLOY:-}" ]; then
-    if [ -n "${PROJECT_NAME:-}" ]; then
-      echo -e "no\n" | wrangler deploy
+  if [[ -n "${DEPLOY:-}" ]]; then
+    if [[ -n "${IS_WORKERS:-}" ]]; then
+      echo -e "no\n" | wrangler deploy  --assets="$PUBLISH_DIR" --name="$PROJECT_NAME" --compatibility-date "$(date -u +%Y-%m-%d)"
+    else
+      echo -e "no\n" | wrangler pages deploy "$PUBLISH_DIR" --project-name="$PROJECT_NAME" --branch main
     fi
   fi
 }
@@ -478,10 +468,6 @@ main() {
       echo -e "\033[31moutput dir $PUBLISH_DIR not found\033[0m"
       exit 1
   fi    
-
-  if check_in_china; then
-      IN_CHINA="YES"
-  fi
 
   if [ -z "${GITLAB_CI:-}" ]; then
     fetch_icons
