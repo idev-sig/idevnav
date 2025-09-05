@@ -77,29 +77,20 @@
       url: https://fastfile.asfd.cn
       description: fastfile（CF Pages 优速）
     - title: 文件加速下载（CFPages）
-      url: https://fastfile.skiy.net
+      url: https://fastfile.ooos.top
       description: fastfile（CF Pages）
     - title: 文件加速下载（CFWorkers）
-      url: https://fastfile-w.skiy.net
+      url: https://fastfile-w.ooos.top
       description: fastfile（CF Workers）
+    - title: 文件加速下载（CFWorkers）
+      url: https://fastfile-ws.ooos.top
+      description: fastfile（CF Workers 优选）      
     - title: 文件加速下载（CFPages）
       url: https://filetas.gxzjy.top
       description: filetas（CF Pages 优速）
     - title: 文件加速下载（CFPages）
       url: https://filetas.iothive.cn
       description: filetas（CF Pages）
-    - title: 文件加速下载（CFWorkers）
-      url: https://filetas-w.iothive.cn
-      description: filetas（CF Workers）
-    - title: 文件加速下载（NLVPS）
-      url: https://filetas.asfd.cn
-      description: 文件加速下载（CF 优速）
-    - title: 文件加速下载（NLVPS）
-      url: https://filetas.skiy.net
-      description: 文件加速下载（VPS 原速）
-    - title: 文件加速下载（NLVPS）
-      url: https://filetas-cf.skiy.net
-      description: 文件加速下载（CF 加速）
 
 - taxonomy: 托管与部署
   icon: bi bi-cloud-fill
