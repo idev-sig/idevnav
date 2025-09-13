@@ -2,15 +2,12 @@
 
 基于 [**Hugo**](https://gohugo.io/) & [**NavSide 主题**](https://github.com/idev-sig/navside)。   
 
-- **精选：** https://nav.asfd.cn   
-- **全量：** https://navs.ooos.top
-
 ---
 
 ## 先决条件
 - **Hugo**
   ```bash
-  curl -L https://s.fx4.cn/iuyTvo | bash -s -- -w
+  curl -L https://fx4.cn/hugo | bash -s -- -w
   ```
 
 ## 开发

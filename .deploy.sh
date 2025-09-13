@@ -435,11 +435,11 @@ main() {
 
   check_parameters
 
-  if [ -z "${GITLAB_CI:-}" ]; then
-    if [ "$GIT_BRANCH_NAME" = "more" ]; then
-      action_for_more_bracnch
-    fi
-  fi
+  # if [ -z "${GITLAB_CI:-}" ]; then
+  #   if [ "$GIT_BRANCH_NAME" = "more" ]; then
+  #     action_for_more_bracnch
+  #   fi
+  # fi
 
   rm -rf "$PUBLISH_DIR"  
 
