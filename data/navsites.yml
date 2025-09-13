@@ -132,11 +132,6 @@
       favicon:
       url: https://gitlab.com
       description: （可自建）代码托管平台
-    - title: Coding
-      logo: coding.png
-      favicon:
-      url: https://coding.net
-      description: （国内）代码托管平台
     - title: CNB
       logo: cnb.png
       favicon:
@@ -555,7 +550,7 @@
       url: https://chat.qwen.ai/
       description: 阿里巴巴旗下通义千问海外版
     - title: 智谱清言
-      logo:
+      logo: chatglm.png
       favicon:
       url: https://chatglm.cn/
       description: 智谱华章旗下

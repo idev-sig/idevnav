@@ -10,8 +10,9 @@
   target: _blank
 
 - item: 书签
-  icon: fas fa-bookmark
+  icon: far fa-bookmark
   link: https://link.asfd.cn
+  target: _blank
 
 - item: 主页
   icon: fas fa-blog
