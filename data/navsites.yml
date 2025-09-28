@@ -501,6 +501,11 @@
       favicon: https://modelers.cn/favicon.ico
       url: https://modelers.cn/
       description: 华为昇腾旗下的“模型即服务”(MaaS)平台
+    - title: 始智AI
+      logo: wisemodel.png
+      favicon:
+      url: https://wisemodel.cn/
+      description: AI开源社区，汇聚模型、数据集等AI开源技术资源
   - term: 工具
     links:
     - title: Ollama
