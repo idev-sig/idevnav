@@ -304,6 +304,11 @@
       favicon:
       url: https://cascii.app/
       description: 基于 Web 的 ASCII 和 Unicode 图表构建器
+    - title: 锤子在线工具网
+      logo: toolhelper.png
+      favicon:
+      url: https://www.toolhelper.cn/
+      description: 一个好用的在线工具集合
   - term: 开发者网站
     links:
     - title: patorjk
