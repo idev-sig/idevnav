@@ -684,6 +684,11 @@
       favicon: https://www.gstatic.com/monospace/230530/icon-192.png
       url: https://idx.google.com/
       description: Google 旗下的 AI 云端开发环境
+    - title: ONA
+      logo: ona.png
+      favicon:
+      url: https://ona.com/
+      description: 云端集成开发环境
   - term: MCP
     links:
     - title: MCP.so
