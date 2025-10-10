@@ -603,6 +603,11 @@
       favicon:
       url: https://tianqi.gitcode.com/
       description: GitCode 旗下
+    - title: 心流AI助手
+      logo: iflow.png
+      favicon:
+      url: https://iflow.cn/
+      description: 阿里巴巴旗下
   - term: 编程助手
     links:
     - title: CodeGeex
