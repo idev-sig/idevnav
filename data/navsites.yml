@@ -559,6 +559,11 @@
       favicon:
       url: https://chat.qwen.ai/
       description: 阿里巴巴旗下通义千问海外版
+    - title: Z.ai Chat
+      logo: zai.png
+      favicon:
+      url: https://chat.z.ai/
+      description: 智谱华章旗下海外版
     - title: 智谱清言
       logo: chatglm.png
       favicon:
