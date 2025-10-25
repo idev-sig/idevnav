@@ -309,6 +309,7 @@
       favicon:
       url: https://www.toolhelper.cn/
       description: 一个好用的在线工具集合
+    - title:
   - term: 开发者网站
     links:
     - title: patorjk
@@ -316,7 +317,11 @@
       favicon:
       url: https://patorjk.com/
       description: 前端开发者(GitHub:patorjk)
-
+    - title: IT-TOOLS
+      logo: it-tools.png
+      favicon:
+      url: https://it-tools.tech/
+      description: IT 工作者工具箱
 - taxonomy: 开发・资源
   icon: bi bi-file-earmark-code-fill
   list:
