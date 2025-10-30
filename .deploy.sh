@@ -253,7 +253,7 @@ download_icon() {
   
     local download_url="$1"
 
-    printf "Saving %s: \n  %-40s" "$cleaned_name" "$download_url"
+    printf "\nSaving %s: \n  %-40s" "$cleaned_name" "$download_url"
     if ! curl --connect-timeout 30 -fsL -o "$filepath" "$download_url"; then
       echo -e "\033[33mWarning: favicon $logo skipped...\033[0m\n"
       echo "$logo" >> "$SYNC_FILE_ERROR_LOG"

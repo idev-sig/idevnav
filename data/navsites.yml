@@ -578,7 +578,12 @@
       logo: xiaoyi.png
       favicon:
       url: https://xiaoyi.huawei.com/chat/
-      description: 华为旗下      
+      description: 华为旗下
+    - title: MiniMax
+      logo: minimax.png
+      favicon:
+      url: https://agent.minimaxi.com/
+      description: MiniMax Agent
   - term: Chat(海外)
     links:
     - title: ChatGPT
