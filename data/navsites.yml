@@ -84,7 +84,7 @@
       description: fastfile（CF Workers）
     - title: 文件加速下载（CFWorkers）
       url: https://fastfile-ws.ooos.top
-      description: fastfile（CF Workers 优选）      
+      description: fastfile（CF Workers 优选）
     - title: 文件加速下载（CFPages）
       url: https://filetas.gxzjy.top
       description: filetas（CF Pages 优速）
@@ -309,7 +309,11 @@
       favicon:
       url: https://www.toolhelper.cn/
       description: 一个好用的在线工具集合
-    - title:
+    - title: IT-TOOLS
+      logo: it-tools.png
+      favicon:
+      url: https://it-tools.tech/
+      description: IT 工作者工具箱
   - term: 开发者网站
     links:
     - title: patorjk
@@ -317,11 +321,6 @@
       favicon:
       url: https://patorjk.com/
       description: 前端开发者(GitHub:patorjk)
-    - title: IT-TOOLS
-      logo: it-tools.png
-      favicon:
-      url: https://it-tools.tech/
-      description: IT 工作者工具箱
 - taxonomy: 开发・资源
   icon: bi bi-file-earmark-code-fill
   list:
@@ -666,7 +665,7 @@
       logo: kiro.png
       favicon:
       url: https://kiro.dev/
-      description: Amazon 旗下 AI 编程助手 
+      description: Amazon 旗下 AI 编程助手
     - title: Qoder
       logo: qoder.png
       favicon:
@@ -696,7 +695,7 @@
       logo: joycode.png
       favicon:
       url: https://joycode.jd.com/
-      description: 京东云旗下 AI 编程助手      
+      description: 京东云旗下 AI 编程助手
   - term: 云端开发
     links:
     - title: Cloud Studio
