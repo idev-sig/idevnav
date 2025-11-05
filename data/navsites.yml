@@ -142,28 +142,6 @@
       favicon:
       url: https://forum.idev.top/d/208
       description: ⇒更多代码托管服务平台
-  - term: 网站部署
-    links:
-    - title: Vercel
-      logo: vercel.png
-      favicon:
-      url: https://vercel.com/
-      description: 静态网站托管服务平台
-    - title: Netlify
-      logo: netlify.png
-      favicon:
-      url: https://www.netlify.com/
-      description: 静态网站托管服务平台
-    - title: Surge
-      logo: surge.svg
-      favicon: https://surge.sh/images/logos/svg/surge-logo.svg
-      url: https://surge.sh/
-      description: 静态网站托管服务平台
-    - title: Fermyon
-      logo: fermyon.png
-      favicon:
-      url: https://fermyon.com/
-      description: WebAssembly 服务托管平台
   - term: 服务部署
     links:
     - title: Firebase
@@ -321,6 +299,7 @@
       favicon:
       url: https://patorjk.com/
       description: 前端开发者(GitHub:patorjk)
+
 - taxonomy: 开发・资源
   icon: bi bi-file-earmark-code-fill
   list:
@@ -463,6 +442,43 @@
       url: https://hf-mirror.com/
       description: Hugging Face 镜像站
 
+- taxonomy: 免费・资源
+  icon: bi bi-server
+  list:
+  - term: 免费空间
+    links:
+    - title: InfinityFree
+      logo: infinityfree.png
+      favicon:
+      url: https://www.infinityfree.com/
+      description: 静态网站托管服务平台
+    - title: alwaysdata
+      logo: alwaysdata.png
+      favicon:
+      url: https://www.alwaysdata.com/
+      description: 无限的数据库、邮箱和网站
+  - term: 网站部署
+    links:
+    - title: Vercel
+      logo: vercel.png
+      favicon:
+      url: https://vercel.com/
+      description: 静态网站托管服务平台
+    - title: Netlify
+      logo: netlify.png
+      favicon:
+      url: https://www.netlify.com/
+      description: 静态网站托管服务平台
+    - title: Surge
+      logo: surge.svg
+      favicon: https://surge.sh/images/logos/svg/surge-logo.svg
+      url: https://surge.sh/
+      description: 静态网站托管服务平台
+    - title: Fermyon
+      logo: fermyon.png
+      favicon:
+      url: https://fermyon.com/
+      description: WebAssembly 服务托管平台
 - taxonomy: 人工智能开发
   icon: bi bi-robot
   list:
