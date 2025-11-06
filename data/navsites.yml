@@ -1,4 +1,5 @@
 ---
+
 - taxonomy: 杰森
   # icon: fa-lg fas fa-star
   icon: bi bi-star-fill
@@ -292,6 +293,9 @@
       favicon:
       url: https://it-tools.tech/
       description: IT 工作者工具箱
+    - title: AI Bot
+      url: https://ai-bot.cn/
+      description: AI Bot 导航
   - term: 开发者网站
     links:
     - title: patorjk
@@ -479,6 +483,7 @@
       favicon:
       url: https://fermyon.com/
       description: WebAssembly 服务托管平台
+
 - taxonomy: 人工智能开发
   icon: bi bi-robot
   list:
@@ -717,6 +722,11 @@
       favicon:
       url: https://joycode.jd.com/
       description: 京东云旗下 AI 编程助手
+    - title: CodeFlicker
+      logo: codeflicker.png
+      favicon:
+      url: https://www.codeflicker.ai/
+      description: 快手旗下 AI 编程助手
   - term: 云端开发
     links:
     - title: Cloud Studio
