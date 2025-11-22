@@ -640,11 +640,6 @@
       favicon:
       url: https://www.scnet.cn/ui/chatbot/
       description: 超算互联网旗下
-    - title: 天启Chat
-      logo: tianqi.png
-      favicon:
-      url: https://tianqi.gitcode.com/
-      description: GitCode 旗下
     - title: 心流AI助手
       logo: iflow.png
       favicon:
@@ -734,7 +729,7 @@
       favicon:
       url: https://catpaw.meituan.com/
       description: 美团旗下 AI 编程助手
-    - title: Google Antigravity
+    - title: Antigravity
       logo: antigravity.png
       url: https://antigravity.google/
       description: Google 旗下 AI 编程助手
