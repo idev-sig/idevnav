@@ -611,6 +611,10 @@
       favicon:
       url: https://longcat.chat/
       description: 美团旗下
+    - title: 灵光AI
+      logo: lingguang.png
+      url: https://www.lingguang.com/
+      description: 蚂蚁集团旗下
   - term: Chat(海外)
     links:
     - title: ChatGPT
@@ -824,6 +828,10 @@
       favicon:
       url: https://raphael.app/
       description: 免费无限制AI图像生成器
+    - title: 可灵AI
+      logo: klingai.png
+      url: https://app.klingai.com/
+      description: 快手旗下创作平台
   - term: LOGO生成器
     links:
     - title: 标小智
