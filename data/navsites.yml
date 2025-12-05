@@ -832,6 +832,23 @@
       logo: klingai.png
       url: https://app.klingai.com/
       description: 快手旗下创作平台
+  - term: 智算平台
+    links:
+    - title: SiliconFlow
+      logo: siliconflow.png
+      favicon:
+      url: https://siliconflow.cn/
+      description: SiliconFlow 智算平台
+    - title: AIHubMix
+      logo: aihubmix.png
+      favicon:
+      url: https://aihubmix.com/
+      description: AIHubMix 智算平台
+    - title: OpenRouter
+      logo: openrouter.png
+      favicon:
+      url: https://openrouter.ai/
+      description: OpenRouter 智算平台
   - term: LOGO生成器
     links:
     - title: 标小智
