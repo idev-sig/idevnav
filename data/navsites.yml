@@ -615,6 +615,10 @@
       logo: lingguang.png
       url: https://www.lingguang.com/
       description: 蚂蚁集团旗下
+    - title: MIMO
+      logo: xiaomimimo.png
+      url: https://aistudio.xiaomimimo.com/
+      description: 小米旗下
   - term: Chat(海外)
     links:
     - title: ChatGPT
@@ -1056,3 +1060,4 @@
       favicon: https://pixabay.com/favicon-32x32.png
       url: https://pixabay.com
       description: 免费高分辨率图片
+
