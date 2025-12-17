@@ -6,7 +6,7 @@ on:
     - main
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
@@ -85,29 +85,30 @@ jobs:
           --baseURL "${{ steps.pages.outputs.base_url }}/" \
           --cacheDir "${{ runner.temp }}/hugo_cache"
     - name: Update CNAME
-      run: echo "${{ steps.deployment.outputs.page_url }}" > ./public/CNAME
-    - name: Cache save
-      id: cache-save
-      uses: actions/cache/save@v4
-      with:
-        path: ${{ runner.temp }}/hugo_cache
-        key: ${{ steps.cache-restore.outputs.cache-primary-key }}
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: ./public
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      # - name: Deploy to GitHub Pages
-      #   id: deployment
-      #   uses: actions/deploy-pages@v4
+      run: echo "${{ steps.pages.outputs.base_url }}" > ./public/CNAME
     - name: Deploy to Branch
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
+    # - name: Cache save
+    #   id: cache-save
+    #   uses: actions/cache/save@v4
+    #   with:
+    #     path: ${{ runner.temp }}/hugo_cache
+    #     key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+    # - name: Upload artifact
+    #   uses: actions/upload-pages-artifact@v3
+    #   with:
+    #     path: ./public
+
+  # deploy:
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v4
