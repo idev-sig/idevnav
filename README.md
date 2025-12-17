@@ -66,7 +66,4 @@
 
 ## 仓库镜像
 
-- [MyCode](https://git.jetsung.com/idev/idevnav)
-- [Framagit](https://framagit.org/idev/idevnav)
-- [GitCode](https://gitcode.com/idev/idevnav)
-- [GitHub](https://github.com/idev-sig/idevnav)
+[MyCode](https://git.jetsung.com/jetsung/idevnav) ● [Framagit](https://framagit.org/jetsung/idevnav) ● [GitCode](https://gitcode.com/jetsung/idevnav) ● [GitHub](https://github.com/jetsung/idevnav)

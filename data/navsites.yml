@@ -806,6 +806,11 @@
       favicon: https://gw.alicdn.com/imgextra/i4/O1CN01vVn7g32134zNZEeAR_!!6000000006928-55-tps-24-24.svg
       url: https://bailian.console.aliyun.com/?tab=mcp#/mcp-market
       description: 阿里云百炼 MCP
+    - title: MCP GitHub
+      logo: github.png
+      favicon:
+      url: https://github.com/mcp
+      description: MCP 官方 GitHub 仓库
   - term: 在线创作
     links:
     - title: 哩布哩布AI
