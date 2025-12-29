@@ -1,6 +1,6 @@
 # 爱开发导航
 
-基于 [**Hugo**](https://gohugo.io/) & [**NavSide 主题**](https://github.com/idev-sig/navside)。   
+基于 [**Hugo**](https://gohugo.io/) & [**NavSide 主题**](https://github.com/idevsig/navside)。   
 
 ---
 
@@ -62,7 +62,7 @@
     - 自建方式二（PHP）： <https://github.com/deploybox/favicon-2>
     - 自建方式三（CloudFlare）： <https://github.com/Aetherinox/searxico-worker>
 
-3. [使用教程](https://git.jetsung.com/idev/idevnav/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
+3. [使用教程](https://git.jetsung.com/jetsung/idevnav/-/wikis/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B)
 
 ## 仓库镜像
 

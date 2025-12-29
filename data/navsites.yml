@@ -503,67 +503,7 @@
       url: https://fermyon.com/
       description: WebAssembly 服务托管平台
 
-- taxonomy: 人工智能开发
-  icon: bi bi-robot
-  list:
-  - term: 深度学习框架
-    links:
-    - title: 飞桨 PaddlePaddle
-      logo: paddlepaddle.png
-      favicon:
-      url: https://www.paddlepaddle.org.cn/
-      description: 百度研发的深度学习平台
-    - title: PyTorch
-      logo: pytorch.png
-      favicon:
-      url: https://pytorch.org/
-      description: 全球领先的深度学习框架
-    - title: TensorFlow
-      logo: tensorflow.png
-      favicon:
-      url: https://tensorflow.org/
-      description: 谷歌推出的开源机器学习框架
-    - title: MindSpore
-      logo: mindspore.png
-      favicon:
-      url: https://www.mindspore.cn/
-      description: 华为昇思开源的全场景AI框架
-  - term: 模型平台
-    links:
-    - title: Hugging Face
-      logo: huggingface.png
-      favicon:
-      url: https://huggingface.co/
-      description: 全球流行的“模型即服务”(MaaS)平台
-    - title: 魔搭社区
-      logo: modelscope.png
-      favicon:
-      url: https://modelscope.cn/
-      description: 阿里巴巴旗下的“模型即服务”(MaaS)平台
-    - title: 启智AI协作平台
-      logo: openi.png
-      favicon:
-      url: https://openi.pcl.ac.cn/
-      description: 一站式AI开发协作平台
-    - title: 魔乐社区
-      logo: modelers.ico
-      favicon: https://modelers.cn/favicon.ico
-      url: https://modelers.cn/
-      description: 华为昇腾旗下的“模型即服务”(MaaS)平台
-    - title: 始智AI
-      logo: wisemodel.png
-      favicon:
-      url: https://wisemodel.cn/
-      description: AI开源社区，汇聚模型、数据集等AI开源技术资源
-  - term: 工具
-    links:
-    - title: Ollama
-      logo: ollama.png
-      favicon:
-      url: https://ollama.com/
-      description: 启动并运行大型语言模型
-
-- taxonomy: AI 编程
+- taxonomy: AI・编程
   icon: bi bi-code-slash
   list:
   - term: 编程助手
@@ -717,7 +657,7 @@
       url: https://github.com/mcp
       description: MCP 官方 GitHub 仓库
 
-- taxonomy: 人工智能服务
+- taxonomy: AI・服务
   icon: bi bi-backpack2-fill
   list:
   - term: 对话平台
@@ -884,6 +824,66 @@
       favicon:
       url: https://www.freelogodesign.org/
       description: (高清需付费下载)Create Your Own Logo
+
+- taxonomy: AI・开发
+  icon: bi bi-robot
+  list:
+  - term: 深度学习框架
+    links:
+    - title: 飞桨 PaddlePaddle
+      logo: paddlepaddle.png
+      favicon:
+      url: https://www.paddlepaddle.org.cn/
+      description: 百度研发的深度学习平台
+    - title: PyTorch
+      logo: pytorch.png
+      favicon:
+      url: https://pytorch.org/
+      description: 全球领先的深度学习框架
+    - title: TensorFlow
+      logo: tensorflow.png
+      favicon:
+      url: https://tensorflow.org/
+      description: 谷歌推出的开源机器学习框架
+    - title: MindSpore
+      logo: mindspore.png
+      favicon:
+      url: https://www.mindspore.cn/
+      description: 华为昇思开源的全场景AI框架
+  - term: 模型平台
+    links:
+    - title: Hugging Face
+      logo: huggingface.png
+      favicon:
+      url: https://huggingface.co/
+      description: 全球流行的“模型即服务”(MaaS)平台
+    - title: 魔搭社区
+      logo: modelscope.png
+      favicon:
+      url: https://modelscope.cn/
+      description: 阿里巴巴旗下的“模型即服务”(MaaS)平台
+    - title: 启智AI协作平台
+      logo: openi.png
+      favicon:
+      url: https://openi.pcl.ac.cn/
+      description: 一站式AI开发协作平台
+    - title: 魔乐社区
+      logo: modelers.ico
+      favicon: https://modelers.cn/favicon.ico
+      url: https://modelers.cn/
+      description: 华为昇腾旗下的“模型即服务”(MaaS)平台
+    - title: 始智AI
+      logo: wisemodel.png
+      favicon:
+      url: https://wisemodel.cn/
+      description: AI开源社区，汇聚模型、数据集等AI开源技术资源
+  - term: 工具
+    links:
+    - title: Ollama
+      logo: ollama.png
+      favicon:
+      url: https://ollama.com/
+      description: 启动并运行大型语言模型
 
 - taxonomy: 技术・提升
   # icon: fa-lg fas fa-graduation-cap
