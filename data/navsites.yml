@@ -807,6 +807,16 @@
       favicon:
       url: https://openrouter.ai/
       description: OpenRouter 智算平台
+    - title: Nvidia
+      logo: nvidia.png
+      favicon:
+      url: https://build.nvidia.com/
+      description: Nvidia 智算平台
+    - title: AI Ping
+      logo: aiping.png
+      favicon:
+      url: https://aiping.cn/
+      description: AI Ping 智算平台
   - term: LOGO生成器
     links:
     - title: 标小智
